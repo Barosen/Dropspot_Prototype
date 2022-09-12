@@ -9,16 +9,13 @@
 /* Begin PBXBuildFile section */
 		139D822928CF6810009F264D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D822828CF6810009F264D /* AppDelegate.swift */; };
 		139D822B28CF6810009F264D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D822A28CF6810009F264D /* SceneDelegate.swift */; };
-		139D822D28CF6810009F264D /* FlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D822C28CF6810009F264D /* FlowViewController.swift */; };
+		139D822D28CF6810009F264D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D822C28CF6810009F264D /* ViewController.swift */; };
 		139D823028CF6810009F264D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139D822E28CF6810009F264D /* Main.storyboard */; };
 		139D823228CF6811009F264D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 139D823128CF6811009F264D /* Assets.xcassets */; };
 		139D823528CF6811009F264D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 139D823328CF6811009F264D /* LaunchScreen.storyboard */; };
 		139D824028CF6811009F264D /* DropspotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D823F28CF6811009F264D /* DropspotTests.swift */; };
 		139D824A28CF6811009F264D /* DropspotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D824928CF6811009F264D /* DropspotUITests.swift */; };
 		139D824C28CF6811009F264D /* DropspotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D824B28CF6811009F264D /* DropspotUITestsLaunchTests.swift */; };
-		A96C19DA28CF77F200B93DD3 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C19D928CF77F200B93DD3 /* FavoritesViewController.swift */; };
-		A96C19DC28CF780700B93DD3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C19DB28CF780700B93DD3 /* SearchViewController.swift */; };
-		A96C19DE28CF782200B93DD3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C19DD28CF782200B93DD3 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +39,7 @@
 		139D822528CF6810009F264D /* Dropspot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dropspot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		139D822828CF6810009F264D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		139D822A28CF6810009F264D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		139D822C28CF6810009F264D /* FlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowViewController.swift; sourceTree = "<group>"; };
+		139D822C28CF6810009F264D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		139D822F28CF6810009F264D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		139D823128CF6811009F264D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		139D823428CF6811009F264D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,9 +49,6 @@
 		139D824528CF6811009F264D /* DropspotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropspotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		139D824928CF6811009F264D /* DropspotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropspotUITests.swift; sourceTree = "<group>"; };
 		139D824B28CF6811009F264D /* DropspotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropspotUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		A96C19D928CF77F200B93DD3 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
-		A96C19DB28CF780700B93DD3 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		A96C19DD28CF782200B93DD3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +99,9 @@
 		139D822728CF6810009F264D /* Dropspot */ = {
 			isa = PBXGroup;
 			children = (
-				A96C19D828CF778000B93DD3 /* ViewControllers */,
 				139D822828CF6810009F264D /* AppDelegate.swift */,
 				139D822A28CF6810009F264D /* SceneDelegate.swift */,
+				139D822C28CF6810009F264D /* ViewController.swift */,
 				139D822E28CF6810009F264D /* Main.storyboard */,
 				139D823128CF6811009F264D /* Assets.xcassets */,
 				139D823328CF6811009F264D /* LaunchScreen.storyboard */,
@@ -131,17 +125,6 @@
 				139D824B28CF6811009F264D /* DropspotUITestsLaunchTests.swift */,
 			);
 			path = DropspotUITests;
-			sourceTree = "<group>";
-		};
-		A96C19D828CF778000B93DD3 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				139D822C28CF6810009F264D /* FlowViewController.swift */,
-				A96C19D928CF77F200B93DD3 /* FavoritesViewController.swift */,
-				A96C19DB28CF780700B93DD3 /* SearchViewController.swift */,
-				A96C19DD28CF782200B93DD3 /* ProfileViewController.swift */,
-			);
-			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,11 +258,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A96C19DE28CF782200B93DD3 /* ProfileViewController.swift in Sources */,
-				A96C19DC28CF780700B93DD3 /* SearchViewController.swift in Sources */,
-				139D822D28CF6810009F264D /* FlowViewController.swift in Sources */,
+				139D822D28CF6810009F264D /* ViewController.swift in Sources */,
 				139D822928CF6810009F264D /* AppDelegate.swift in Sources */,
-				A96C19DA28CF77F200B93DD3 /* FavoritesViewController.swift in Sources */,
 				139D822B28CF6810009F264D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FlowViewController: UIViewController {
+class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
