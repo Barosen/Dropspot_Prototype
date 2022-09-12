@@ -17,6 +17,7 @@
 		139D824A28CF6811009F264D /* DropspotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D824928CF6811009F264D /* DropspotUITests.swift */; };
 		139D824C28CF6811009F264D /* DropspotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D824B28CF6811009F264D /* DropspotUITestsLaunchTests.swift */; };
 		5BB3D3E228CF888C00F32BAF /* LoginOrSingnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB3D3E128CF888C00F32BAF /* LoginOrSingnViewController.swift */; };
+		5BB3D3E628CFBD7900F32BAF /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB3D3E528CFBD7900F32BAF /* CreateAccountViewController.swift */; };
 		A96C19E128CF83D500B93DD3 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C19E028CF83D500B93DD3 /* FavoritesViewController.swift */; };
 		A96C19E328CF83EF00B93DD3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C19E228CF83EF00B93DD3 /* SearchViewController.swift */; };
 		A96C19E528CF83FA00B93DD3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C19E428CF83FA00B93DD3 /* ProfileViewController.swift */; };
@@ -54,6 +55,7 @@
 		139D824928CF6811009F264D /* DropspotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropspotUITests.swift; sourceTree = "<group>"; };
 		139D824B28CF6811009F264D /* DropspotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropspotUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5BB3D3E128CF888C00F32BAF /* LoginOrSingnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOrSingnViewController.swift; sourceTree = "<group>"; };
+		5BB3D3E528CFBD7900F32BAF /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		A96C19E028CF83D500B93DD3 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		A96C19E228CF83EF00B93DD3 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A96C19E428CF83FA00B93DD3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				A96C19E228CF83EF00B93DD3 /* SearchViewController.swift */,
 				A96C19E428CF83FA00B93DD3 /* ProfileViewController.swift */,
 				5BB3D3E128CF888C00F32BAF /* LoginOrSingnViewController.swift */,
+				5BB3D3E528CFBD7900F32BAF /* CreateAccountViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				A96C19E328CF83EF00B93DD3 /* SearchViewController.swift in Sources */,
 				139D822D28CF6810009F264D /* FlowViewController.swift in Sources */,
 				139D822928CF6810009F264D /* AppDelegate.swift in Sources */,
+				5BB3D3E628CFBD7900F32BAF /* CreateAccountViewController.swift in Sources */,
 				5BB3D3E228CF888C00F32BAF /* LoginOrSingnViewController.swift in Sources */,
 				A96C19E128CF83D500B93DD3 /* FavoritesViewController.swift in Sources */,
 				139D822B28CF6810009F264D /* SceneDelegate.swift in Sources */,
