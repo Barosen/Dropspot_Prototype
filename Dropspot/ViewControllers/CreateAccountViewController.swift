@@ -9,10 +9,12 @@ import UIKit
 
 class CreateAccountViewController: UIViewController {
 
+  @IBOutlet weak var RegisterDesignBt: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        RegisterDesignBt.layer.cornerRadius = 20
     }
     
 
