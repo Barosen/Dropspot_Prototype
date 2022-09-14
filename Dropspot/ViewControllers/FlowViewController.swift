@@ -9,7 +9,8 @@ import UIKit
 
 class FlowViewController: UIViewController {
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet var tableView: UITableView!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
