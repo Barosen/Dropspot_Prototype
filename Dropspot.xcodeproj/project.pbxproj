@@ -18,6 +18,7 @@
 		139D824C28CF6811009F264D /* DropspotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D824B28CF6811009F264D /* DropspotUITestsLaunchTests.swift */; };
 		5B9124B628D0E8F6004E7813 /* CustomTextFiled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9124B528D0E8F6004E7813 /* CustomTextFiled.swift */; };
 		5B9124B828D23D71004E7813 /* LoginBusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9124B728D23D71004E7813 /* LoginBusinessViewController.swift */; };
+		5B9124BA28D36544004E7813 /* CreateAccBusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9124B928D36544004E7813 /* CreateAccBusinessViewController.swift */; };
 		5BB3D3E228CF888C00F32BAF /* LoginOrSingnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB3D3E128CF888C00F32BAF /* LoginOrSingnViewController.swift */; };
 		5BB3D3E628CFBD7900F32BAF /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB3D3E528CFBD7900F32BAF /* CreateAccountViewController.swift */; };
 		A96C19E128CF83D500B93DD3 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C19E028CF83D500B93DD3 /* FavoritesViewController.swift */; };
@@ -58,6 +59,7 @@
 		139D824B28CF6811009F264D /* DropspotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropspotUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5B9124B528D0E8F6004E7813 /* CustomTextFiled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFiled.swift; sourceTree = "<group>"; };
 		5B9124B728D23D71004E7813 /* LoginBusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBusinessViewController.swift; sourceTree = "<group>"; };
+		5B9124B928D36544004E7813 /* CreateAccBusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccBusinessViewController.swift; sourceTree = "<group>"; };
 		5BB3D3E128CF888C00F32BAF /* LoginOrSingnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOrSingnViewController.swift; sourceTree = "<group>"; };
 		5BB3D3E528CFBD7900F32BAF /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		A96C19E028CF83D500B93DD3 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				5BB3D3E128CF888C00F32BAF /* LoginOrSingnViewController.swift */,
 				5BB3D3E528CFBD7900F32BAF /* CreateAccountViewController.swift */,
 				5B9124B728D23D71004E7813 /* LoginBusinessViewController.swift */,
+				5B9124B928D36544004E7813 /* CreateAccBusinessViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				139D822D28CF6810009F264D /* FlowViewController.swift in Sources */,
 				139D822928CF6810009F264D /* AppDelegate.swift in Sources */,
 				5BB3D3E628CFBD7900F32BAF /* CreateAccountViewController.swift in Sources */,
+				5B9124BA28D36544004E7813 /* CreateAccBusinessViewController.swift in Sources */,
 				5BB3D3E228CF888C00F32BAF /* LoginOrSingnViewController.swift in Sources */,
 				A96C19E128CF83D500B93DD3 /* FavoritesViewController.swift in Sources */,
 				5B9124B828D23D71004E7813 /* LoginBusinessViewController.swift in Sources */,
