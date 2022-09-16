@@ -2,22 +2,27 @@
 //  CreateAccBusinessViewController.swift
 //  Dropspot
 //
-//  Created by Raí Gomes on 2022-09-15.
+//  Created by Raí Gomes on 2022-09-16.
 //
 
 import UIKit
 
 class CreateAccBusinessViewController: UIViewController {
 
-    @IBOutlet weak var ImageViewConerRadius: UIImageView!
-    @IBOutlet weak var BusinessRegBtDesign: UIButton!
+    @IBOutlet weak var BusinessRegisterBtDesign: UIButton!
+    
+    
+    @IBOutlet weak var BusinessImgDesign: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        ImageViewConerRadius.layer.cornerRadius = 20
+        
+        BusinessRegisterBtDesign.layer.cornerRadius = 20
+        BusinessImgDesign.layer.cornerRadius = 20
+        
 
-        BusinessRegBtDesign.layer.cornerRadius = 20
-        
-        
+        // Do any additional setup after loading the view.
     }
     
 

@@ -2,21 +2,23 @@
 //  LoginBusinessViewController.swift
 //  Dropspot
 //
-//  Created by Raí Gomes on 2022-09-14.
+//  Created by Raí Gomes on 2022-09-16.
 //
 
 import UIKit
 
 class LoginBusinessViewController: UIViewController {
 
-    @IBOutlet weak var BussinesLoginBtDesign: UIButton!
-    @IBOutlet weak var CreatBussinesBtDesign: UIButton!
-    
+    @IBOutlet weak var CreateBusinessBtDesign: UIButton!
+    @IBOutlet weak var BusinessLoginBtDesign: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        CreateBusinessBtDesign.layer.cornerRadius = 20
+        BusinessLoginBtDesign.layer.cornerRadius = 20
+        
 
-        BussinesLoginBtDesign.layer.cornerRadius = 20
-        CreatBussinesBtDesign.layer.cornerRadius = 20
+        // Do any additional setup after loading the view.
     }
     
 
