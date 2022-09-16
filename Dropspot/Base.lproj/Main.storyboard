@@ -18,12 +18,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="oL9-Wb-NsC">
-                                <rect key="frame" x="47" y="101" width="300" height="472"/>
+                                <rect key="frame" x="43" y="101" width="300" height="472"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXz-iH-0qh">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="32"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="300" id="8Xp-Ga-rqM"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="8Xp-Ga-rqM"/>
                                             <constraint firstAttribute="height" constant="32" id="LJh-ZR-PX5"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
@@ -108,7 +108,6 @@
                                 <constraints>
                                     <constraint firstItem="TXz-iH-0qh" firstAttribute="width" secondItem="oL9-Wb-NsC" secondAttribute="width" id="V8N-bD-sjB"/>
                                     <constraint firstItem="VJB-ZD-5AM" firstAttribute="width" secondItem="oL9-Wb-NsC" secondAttribute="width" id="h4f-nx-uuO"/>
-                                    <constraint firstAttribute="width" constant="300" id="ohf-c5-yXj"/>
                                     <constraint firstItem="FtM-U0-NwG" firstAttribute="width" secondItem="oL9-Wb-NsC" secondAttribute="width" id="zkw-fG-qc7"/>
                                 </constraints>
                             </stackView>
@@ -118,10 +117,12 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="oL9-Wb-NsC" secondAttribute="bottom" constant="188" id="01o-xy-jfL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oL9-Wb-NsC" secondAttribute="trailing" constant="47" id="94Z-28-iP1"/>
+                            <constraint firstItem="oL9-Wb-NsC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="Fvo-M6-9rr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oL9-Wb-NsC" secondAttribute="trailing" constant="47" id="Is4-oJ-Kci"/>
                             <constraint firstItem="oL9-Wb-NsC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="KHs-ng-XIG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oL9-Wb-NsC" secondAttribute="trailing" constant="47" id="bZw-bH-DRI"/>
                             <constraint firstItem="oL9-Wb-NsC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="eNf-x8-CP6"/>
-                            <constraint firstItem="oL9-Wb-NsC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="uTG-Y6-f9F"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oL9-Wb-NsC" secondAttribute="trailing" constant="43" id="p3a-Za-a3o"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="peF-8S-bWT"/>
