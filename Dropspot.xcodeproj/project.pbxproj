@@ -24,6 +24,9 @@
 		A96C19E128CF83D500B93DD3 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C19E028CF83D500B93DD3 /* FavoritesViewController.swift */; };
 		A96C19E328CF83EF00B93DD3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C19E228CF83EF00B93DD3 /* SearchViewController.swift */; };
 		A96C19E528CF83FA00B93DD3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C19E428CF83FA00B93DD3 /* ProfileViewController.swift */; };
+		A9B97DCC28D882B5004B77CB /* stretchyTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B97DCB28D882B5004B77CB /* stretchyTableViewHeader.swift */; };
+		A9B97DD428D8CF3D004B77CB /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B97DD228D8CF3D004B77CB /* SearchCell.swift */; };
+		A9B97DD528D8CF3D004B77CB /* SearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9B97DD328D8CF3D004B77CB /* SearchCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		A96C19E028CF83D500B93DD3 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		A96C19E228CF83EF00B93DD3 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A96C19E428CF83FA00B93DD3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A9B97DCB28D882B5004B77CB /* stretchyTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stretchyTableViewHeader.swift; sourceTree = "<group>"; };
+		A9B97DD228D8CF3D004B77CB /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		A9B97DD328D8CF3D004B77CB /* SearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,7 @@
 		139D822728CF6810009F264D /* Dropspot */ = {
 			isa = PBXGroup;
 			children = (
+				A9B97DCD28D8CD05004B77CB /* TableViewCells */,
 				5B9124B428D0E87A004E7813 /* CustomTextFiled */,
 				A96C19DF28CF83BA00B93DD3 /* ViewControllers */,
 				139D822828CF6810009F264D /* AppDelegate.swift */,
@@ -123,6 +130,7 @@
 				139D823128CF6811009F264D /* Assets.xcassets */,
 				139D823328CF6811009F264D /* LaunchScreen.storyboard */,
 				139D823628CF6811009F264D /* Info.plist */,
+				A9B97DCB28D882B5004B77CB /* stretchyTableViewHeader.swift */,
 			);
 			path = Dropspot;
 			sourceTree = "<group>";
@@ -165,6 +173,15 @@
 				5B9124BD28D51062004E7813 /* CreateAccBusinessViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A9B97DCD28D8CD05004B77CB /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				A9B97DD228D8CF3D004B77CB /* SearchCell.swift */,
+				A9B97DD328D8CF3D004B77CB /* SearchCell.xib */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				139D823528CF6811009F264D /* LaunchScreen.storyboard in Resources */,
+				A9B97DD528D8CF3D004B77CB /* SearchCell.xib in Resources */,
 				139D823228CF6811009F264D /* Assets.xcassets in Resources */,
 				139D823028CF6810009F264D /* Main.storyboard in Resources */,
 			);
@@ -298,12 +316,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9B97DD428D8CF3D004B77CB /* SearchCell.swift in Sources */,
 				5B9124B628D0E8F6004E7813 /* CustomTextFiled.swift in Sources */,
 				A96C19E528CF83FA00B93DD3 /* ProfileViewController.swift in Sources */,
 				A96C19E328CF83EF00B93DD3 /* SearchViewController.swift in Sources */,
 				139D822D28CF6810009F264D /* FlowViewController.swift in Sources */,
 				139D822928CF6810009F264D /* AppDelegate.swift in Sources */,
 				5BB3D3E628CFBD7900F32BAF /* CreateAccountViewController.swift in Sources */,
+				A9B97DCC28D882B5004B77CB /* stretchyTableViewHeader.swift in Sources */,
 				5B9124BE28D51062004E7813 /* CreateAccBusinessViewController.swift in Sources */,
 				5BB3D3E228CF888C00F32BAF /* LoginOrSingnViewController.swift in Sources */,
 				A96C19E128CF83D500B93DD3 /* FavoritesViewController.swift in Sources */,

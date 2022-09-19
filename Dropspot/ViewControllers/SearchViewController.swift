@@ -8,22 +8,44 @@
 import UIKit
 
 class SearchViewController: UIViewController {
-
+    @IBOutlet var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        tableViewAndStylingDetails()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableViewAndStylingDetails() {
+        //TableView
+        tableView.delegate = self
+        tableView.dataSource = self
+        let nib = UINib(nibName: "SearchCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "SearchCell")
     }
-    */
+    
+}
 
+extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    //Skriv bara tableView funktioner här
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SearchCell", for: indexPath) as! SearchCell
+        //Fixa element, exempelvis: cell.myLabel.text = "Coop Forum"
+        
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // return datainfo.count
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 100
+    }
+    
 }
