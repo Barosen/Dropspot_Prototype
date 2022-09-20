@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		130C582E28D9BDC100C1783E /* SplashScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130C582D28D9BDC100C1783E /* SplashScreenController.swift */; };
 		139D822928CF6810009F264D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D822828CF6810009F264D /* AppDelegate.swift */; };
 		139D822B28CF6810009F264D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D822A28CF6810009F264D /* SceneDelegate.swift */; };
 		139D822D28CF6810009F264D /* FlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D822C28CF6810009F264D /* FlowViewController.swift */; };
@@ -47,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		130C582D28D9BDC100C1783E /* SplashScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenController.swift; sourceTree = "<group>"; };
 		139D822528CF6810009F264D /* Dropspot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dropspot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		139D822828CF6810009F264D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		139D822A28CF6810009F264D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				5BB3D3E528CFBD7900F32BAF /* CreateAccountViewController.swift */,
 				5B9124BB28D50F3E004E7813 /* LoginBusinessViewController.swift */,
 				5B9124BD28D51062004E7813 /* CreateAccBusinessViewController.swift */,
+				130C582D28D9BDC100C1783E /* SplashScreenController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				5B9124B628D0E8F6004E7813 /* CustomTextFiled.swift in Sources */,
 				A96C19E528CF83FA00B93DD3 /* ProfileViewController.swift in Sources */,
 				A96C19E328CF83EF00B93DD3 /* SearchViewController.swift in Sources */,
+				130C582E28D9BDC100C1783E /* SplashScreenController.swift in Sources */,
 				139D822D28CF6810009F264D /* FlowViewController.swift in Sources */,
 				139D822928CF6810009F264D /* AppDelegate.swift in Sources */,
 				5BB3D3E628CFBD7900F32BAF /* CreateAccountViewController.swift in Sources */,
