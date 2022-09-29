@@ -10,12 +10,22 @@ import UIKit
 class FlowViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
+   // @IBOutlet weak var FlowTableViewCell: UITableViewCell!
+   
+    
+
+  
     var header: StretchyTableViewHeader?
     
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableViewAndDesignDetails()
+        tableView.delegate = self
+        tableView.dataSource = self
+       
+        
+       tableViewAndDesignDetails()
     }
 
     func tableViewAndDesignDetails() {
@@ -45,6 +55,7 @@ class FlowViewController: UIViewController {
         label.text = "DropSpot"
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: label)
     }
+ 
     
     @objc func headerButtonOne(_ sender:UIButton) {
         print("One")
@@ -58,5 +69,45 @@ class FlowViewController: UIViewController {
         header?.buttonTwo.backgroundColor = .tertiaryLabel
     }
 
+}
+
+class FolowTableViewCell: UITableViewCell{
+    @IBOutlet weak var shareButton: UIButton!
+    @IBOutlet weak var favoriteButton: UIButton!
+    
+    @IBOutlet weak var commentButton: UIButton!
+    @IBOutlet weak var followButton: UIButton!
+    @IBOutlet weak var companyImageView: UIImageView!
+    
+
+}
+extension FlowViewController : UITableViewDelegate{
+    func tableView( _tableView : UITableView, didSelectRowAt indexPath: IndexPath){
+        print ("you tapped me")
+    }
+    
+}
+
+
+extension FlowViewController : UITableViewDataSource{
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for : indexPath) as! FolowTableViewCell
+        cell.companyImageView.image = UIImage(named: "image.jpg")
+        cell.commentButton.setImage(UIImage(named: "commentButton"), for: UIControl.State())
+        cell.favoriteButton.setImage(UIImage(named: "favoriteButton"), for: UIControl.State())
+        cell.shareButton.setImage(UIImage(named: "shareButton"), for: UIControl.State())
+        cell.followButton.setImage(UIImage(named: "followButton"), for: UIControl.State())
+        
+        
+      
+        
+        return cell
+        
+    }
+    
+    func tableView(_ tableView : UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
 }
 
