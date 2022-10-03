@@ -11,11 +11,15 @@ class TakeOwnShipViewController: UIViewController {
 
     @IBOutlet weak var SubmitDesign: UIButton!
     
+    @IBOutlet weak var StackDesign: UIStackView!
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
         SubmitDesign.layer.cornerRadius = 20
+        StackDesign.layer.cornerRadius = 20
         // Do any additional setup after loading the view.
     }
     
