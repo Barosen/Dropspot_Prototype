@@ -506,7 +506,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cto-bT-v7H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="370.76923076923077" y="1166.5876777251185"/>
+            <point key="canvasLocation" x="371" y="653"/>
         </scene>
         <!--Create Account View Controller-->
         <scene sceneID="XrY-en-qos">
@@ -817,7 +817,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dYO-6M-scq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1061.5384615384614" y="413.74407582938386"/>
+            <point key="canvasLocation" x="1349" y="653"/>
         </scene>
     </scenes>
     <resources>
