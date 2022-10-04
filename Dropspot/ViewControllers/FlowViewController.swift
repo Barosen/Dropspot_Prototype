@@ -16,6 +16,13 @@ class FlowViewController: UIViewController {
 
   
     var header: StretchyTableViewHeader?
+    let annonces = [
+        Annonce(title: "flower", image: "image.jpg"),
+        Annonce(title: "kläder", image: "image1"),
+        Annonce(title: "Food", image: "McDonalds"),
+        Annonce(title: "rabat", image: "discount")
+        
+    ]
     
  
     override func viewDidLoad() {
@@ -92,7 +99,8 @@ extension FlowViewController : UITableViewDelegate{
 extension FlowViewController : UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for : indexPath) as! FolowTableViewCell
-        cell.companyImageView.image = UIImage(named: "image.jpg")
+        let annonce = self.annonces[indexPath.row]
+        cell.companyImageView.image = UIImage(named: annonce.image)
         cell.commentButton.setImage(UIImage(named: "commentButton"), for: UIControl.State())
         cell.favoriteButton.setImage(UIImage(named: "favoriteButton"), for: UIControl.State())
         cell.shareButton.setImage(UIImage(named: "shareButton"), for: UIControl.State())
@@ -106,8 +114,13 @@ extension FlowViewController : UITableViewDataSource{
     }
     
     func tableView(_ tableView : UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 4
     }
     
+}
+struct Annonce{
+    var title : String
+    var image : String
+
 }
 

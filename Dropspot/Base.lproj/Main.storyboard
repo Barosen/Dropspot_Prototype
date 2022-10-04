@@ -212,10 +212,10 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="390" height="622"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="GAZ-CT-Fan">
-                                                            <rect key="frame" x="0.0" y="0.0" width="390" height="622"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="390" height="612"/>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="dvd-SE-JhY">
-                                                            <rect key="frame" x="20" y="562" width="350" height="50"/>
+                                                            <rect key="frame" x="20" y="547" width="350" height="50"/>
                                                             <subviews>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMi-qh-5UK">
                                                                     <rect key="frame" x="0.0" y="0.0" width="51.666666666666664" height="50"/>
@@ -255,11 +255,10 @@
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="390" id="319-tB-j5j"/>
                                                         <constraint firstAttribute="trailing" secondItem="dvd-SE-JhY" secondAttribute="trailing" constant="20" id="3ge-cV-TdJ"/>
-                                                        <constraint firstAttribute="bottom" secondItem="dvd-SE-JhY" secondAttribute="bottom" constant="10" id="ELI-gT-GfE"/>
+                                                        <constraint firstAttribute="bottom" secondItem="dvd-SE-JhY" secondAttribute="bottom" constant="25" id="E5y-vH-y7C"/>
+                                                        <constraint firstAttribute="bottom" secondItem="GAZ-CT-Fan" secondAttribute="bottom" constant="10" id="HL9-Zz-bQl"/>
                                                         <constraint firstItem="GAZ-CT-Fan" firstAttribute="top" secondItem="mVs-y0-rgw" secondAttribute="top" id="TVt-rF-kQw"/>
                                                         <constraint firstItem="GAZ-CT-Fan" firstAttribute="leading" secondItem="mVs-y0-rgw" secondAttribute="leading" id="UJA-xG-FWf"/>
-                                                        <constraint firstAttribute="bottom" secondItem="GAZ-CT-Fan" secondAttribute="bottom" id="hL3-Gu-jUh"/>
-                                                        <constraint firstAttribute="bottom" secondItem="GAZ-CT-Fan" secondAttribute="bottom" id="jze-K3-Aiz"/>
                                                         <constraint firstAttribute="height" constant="622" id="mId-tO-lLA"/>
                                                         <constraint firstAttribute="trailing" secondItem="GAZ-CT-Fan" secondAttribute="trailing" id="uQG-2V-isz"/>
                                                         <constraint firstItem="dvd-SE-JhY" firstAttribute="leading" secondItem="mVs-y0-rgw" secondAttribute="leading" constant="20" id="v6m-rt-DUx"/>
