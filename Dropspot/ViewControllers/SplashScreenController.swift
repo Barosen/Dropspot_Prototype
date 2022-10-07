@@ -41,7 +41,7 @@ class SplashScreenController: UIViewController {
                                 DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
                                     self.SplashLabel.text! += "t"
                                     self.sound()
-                                    DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                                    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                                     }
                                 }
                             }
