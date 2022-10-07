@@ -78,7 +78,7 @@ class FlowViewController: UIViewController {
 
 }
 
-class FolowTableViewCell: UITableViewCell{
+class FlowTableViewCell: UITableViewCell{
     @IBOutlet weak var shareButton: UIButton!
     @IBOutlet weak var favoriteButton: UIButton!
     
@@ -88,17 +88,30 @@ class FolowTableViewCell: UITableViewCell{
     
 
 }
+
 extension FlowViewController : UITableViewDelegate{
-    func tableView( _tableView : UITableView, didSelectRowAt indexPath: IndexPath){
-        print ("you tapped me")
+    
+    
+      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+          /*
+          let storyboard = UIStoryboard(name: "CompanyFlowViewController", bundle: nil)
+          let vc = storyboard.instantiateInitialViewController()!
+          self.present(vc, animated: true, completion: nil)
+           */
+          performSegue(withIdentifier: "showRecentAnnonce", sender: self)
+        // your code ...
+        print (indexPath)
+         
     }
+
     
 }
 
 
 extension FlowViewController : UITableViewDataSource{
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for : indexPath) as! FolowTableViewCell
+    
+     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for : indexPath) as! FlowTableViewCell
         let annonce = self.annonces[indexPath.row]
         cell.companyImageView.image = UIImage(named: annonce.image)
         cell.commentButton.setImage(UIImage(named: "commentButton"), for: UIControl.State())
@@ -114,7 +127,7 @@ extension FlowViewController : UITableViewDataSource{
     }
     
     func tableView(_ tableView : UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return annonces.count
     }
     
 }
