@@ -20,6 +20,7 @@
 		5B9124B628D0E8F6004E7813 /* CustomTextFiled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9124B528D0E8F6004E7813 /* CustomTextFiled.swift */; };
 		5B9124BC28D50F3E004E7813 /* LoginBusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9124BB28D50F3E004E7813 /* LoginBusinessViewController.swift */; };
 		5B9124BE28D51062004E7813 /* CreateAccBusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9124BD28D51062004E7813 /* CreateAccBusinessViewController.swift */; };
+		5B9124C028EB0EF4004E7813 /* TakeOwnShipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9124BF28EB0EF4004E7813 /* TakeOwnShipViewController.swift */; };
 		5BB3D3E228CF888C00F32BAF /* LoginOrSingnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB3D3E128CF888C00F32BAF /* LoginOrSingnViewController.swift */; };
 		5BB3D3E628CFBD7900F32BAF /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB3D3E528CFBD7900F32BAF /* CreateAccountViewController.swift */; };
 		A949CF3A28EF62430057F002 /* OptionsInFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A949CF3928EF62430057F002 /* OptionsInFlowViewController.swift */; };
@@ -66,6 +67,7 @@
 		5B9124B528D0E8F6004E7813 /* CustomTextFiled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFiled.swift; sourceTree = "<group>"; };
 		5B9124BB28D50F3E004E7813 /* LoginBusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBusinessViewController.swift; sourceTree = "<group>"; };
 		5B9124BD28D51062004E7813 /* CreateAccBusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccBusinessViewController.swift; sourceTree = "<group>"; };
+		5B9124BF28EB0EF4004E7813 /* TakeOwnShipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeOwnShipViewController.swift; sourceTree = "<group>"; };
 		5BB3D3E128CF888C00F32BAF /* LoginOrSingnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOrSingnViewController.swift; sourceTree = "<group>"; };
 		5BB3D3E528CFBD7900F32BAF /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		A949CF3928EF62430057F002 /* OptionsInFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsInFlowViewController.swift; sourceTree = "<group>"; };
@@ -176,7 +178,11 @@
 				5B9124BB28D50F3E004E7813 /* LoginBusinessViewController.swift */,
 				5B9124BD28D51062004E7813 /* CreateAccBusinessViewController.swift */,
 				130C582D28D9BDC100C1783E /* SplashScreenController.swift */,
+ kev-branche
 				A949CF3928EF62430057F002 /* OptionsInFlowViewController.swift */,
+
+				5B9124BF28EB0EF4004E7813 /* TakeOwnShipViewController.swift */,
+ main
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -333,7 +339,11 @@
 				A9B97DCC28D882B5004B77CB /* stretchyTableViewHeader.swift in Sources */,
 				5B9124BE28D51062004E7813 /* CreateAccBusinessViewController.swift in Sources */,
 				5BB3D3E228CF888C00F32BAF /* LoginOrSingnViewController.swift in Sources */,
+ kev-branche
 				A949CF3A28EF62430057F002 /* OptionsInFlowViewController.swift in Sources */,
+
+				5B9124C028EB0EF4004E7813 /* TakeOwnShipViewController.swift in Sources */,
+main
 				A96C19E128CF83D500B93DD3 /* FavoritesViewController.swift in Sources */,
 				5B9124BC28D50F3E004E7813 /* LoginBusinessViewController.swift in Sources */,
 				139D822B28CF6810009F264D /* SceneDelegate.swift in Sources */,

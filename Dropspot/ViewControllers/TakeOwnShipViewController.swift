@@ -1,25 +1,25 @@
 //
-//  CreateAccBusinessViewController.swift
+//  TakeOwnShipViewController.swift
 //  Dropspot
 //
-//  Created by Raí Gomes on 2022-09-16.
+//  Created by Raí Gomes on 2022-10-03.
 //
 
 import UIKit
 
-class CreateAccBusinessViewController: UIViewController {
+class TakeOwnShipViewController: UIViewController {
+
+    @IBOutlet weak var SubmitDesign: UIButton!
     
-    
-    @IBOutlet weak var RegisterBusiBtDesign: UIButton!
-    
-    @IBOutlet weak var BusinessImgDesign: UIImageView!
+    @IBOutlet weak var StackDesign: UIStackView!
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        RegisterBusiBtDesign.layer.cornerRadius = 20
-        BusinessImgDesign.layer.cornerRadius = 20
-
+        
+        SubmitDesign.layer.cornerRadius = 20
+        StackDesign.layer.cornerRadius = 20
         // Do any additional setup after loading the view.
     }
     
