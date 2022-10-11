@@ -188,7 +188,7 @@
             </objects>
             <point key="canvasLocation" x="-1132" y="-1044"/>
         </scene>
-        <!--DropSpot-->
+        <!--Flow View Controller-->
         <scene sceneID="Y88-xK-opW">
             <objects>
                 <viewController id="Iai-b5-edo" customClass="FlowViewController" customModule="Dropspot" customModuleProvider="target" sceneMemberID="viewController">
@@ -210,166 +210,14 @@
                             <constraint firstItem="A9J-2j-Vyy" firstAttribute="top" secondItem="3Mr-3l-bRu" secondAttribute="top" id="cGM-iN-zCR"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="DropSpot" id="qky-Xh-7vo">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="gearshape.fill" catalog="system" id="2rx-nL-Pld">
-                            <color key="tintColor" systemColor="labelColor"/>
-                            <connections>
-                                <action selector="barButtonOptionsPress:" destination="Iai-b5-edo" id="8qW-D9-aD9"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="qky-Xh-7vo"/>
                     <connections>
-                        <outlet property="optionsBarButtonItem" destination="2rx-nL-Pld" id="DYO-lp-grX"/>
                         <outlet property="tableView" destination="A9J-2j-Vyy" id="kno-RI-MhD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hXz-QD-Q22" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1132" y="-336"/>
-        </scene>
-        <!--Options In Flow View Controller-->
-        <scene sceneID="bXD-yN-1kG">
-            <objects>
-                <viewController storyboardIdentifier="optionsflowvc" id="DxR-L5-ZZl" customClass="OptionsInFlowViewController" customModule="Dropspot" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zxn-b1-3Po">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yh2-Yt-p13">
-                                <rect key="frame" x="20" y="755.66666666666663" width="350" height="34.333333333333371"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Save"/>
-                                <connections>
-                                    <action selector="savePressed:" destination="DxR-L5-ZZl" eventType="touchUpInside" id="dUH-GJ-44A"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="72m-DQ-whV">
-                                <rect key="frame" x="20" y="540" width="350" height="207.66666666666663"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="buN-VW-aak">
-                                        <rect key="frame" x="0.0" y="2" width="159.33333333333334" height="203.66666666666666"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73k-DR-uXF">
-                                                <rect key="frame" x="0.0" y="0.0" width="159.33333333333334" height="34.333333333333336"/>
-                                                <color key="tintColor" red="0.21489563584327698" green="0.17306917905807495" blue="0.0539126917719841" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="circle" catalog="system" title="Status update" imagePadding="3"/>
-                                                <connections>
-                                                    <action selector="buttonOnePress:" destination="DxR-L5-ZZl" eventType="touchUpInside" id="gI7-9Q-0ZM"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RoD-xJ-cID">
-                                                <rect key="frame" x="0.0" y="42.333333333333371" width="159.33333333333334" height="34.333333333333343"/>
-                                                <color key="tintColor" red="0.21489563584327698" green="0.17306917905807495" blue="0.0539126917719841" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="circle" catalog="system" title="Discounts" imagePadding="3" titleAlignment="leading"/>
-                                                <connections>
-                                                    <action selector="buttonTwoPress:" destination="DxR-L5-ZZl" eventType="touchUpInside" id="YJl-E5-ack"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ba-ya-tMO">
-                                                <rect key="frame" x="0.0" y="84.666666666666629" width="159.33333333333334" height="34.333333333333343"/>
-                                                <color key="tintColor" red="0.21489563584327698" green="0.17306917905807495" blue="0.0539126917719841" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="circle" catalog="system" title="Release" imagePadding="3" titleAlignment="leading"/>
-                                                <connections>
-                                                    <action selector="buttonThreePress:" destination="DxR-L5-ZZl" eventType="touchUpInside" id="PgO-FJ-PEz"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9i-kC-8UE">
-                                                <rect key="frame" x="0.0" y="126.99999999999999" width="159.33333333333334" height="34.333333333333329"/>
-                                                <color key="tintColor" red="0.21489563584327698" green="0.17306917905807495" blue="0.0539126917719841" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="circle" catalog="system" title="Event" imagePadding="3" titleAlignment="leading"/>
-                                                <connections>
-                                                    <action selector="buttonFourPress:" destination="DxR-L5-ZZl" eventType="touchUpInside" id="GNm-ai-eTq"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0L-Tq-fUG">
-                                                <rect key="frame" x="0.0" y="169.33333333333337" width="159.33333333333334" height="34.333333333333343"/>
-                                                <color key="tintColor" red="0.21489563584327698" green="0.17306917905807495" blue="0.0539126917719841" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="circle" catalog="system" title="NearBy" imagePadding="3" titleAlignment="leading"/>
-                                                <connections>
-                                                    <action selector="buttonFivePress:" destination="DxR-L5-ZZl" eventType="touchUpInside" id="eox-9V-2r4"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstItem="buN-VW-aak" firstAttribute="leading" secondItem="72m-DQ-whV" secondAttribute="leading" id="ToV-i5-PoW"/>
-                                    <constraint firstItem="buN-VW-aak" firstAttribute="top" secondItem="72m-DQ-whV" secondAttribute="top" constant="2" id="W5K-0S-qjs"/>
-                                    <constraint firstAttribute="bottom" secondItem="buN-VW-aak" secondAttribute="bottom" constant="2" id="hLh-hT-32v"/>
-                                </constraints>
-                            </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y6M-La-wZb">
-                                <rect key="frame" x="20" y="495.66666666666669" width="350" height="34.333333333333314"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdt-fa-8Yb">
-                                        <rect key="frame" x="0.0" y="0.0" width="175" height="34.333333333333336"/>
-                                        <color key="backgroundColor" systemColor="systemGray3Color"/>
-                                        <color key="tintColor" systemColor="labelColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Following"/>
-                                        <connections>
-                                            <action selector="followingButtonPress:" destination="DxR-L5-ZZl" eventType="touchUpInside" id="hVf-nA-E3l"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sBQ-Go-LVF">
-                                        <rect key="frame" x="175" y="0.0" width="175" height="34.333333333333336"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <color key="tintColor" systemColor="labelColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Not following"/>
-                                        <connections>
-                                            <action selector="notFollowingButtonPress:" destination="DxR-L5-ZZl" eventType="touchUpInside" id="ewS-oH-7gb"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal Options" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rGH-Ux-7ON">
-                                <rect key="frame" x="114.00000000000001" y="451.33333333333331" width="162.33333333333337" height="26.333333333333314"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="dbv-GK-d4Y"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="72m-DQ-whV" firstAttribute="leading" secondItem="dbv-GK-d4Y" secondAttribute="leading" constant="20" id="311-j4-FlA"/>
-                            <constraint firstItem="dbv-GK-d4Y" firstAttribute="bottom" secondItem="Yh2-Yt-p13" secondAttribute="bottom" constant="20" id="3rj-Ym-Ygp"/>
-                            <constraint firstItem="Yh2-Yt-p13" firstAttribute="leading" secondItem="dbv-GK-d4Y" secondAttribute="leading" constant="20" id="5Vu-Xe-gyW"/>
-                            <constraint firstItem="rGH-Ux-7ON" firstAttribute="centerX" secondItem="zxn-b1-3Po" secondAttribute="centerX" id="5bK-bL-DJJ"/>
-                            <constraint firstItem="dbv-GK-d4Y" firstAttribute="trailing" secondItem="Yh2-Yt-p13" secondAttribute="trailing" constant="20" id="933-9m-9IL"/>
-                            <constraint firstItem="dbv-GK-d4Y" firstAttribute="trailing" secondItem="Y6M-La-wZb" secondAttribute="trailing" constant="20" id="FGF-F2-n6T"/>
-                            <constraint firstItem="Y6M-La-wZb" firstAttribute="top" secondItem="rGH-Ux-7ON" secondAttribute="bottom" constant="18" id="NQ5-Gc-lmq"/>
-                            <constraint firstItem="72m-DQ-whV" firstAttribute="top" secondItem="Y6M-La-wZb" secondAttribute="bottom" constant="10" id="ZHJ-7m-97v"/>
-                            <constraint firstItem="dbv-GK-d4Y" firstAttribute="trailing" secondItem="72m-DQ-whV" secondAttribute="trailing" constant="20" id="dXO-1g-GZW"/>
-                            <constraint firstItem="Y6M-La-wZb" firstAttribute="leading" secondItem="dbv-GK-d4Y" secondAttribute="leading" constant="20" id="pyb-bn-g3P"/>
-                            <constraint firstItem="Yh2-Yt-p13" firstAttribute="top" secondItem="72m-DQ-whV" secondAttribute="bottom" constant="8" id="t63-cw-hYe"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="FollowingButton" destination="zdt-fa-8Yb" id="Z9G-LT-c3J"/>
-                        <outlet property="buttonFive" destination="X0L-Tq-fUG" id="2Rk-5M-TdH"/>
-                        <outlet property="buttonFour" destination="U9i-kC-8UE" id="JdJ-dS-h4I"/>
-                        <outlet property="buttonOne" destination="73k-DR-uXF" id="b0O-j1-pHH"/>
-                        <outlet property="buttonThree" destination="1Ba-ya-tMO" id="zFC-d7-fWk"/>
-                        <outlet property="buttonTwo" destination="RoD-xJ-cID" id="COw-yy-y5M"/>
-                        <outlet property="notFollowingButton" destination="sBQ-Go-LVF" id="HKR-If-t7t"/>
-                        <outlet property="saveButton" destination="Yh2-Yt-p13" id="Kfi-2k-J1h"/>
-                        <outlet property="viewButtons" destination="72m-DQ-whV" id="lGW-Hp-Yir"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="g5X-Eo-HWR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1133.8461538461538" y="340.521327014218"/>
         </scene>
         <!--Favorites View Controller-->
         <scene sceneID="FMx-go-HP3">
@@ -744,122 +592,6 @@
             </objects>
             <point key="canvasLocation" x="1062" y="-2401"/>
         </scene>
- kev-branche
-        <!--Login Business View Controller-->
-        <scene sceneID="Nls-FF-6pV">
-            <objects>
-                <viewController id="uZq-Go-RL7" customClass="LoginBusinessViewController" customModule="Dropspot" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Kg5-ev-Bxd">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="9Ro-fu-ER2">
-                                <rect key="frame" x="45" y="142" width="296" height="565"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Business" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UK7-IG-Suo">
-                                        <rect key="frame" x="0.0" y="0.0" width="296" height="32"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="32" id="gWr-xb-fHP"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p1u-6r-qID" customClass="CustomTextFiled" customModule="Dropspot" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="102" width="296" height="60"/>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="fQD-SA-gsc"/>
-                                        </constraints>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
-                                                <color key="value" red="0.96611279249191284" green="0.4599636725779121" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mag-6V-2Ub" customClass="CustomTextFiled" customModule="Dropspot" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="232" width="296" height="60"/>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="R6Z-aT-rdc"/>
-                                        </constraints>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
-                                                <color key="value" red="0.96611279249191284" green="0.4599636725779121" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </textField>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7oy-dX-tcu">
-                                        <rect key="frame" x="0.0" y="362" width="296" height="203"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36B-2D-Xhw" userLabel="Bussines Login Bt Design">
-                                                <rect key="frame" x="0.0" y="0.0" width="296" height="50"/>
-                                                <color key="backgroundColor" red="0.99402733219999995" green="0.46508032160000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="4ar-Er-QcN"/>
-                                                    <constraint firstAttribute="height" constant="50" id="MV6-yG-Wja"/>
-                                                </constraints>
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" title="Login"/>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Adw-Qp-bDu">
-                                                <rect key="frame" x="0.0" y="60" width="296" height="143"/>
-                                                <color key="backgroundColor" red="0.96170336010000002" green="0.42306281680000002" blue="0.0153026672" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="PVs-GO-QVo"/>
-                                                </constraints>
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="gray" title="Create Business"/>
-                                                <connections>
-                                                    <segue destination="neK-5G-qlS" kind="show" id="Yrw-PP-8bt"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="bZ9-v5-Bl7"/>
-                                        </constraints>
-                                    </stackView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="p1u-6r-qID" firstAttribute="width" secondItem="9Ro-fu-ER2" secondAttribute="width" id="D6B-kt-CHG"/>
-                                    <constraint firstItem="Mag-6V-2Ub" firstAttribute="width" secondItem="9Ro-fu-ER2" secondAttribute="width" id="LU1-wz-Rz0"/>
-                                    <constraint firstAttribute="width" constant="300" id="cQ9-1N-oCk"/>
-                                    <constraint firstItem="UK7-IG-Suo" firstAttribute="width" secondItem="9Ro-fu-ER2" secondAttribute="width" id="uqG-08-CSR"/>
-                                </constraints>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="aRL-x8-Efd"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="9Ro-fu-ER2" firstAttribute="top" secondItem="aRL-x8-Efd" secondAttribute="top" constant="95" id="39s-P2-4Km"/>
-                            <constraint firstItem="9Ro-fu-ER2" firstAttribute="leading" secondItem="aRL-x8-Efd" secondAttribute="leading" constant="45" id="AR9-69-1rJ"/>
-                            <constraint firstItem="9Ro-fu-ER2" firstAttribute="top" secondItem="aRL-x8-Efd" secondAttribute="top" constant="95" id="ARf-Wb-zhp"/>
-                            <constraint firstItem="9Ro-fu-ER2" firstAttribute="top" secondItem="aRL-x8-Efd" secondAttribute="top" constant="95" id="Dq9-jL-dzq"/>
-                            <constraint firstItem="aRL-x8-Efd" firstAttribute="trailing" secondItem="9Ro-fu-ER2" secondAttribute="trailing" constant="49" id="S0f-j2-xV9"/>
-                            <constraint firstItem="aRL-x8-Efd" firstAttribute="bottom" secondItem="9Ro-fu-ER2" secondAttribute="bottom" constant="103" id="cKV-Sl-OMv"/>
-                            <constraint firstItem="aRL-x8-Efd" firstAttribute="trailing" secondItem="9Ro-fu-ER2" secondAttribute="trailing" constant="49" id="p2F-c1-7hK"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="Jvz-N9-elO"/>
-                    <connections>
-                        <outlet property="BusinessLoginBtDesign" destination="36B-2D-Xhw" id="og9-xd-3RQ"/>
-                        <outlet property="CreateBusinessBtDesign" destination="Adw-Qp-bDu" id="cF9-bX-drr"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lVS-bt-g9q" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1062" y="1101"/>
-        </scene>
-
- main
         <!--Create Acc Business View Controller-->
         <scene sceneID="scR-Aa-Kcz">
             <objects>
@@ -1024,8 +756,6 @@
     <resources>
         <image name="addFile-35-35" width="35" height="35"/>
         <image name="briefcase.fill" catalog="system" width="128" height="103"/>
-        <image name="circle" catalog="system" width="128" height="123"/>
-        <image name="gearshape.fill" catalog="system" width="128" height="123"/>
         <image name="heart" catalog="system" width="128" height="107"/>
         <image name="icons8-edit-50-2" width="25" height="25"/>
         <image name="icons8-remove-50-2" width="25" height="25"/>
@@ -1050,9 +780,6 @@
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGray3Color">
-            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

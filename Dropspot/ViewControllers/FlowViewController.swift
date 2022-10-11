@@ -11,70 +11,52 @@ class FlowViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
     var header: StretchyTableViewHeader?
-    var itemleft = UIBarButtonItem()
-    var valueToCheck = 0
-    var btnProfile = UIButton()
     
-    @IBOutlet var optionsBarButtonItem: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        designDetails()
+        tableViewAndDesignDetails()
     }
 
-    func designDetails() {
+    func tableViewAndDesignDetails() {
         
-        // Left barbuttonitem
+        // TableView Header
         
-        btnProfile = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 25))
-        btnProfile.setTitle("Following", for: .normal)
-        btnProfile.backgroundColor = UIColor.gray.withAlphaComponent(0.3)
-        btnProfile.layer.cornerRadius = 12.5
-        btnProfile.layer.masksToBounds = true
-        btnProfile.addTarget(self, action: #selector(followOrForYouPress), for: .touchUpInside)
-        itemleft = UIBarButtonItem(customView: btnProfile)
-        self.navigationItem.setLeftBarButton(itemleft, animated: true)
+        header = StretchyTableViewHeader(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.width / 3.1))
+        header?.button.addTarget(self, action: #selector(headerButtonOne(_:)), for: .touchUpInside)
+        header?.button.layer.cornerRadius = 15
+        header?.button.setTitleColor(UIColor.label, for: .normal)
+        header?.button.setTitle("Följer", for: .normal)
+        header?.button.sizeToFit()
         
+        header?.buttonTwo.addTarget(self, action: #selector(headerButtonTwo(_:)), for: .touchUpInside)
+        header?.buttonTwo.layer.cornerRadius = 15
+        header?.buttonTwo.setTitleColor(UIColor.label, for: .normal)
+        header?.buttonTwo.setTitle("Allmänt", for: .normal)
+        header?.buttonTwo.sizeToFit()
+        
+        tableView.tableHeaderView = header
+        
+        // NavigationBar-Label
+        
+        let label = UILabel()
+        label.textColor = UIColor.label
+        label.font = UIFont.italicSystemFont(ofSize: 30.0)
+        label.text = "DropSpot"
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: label)
     }
     
-    func animateFollowOrForYouPress() {
-        UIView.animate(withDuration: 0.0, animations:{
-            self.btnProfile.transform = CGAffineTransform(scaleX: 0.9, y: 0.9)
-            }, completion: { _ in
-                UIView.animate(withDuration: 0.2, animations:{
-                    self.btnProfile.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
-                    }, completion: { _ in
-                        UIView.animate(withDuration: 0.2, animations: {
-                            self.btnProfile.transform = .identity
-                        })
-                    })
-            })
+    @objc func headerButtonOne(_ sender:UIButton) {
+        print("One")
+        header?.button.backgroundColor = .tertiaryLabel
+        header?.buttonTwo.backgroundColor = .clear
     }
     
-    @objc func followOrForYouPress() {
-        if valueToCheck == 0 {
-            btnProfile.setTitle("For You", for: .normal)
-            itemleft = UIBarButtonItem(customView: btnProfile)
-            valueToCheck = 1
-            animateFollowOrForYouPress()
-        } else {
-            btnProfile.setTitle("Following", for: .normal)
-            itemleft = UIBarButtonItem(customView: btnProfile)
-            valueToCheck = 0
-            animateFollowOrForYouPress()
-        }
-        print("Working")
+    @objc func headerButtonTwo(_ sender:UIButton) {
+        print("Two")
+        header?.button.backgroundColor = .clear
+        header?.buttonTwo.backgroundColor = .tertiaryLabel
     }
 
-
-    @IBAction func barButtonOptionsPress(_ sender: Any) {
-        guard let vc = storyboard?.instantiateViewController(withIdentifier: "optionsflowvc") as? OptionsInFlowViewController else {return}
-        if let sheet = vc.sheetPresentationController {
-            sheet.prefersGrabberVisible = true
-            sheet.detents = [.medium()]
-        }
-            present(vc, animated: true)
-    }
-    
 }
 
