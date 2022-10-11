@@ -29,8 +29,6 @@
 		A9B97DCC28D882B5004B77CB /* stretchyTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B97DCB28D882B5004B77CB /* stretchyTableViewHeader.swift */; };
 		A9B97DD428D8CF3D004B77CB /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B97DD228D8CF3D004B77CB /* SearchCell.swift */; };
 		A9B97DD528D8CF3D004B77CB /* SearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9B97DD328D8CF3D004B77CB /* SearchCell.xib */; };
-		C186039E28EED776002E02B9 /* CompanyFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C186039D28EED776002E02B9 /* CompanyFlowViewController.swift */; };
-		C1D1FB2E28E70A1E00EB4AE2 /* followTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1FB2D28E70A1E00EB4AE2 /* followTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,8 +75,6 @@
 		A9B97DCB28D882B5004B77CB /* stretchyTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stretchyTableViewHeader.swift; sourceTree = "<group>"; };
 		A9B97DD228D8CF3D004B77CB /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		A9B97DD328D8CF3D004B77CB /* SearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCell.xib; sourceTree = "<group>"; };
-		C186039D28EED776002E02B9 /* CompanyFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyFlowViewController.swift; sourceTree = "<group>"; };
-		C1D1FB2D28E70A1E00EB4AE2 /* followTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = followTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,8 +176,6 @@
 				5B9124BB28D50F3E004E7813 /* LoginBusinessViewController.swift */,
 				5B9124BD28D51062004E7813 /* CreateAccBusinessViewController.swift */,
 				130C582D28D9BDC100C1783E /* SplashScreenController.swift */,
-				C1D1FB2D28E70A1E00EB4AE2 /* followTableViewCell.swift */,
-				C186039D28EED776002E02B9 /* CompanyFlowViewController.swift */,
 				5B9124BF28EB0EF4004E7813 /* TakeOwnShipViewController.swift */,
 			);
 			path = ViewControllers;
@@ -264,7 +258,6 @@
 				TargetAttributes = {
 					139D822428CF6810009F264D = {
 						CreatedOnToolsVersion = 13.4.1;
-						LastSwiftMigration = 1400;
 					};
 					139D823A28CF6811009F264D = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -337,9 +330,7 @@
 				139D822D28CF6810009F264D /* FlowViewController.swift in Sources */,
 				139D822928CF6810009F264D /* AppDelegate.swift in Sources */,
 				5BB3D3E628CFBD7900F32BAF /* CreateAccountViewController.swift in Sources */,
-				C186039E28EED776002E02B9 /* CompanyFlowViewController.swift in Sources */,
 				A9B97DCC28D882B5004B77CB /* stretchyTableViewHeader.swift in Sources */,
-				C1D1FB2E28E70A1E00EB4AE2 /* followTableViewCell.swift in Sources */,
 				5B9124BE28D51062004E7813 /* CreateAccBusinessViewController.swift in Sources */,
 				5BB3D3E228CF888C00F32BAF /* LoginOrSingnViewController.swift in Sources */,
 				5B9124C028EB0EF4004E7813 /* TakeOwnShipViewController.swift in Sources */,
@@ -520,7 +511,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8V3CAV6X92;
@@ -539,8 +529,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = TuktukAB.Dropspot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "Dropspot/ViewControllers/Dropspot-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -551,7 +539,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8V3CAV6X92;
@@ -570,7 +557,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = TuktukAB.Dropspot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "Dropspot/ViewControllers/Dropspot-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
