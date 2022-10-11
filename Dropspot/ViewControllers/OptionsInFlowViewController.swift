@@ -115,6 +115,7 @@ class OptionsInFlowViewController: UIViewController {
             boolFour = false
             let circle = UIImage(systemName: "circle", withConfiguration: circleConfig)
             buttonFour.setImage(circle, for: .normal)
+            print("working")
         }
 
     }
