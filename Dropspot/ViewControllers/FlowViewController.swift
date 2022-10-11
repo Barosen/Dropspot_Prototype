@@ -10,12 +10,29 @@ import UIKit
 class FlowViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
-    var header: StretchyTableViewHeader?
+   // @IBOutlet weak var FlowTableViewCell: UITableViewCell!
+   
     
+
+  
+    var header: StretchyTableViewHeader?
+    let annonces = [
+        Annonce(title: "flower", image: "image.jpg"),
+        Annonce(title: "kläder", image: "image1"),
+        Annonce(title: "Food", image: "McDonalds"),
+        Annonce(title: "rabat", image: "discount")
+        
+    ]
+    
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableViewAndDesignDetails()
+        tableView.delegate = self
+        tableView.dataSource = self
+       
+        
+       tableViewAndDesignDetails()
     }
 
     func tableViewAndDesignDetails() {
@@ -45,6 +62,7 @@ class FlowViewController: UIViewController {
         label.text = "DropSpot"
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: label)
     }
+ 
     
     @objc func headerButtonOne(_ sender:UIButton) {
         print("One")
@@ -57,6 +75,65 @@ class FlowViewController: UIViewController {
         header?.button.backgroundColor = .clear
         header?.buttonTwo.backgroundColor = .tertiaryLabel
     }
+
+}
+
+class FlowTableViewCell: UITableViewCell{
+    @IBOutlet weak var shareButton: UIButton!
+    @IBOutlet weak var favoriteButton: UIButton!
+    
+    @IBOutlet weak var commentButton: UIButton!
+    @IBOutlet weak var followButton: UIButton!
+    @IBOutlet weak var companyImageView: UIImageView!
+    
+
+}
+
+extension FlowViewController : UITableViewDelegate{
+    
+    
+      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+          /*
+          let storyboard = UIStoryboard(name: "CompanyFlowViewController", bundle: nil)
+          let vc = storyboard.instantiateInitialViewController()!
+          self.present(vc, animated: true, completion: nil)
+           */
+          performSegue(withIdentifier: "showRecentAnnonce", sender: self)
+        // your code ...
+        print (indexPath)
+         
+    }
+
+    
+}
+
+
+extension FlowViewController : UITableViewDataSource{
+    
+     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for : indexPath) as! FlowTableViewCell
+        let annonce = self.annonces[indexPath.row]
+        cell.companyImageView.image = UIImage(named: annonce.image)
+        cell.commentButton.setImage(UIImage(named: "commentButton"), for: UIControl.State())
+        cell.favoriteButton.setImage(UIImage(named: "favoriteButton"), for: UIControl.State())
+        cell.shareButton.setImage(UIImage(named: "shareButton"), for: UIControl.State())
+        cell.followButton.setImage(UIImage(named: "followButton"), for: UIControl.State())
+        
+        
+      
+        
+        return cell
+        
+    }
+    
+    func tableView(_ tableView : UITableView, numberOfRowsInSection section: Int) -> Int {
+        return annonces.count
+    }
+    
+}
+struct Annonce{
+    var title : String
+    var image : String
 
 }
 
