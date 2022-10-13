@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="oL9-Wb-NsC">
-                                <rect key="frame" x="47" y="57" width="300" height="472"/>
+                                <rect key="frame" x="47" y="57" width="300" height="565"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXz-iH-0qh">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="32"/>
@@ -61,7 +61,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZBd-gG-vWk">
-                                        <rect key="frame" x="0.0" y="302" width="300" height="170"/>
+                                        <rect key="frame" x="0.0" y="302" width="300" height="263"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYv-bZ-8bp">
                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
@@ -89,7 +89,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DfF-eo-KUh">
-                                                <rect key="frame" x="0.0" y="120" width="300" height="50"/>
+                                                <rect key="frame" x="0.0" y="120" width="300" height="143"/>
                                                 <color key="backgroundColor" red="0.96170336010000002" green="0.42306281680000002" blue="0.0153026672" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="fLc-En-YQ8"/>
@@ -386,6 +386,9 @@
                                 <rect key="frame" x="178" y="209" width="51" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Hm"/>
+                                <connections>
+                                    <segue destination="kMB-Ac-FJk" kind="show" id="fkU-id-JP6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YYl-3p-7Od"/>
@@ -402,7 +405,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xd4-Uu-tuQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1062" y="-336"/>
+            <point key="canvasLocation" x="2294" y="-309"/>
         </scene>
         <!--My Company View Controller-->
         <scene sceneID="eHe-xB-C9p">
@@ -531,7 +534,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7mJ-3O-pnh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1947.6923076923076" y="-336.25592417061608"/>
+            <point key="canvasLocation" x="2565" y="653"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fx3-UR-kLD">
@@ -546,7 +549,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qqi-Q2-K6Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1948" y="402"/>
+            <point key="canvasLocation" x="2538" y="1391"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="RC0-F3-p4M">
@@ -562,7 +565,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uR3-la-E0k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2753.8461538461538" y="-336.25592417061608"/>
+            <point key="canvasLocation" x="3345" y="653"/>
         </scene>
         <!--Search View Controller-->
         <scene sceneID="sZ3-2L-Tfi">
@@ -600,7 +603,7 @@
             <objects>
                 <viewController id="Sj6-85-F0u" customClass="TakeOwnShipViewController" customModule="Dropspot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y5M-Zl-EO1">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="91" translatesAutoresizingMaskIntoConstraints="NO" id="Si9-nJ-RoJ">
@@ -948,7 +951,7 @@
             <objects>
                 <viewController id="neK-5G-qlS" customClass="CreateAccBusinessViewController" customModule="Dropspot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dad-oe-TI1">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="SPZ-qG-0yl">
@@ -1152,7 +1155,7 @@
                                                             <rect key="frame" x="20" y="636" width="350" height="50"/>
                                                             <subviews>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCE-yG-Yxl" userLabel="Share Btn">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="51" height="50"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="51.666666666666664" height="50"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="51.670000000000002" id="Dek-1n-F4I"/>
                                                                         <constraint firstAttribute="height" constant="50" id="vHy-AL-j0N"/>
@@ -1163,7 +1166,7 @@
                                                                     </buttonConfiguration>
                                                                 </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AgM-Vw-eq5" userLabel="Favorite Btn">
-                                                                    <rect key="frame" x="99" y="0.0" width="51.666666666666657" height="50"/>
+                                                                    <rect key="frame" x="99.666666666666671" y="0.0" width="51.666666666666671" height="50"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="51.670000000000002" id="Zto-ON-WEM"/>
                                                                         <constraint firstAttribute="height" constant="50" id="rmT-PG-dW8"/>
@@ -1174,7 +1177,7 @@
                                                                     </buttonConfiguration>
                                                                 </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0v-kg-4eP" userLabel="Comment Btn">
-                                                                    <rect key="frame" x="198.66666666666666" y="0.0" width="51.666666666666657" height="50"/>
+                                                                    <rect key="frame" x="199.33333333333334" y="0.0" width="51.666666666666657" height="50"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="50" id="CcN-QC-01H"/>
                                                                         <constraint firstAttribute="width" constant="51.670000000000002" id="zQZ-gv-OI3"/>
@@ -1185,7 +1188,7 @@
                                                                     </buttonConfiguration>
                                                                 </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQB-HW-SRn" userLabel="Follow Btn">
-                                                                    <rect key="frame" x="298.33333333333331" y="0.0" width="51.666666666666686" height="50"/>
+                                                                    <rect key="frame" x="299" y="0.0" width="51" height="50"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="51.670000000000002" id="HTb-QZ-5Z0"/>
                                                                         <constraint firstAttribute="height" constant="50" id="oIo-8z-X9X"/>
@@ -1254,7 +1257,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Yrw-PP-8bt"/>
+        <segue reference="vfw-Th-lee"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="addFile-35-35" width="35" height="35"/>

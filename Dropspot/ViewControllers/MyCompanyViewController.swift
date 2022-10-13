@@ -2,9 +2,8 @@
 //  MyCompanyViewController.swift
 //  Dropspot
 //
-//  Created by Vincent Pilström Tipmung on 2022-10-03.
+//  Created by Vincent Pilström Tipmung on 2022-10-13.
 //
-
 
 
 import UIKit
@@ -68,3 +67,4 @@ class MyCompanyViewController:UIViewController{
     }
     
 }
+

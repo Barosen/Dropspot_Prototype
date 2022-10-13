@@ -17,6 +17,7 @@
 		139D824028CF6811009F264D /* DropspotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D823F28CF6811009F264D /* DropspotTests.swift */; };
 		139D824A28CF6811009F264D /* DropspotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D824928CF6811009F264D /* DropspotUITests.swift */; };
 		139D824C28CF6811009F264D /* DropspotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D824B28CF6811009F264D /* DropspotUITestsLaunchTests.swift */; };
+		497EF93A28F8084D00AE1A9C /* MyCompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497EF93928F8084D00AE1A9C /* MyCompanyViewController.swift */; };
 		5B9124B628D0E8F6004E7813 /* CustomTextFiled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9124B528D0E8F6004E7813 /* CustomTextFiled.swift */; };
 		5B9124BC28D50F3E004E7813 /* LoginBusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9124BB28D50F3E004E7813 /* LoginBusinessViewController.swift */; };
 		5B9124BE28D51062004E7813 /* CreateAccBusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9124BD28D51062004E7813 /* CreateAccBusinessViewController.swift */; };
@@ -65,6 +66,7 @@
 		139D824528CF6811009F264D /* DropspotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropspotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		139D824928CF6811009F264D /* DropspotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropspotUITests.swift; sourceTree = "<group>"; };
 		139D824B28CF6811009F264D /* DropspotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropspotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		497EF93928F8084D00AE1A9C /* MyCompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCompanyViewController.swift; sourceTree = "<group>"; };
 		5B9124B528D0E8F6004E7813 /* CustomTextFiled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFiled.swift; sourceTree = "<group>"; };
 		5B9124BB28D50F3E004E7813 /* LoginBusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBusinessViewController.swift; sourceTree = "<group>"; };
 		5B9124BD28D51062004E7813 /* CreateAccBusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccBusinessViewController.swift; sourceTree = "<group>"; };
@@ -180,10 +182,10 @@
 				5B9124BB28D50F3E004E7813 /* LoginBusinessViewController.swift */,
 				5B9124BD28D51062004E7813 /* CreateAccBusinessViewController.swift */,
 				130C582D28D9BDC100C1783E /* SplashScreenController.swift */,
-
 				C1D1FB2D28E70A1E00EB4AE2 /* followTableViewCell.swift */,
 				C186039D28EED776002E02B9 /* CompanyFlowViewController.swift */,
 				5B9124BF28EB0EF4004E7813 /* TakeOwnShipViewController.swift */,
+				497EF93928F8084D00AE1A9C /* MyCompanyViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -340,6 +342,7 @@
 				5BB3D3E628CFBD7900F32BAF /* CreateAccountViewController.swift in Sources */,
 				C186039E28EED776002E02B9 /* CompanyFlowViewController.swift in Sources */,
 				A9B97DCC28D882B5004B77CB /* stretchyTableViewHeader.swift in Sources */,
+				497EF93A28F8084D00AE1A9C /* MyCompanyViewController.swift in Sources */,
 				C1D1FB2E28E70A1E00EB4AE2 /* followTableViewCell.swift in Sources */,
 				5B9124BE28D51062004E7813 /* CreateAccBusinessViewController.swift in Sources */,
 				5BB3D3E228CF888C00F32BAF /* LoginOrSingnViewController.swift in Sources */,
