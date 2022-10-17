@@ -17,17 +17,22 @@
 		139D824028CF6811009F264D /* DropspotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D823F28CF6811009F264D /* DropspotTests.swift */; };
 		139D824A28CF6811009F264D /* DropspotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D824928CF6811009F264D /* DropspotUITests.swift */; };
 		139D824C28CF6811009F264D /* DropspotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D824B28CF6811009F264D /* DropspotUITestsLaunchTests.swift */; };
+		497EF93A28F8084D00AE1A9C /* MyCompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497EF93928F8084D00AE1A9C /* MyCompanyViewController.swift */; };
 		5B9124B628D0E8F6004E7813 /* CustomTextFiled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9124B528D0E8F6004E7813 /* CustomTextFiled.swift */; };
 		5B9124BC28D50F3E004E7813 /* LoginBusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9124BB28D50F3E004E7813 /* LoginBusinessViewController.swift */; };
 		5B9124BE28D51062004E7813 /* CreateAccBusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9124BD28D51062004E7813 /* CreateAccBusinessViewController.swift */; };
+		5B9124C028EB0EF4004E7813 /* TakeOwnShipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9124BF28EB0EF4004E7813 /* TakeOwnShipViewController.swift */; };
 		5BB3D3E228CF888C00F32BAF /* LoginOrSingnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB3D3E128CF888C00F32BAF /* LoginOrSingnViewController.swift */; };
 		5BB3D3E628CFBD7900F32BAF /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB3D3E528CFBD7900F32BAF /* CreateAccountViewController.swift */; };
+		A91F0FF528F873B900070CD2 /* FlowOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91F0FF428F873B900070CD2 /* FlowOptionsViewController.swift */; };
 		A96C19E128CF83D500B93DD3 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C19E028CF83D500B93DD3 /* FavoritesViewController.swift */; };
 		A96C19E328CF83EF00B93DD3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C19E228CF83EF00B93DD3 /* SearchViewController.swift */; };
 		A96C19E528CF83FA00B93DD3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C19E428CF83FA00B93DD3 /* ProfileViewController.swift */; };
 		A9B97DCC28D882B5004B77CB /* stretchyTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B97DCB28D882B5004B77CB /* stretchyTableViewHeader.swift */; };
 		A9B97DD428D8CF3D004B77CB /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B97DD228D8CF3D004B77CB /* SearchCell.swift */; };
 		A9B97DD528D8CF3D004B77CB /* SearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9B97DD328D8CF3D004B77CB /* SearchCell.xib */; };
+		C186039E28EED776002E02B9 /* CompanyFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C186039D28EED776002E02B9 /* CompanyFlowViewController.swift */; };
+		C1D1FB2E28E70A1E00EB4AE2 /* followTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1FB2D28E70A1E00EB4AE2 /* followTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,17 +67,22 @@
 		139D824528CF6811009F264D /* DropspotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropspotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		139D824928CF6811009F264D /* DropspotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropspotUITests.swift; sourceTree = "<group>"; };
 		139D824B28CF6811009F264D /* DropspotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropspotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		497EF93928F8084D00AE1A9C /* MyCompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCompanyViewController.swift; sourceTree = "<group>"; };
 		5B9124B528D0E8F6004E7813 /* CustomTextFiled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFiled.swift; sourceTree = "<group>"; };
 		5B9124BB28D50F3E004E7813 /* LoginBusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBusinessViewController.swift; sourceTree = "<group>"; };
 		5B9124BD28D51062004E7813 /* CreateAccBusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccBusinessViewController.swift; sourceTree = "<group>"; };
+		5B9124BF28EB0EF4004E7813 /* TakeOwnShipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeOwnShipViewController.swift; sourceTree = "<group>"; };
 		5BB3D3E128CF888C00F32BAF /* LoginOrSingnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOrSingnViewController.swift; sourceTree = "<group>"; };
 		5BB3D3E528CFBD7900F32BAF /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		A91F0FF428F873B900070CD2 /* FlowOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowOptionsViewController.swift; sourceTree = "<group>"; };
 		A96C19E028CF83D500B93DD3 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		A96C19E228CF83EF00B93DD3 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		A96C19E428CF83FA00B93DD3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		A9B97DCB28D882B5004B77CB /* stretchyTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stretchyTableViewHeader.swift; sourceTree = "<group>"; };
 		A9B97DD228D8CF3D004B77CB /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		A9B97DD328D8CF3D004B77CB /* SearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCell.xib; sourceTree = "<group>"; };
+		C186039D28EED776002E02B9 /* CompanyFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyFlowViewController.swift; sourceTree = "<group>"; };
+		C1D1FB2D28E70A1E00EB4AE2 /* followTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = followTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +184,11 @@
 				5B9124BB28D50F3E004E7813 /* LoginBusinessViewController.swift */,
 				5B9124BD28D51062004E7813 /* CreateAccBusinessViewController.swift */,
 				130C582D28D9BDC100C1783E /* SplashScreenController.swift */,
+				C1D1FB2D28E70A1E00EB4AE2 /* followTableViewCell.swift */,
+				C186039D28EED776002E02B9 /* CompanyFlowViewController.swift */,
+				5B9124BF28EB0EF4004E7813 /* TakeOwnShipViewController.swift */,
+				497EF93928F8084D00AE1A9C /* MyCompanyViewController.swift */,
+				A91F0FF428F873B900070CD2 /* FlowOptionsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -255,6 +270,7 @@
 				TargetAttributes = {
 					139D822428CF6810009F264D = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1400;
 					};
 					139D823A28CF6811009F264D = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -327,10 +343,15 @@
 				139D822D28CF6810009F264D /* FlowViewController.swift in Sources */,
 				139D822928CF6810009F264D /* AppDelegate.swift in Sources */,
 				5BB3D3E628CFBD7900F32BAF /* CreateAccountViewController.swift in Sources */,
+				C186039E28EED776002E02B9 /* CompanyFlowViewController.swift in Sources */,
 				A9B97DCC28D882B5004B77CB /* stretchyTableViewHeader.swift in Sources */,
+				497EF93A28F8084D00AE1A9C /* MyCompanyViewController.swift in Sources */,
+				C1D1FB2E28E70A1E00EB4AE2 /* followTableViewCell.swift in Sources */,
 				5B9124BE28D51062004E7813 /* CreateAccBusinessViewController.swift in Sources */,
 				5BB3D3E228CF888C00F32BAF /* LoginOrSingnViewController.swift in Sources */,
+				5B9124C028EB0EF4004E7813 /* TakeOwnShipViewController.swift in Sources */,
 				A96C19E128CF83D500B93DD3 /* FavoritesViewController.swift in Sources */,
+				A91F0FF528F873B900070CD2 /* FlowOptionsViewController.swift in Sources */,
 				5B9124BC28D50F3E004E7813 /* LoginBusinessViewController.swift in Sources */,
 				139D822B28CF6810009F264D /* SceneDelegate.swift in Sources */,
 			);
@@ -507,6 +528,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8V3CAV6X92;
@@ -525,6 +547,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = TuktukAB.Dropspot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Dropspot/ViewControllers/Dropspot-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -535,6 +559,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8V3CAV6X92;
@@ -553,6 +578,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = TuktukAB.Dropspot;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Dropspot/ViewControllers/Dropspot-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
