@@ -505,23 +505,23 @@
         <!--Profile View Controller-->
         <scene sceneID="jLW-4U-x67">
             <objects>
-                <viewController id="yXX-Et-m5D" customClass="ProfileViewController" customModule="Dropspot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yXX-Et-m5D" customClass="ProfileViewController" customModule="Dropspot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I4v-NX-VGB">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awH-PU-H0u">
-                                <rect key="frame" x="137.33333333333331" y="540.66666666666663" width="132.33333333333331" height="34.333333333333371"/>
+                                <rect key="frame" x="137.33333333333331" y="566.66666666666663" width="132.33333333333331" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Add Company">
                                     <color key="baseBackgroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="neK-5G-qlS" kind="presentation" modalPresentationStyle="currentContext" id="vfw-Th-lee"/>
+                                    <action selector="btnBusinessCrt:" destination="yXX-Et-m5D" eventType="touchUpInside" id="9o4-pR-LmT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTu-qb-2WH">
-                                <rect key="frame" x="178" y="209" width="51" height="35"/>
+                                <rect key="frame" x="178" y="165" width="51" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Hm"/>
                                 <connections>
@@ -540,6 +540,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BwN-cf-ga2"/>
+                    <connections>
+                        <segue destination="neK-5G-qlS" kind="show" identifier="nextScreen" id="V2X-wj-Gab"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xd4-Uu-tuQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -550,11 +553,11 @@
             <objects>
                 <viewController id="kMB-Ac-FJk" customClass="MyCompanyViewController" customModule="Dropspot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bqa-oa-5hE">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UgC-KG-pX8">
-                                <rect key="frame" x="10" y="111" width="370" height="445"/>
+                                <rect key="frame" x="10" y="67" width="370" height="445"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="u0V-zg-zWV">
                                         <rect key="frame" x="0.0" y="0.0" width="370" height="445"/>
@@ -694,7 +697,7 @@
             <objects>
                 <viewController id="O9i-o1-hds" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uHx-O7-cds">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="h3t-KC-mpZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -736,12 +739,12 @@
             </objects>
             <point key="canvasLocation" x="1300" y="-309.24170616113742"/>
         </scene>
-        <!--Take Own Ship View Controller-->
+        <!--Company Name-->
         <scene sceneID="oet-x4-dgd">
             <objects>
-                <viewController id="Sj6-85-F0u" customClass="TakeOwnShipViewController" customModule="Dropspot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TakeOwnShipViewController" title="Company Name" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Sj6-85-F0u" customClass="TakeOwnShipViewController" customModule="Dropspot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y5M-Zl-EO1">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="91" translatesAutoresizingMaskIntoConstraints="NO" id="Si9-nJ-RoJ">
@@ -856,6 +859,9 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Submit"/>
+                                        <connections>
+                                            <action selector="btnSubmit:" destination="Sj6-85-F0u" eventType="touchUpInside" id="zEe-5M-X5p"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -872,12 +878,13 @@
                     <navigationItem key="navigationItem" id="3Gd-KX-yIV"/>
                     <connections>
                         <outlet property="StackDesign" destination="lUz-xa-bzA" id="6w9-wY-AXd"/>
-                        <outlet property="SubmitDesign" destination="XPV-8l-vyZ" id="LSY-OM-Rl9"/>
+                        <outlet property="SubmitDesign" destination="XPV-8l-vyZ" id="vSD-IX-cBq"/>
+                        <segue destination="yXX-Et-m5D" kind="presentation" identifier="screen" modalPresentationStyle="currentContext" id="9Ug-mq-sOJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cto-bT-v7H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="371" y="653"/>
+            <point key="canvasLocation" x="1348" y="1432"/>
         </scene>
         <!--Create Account View Controller-->
         <scene sceneID="XrY-en-qos">
@@ -971,12 +978,12 @@
             </objects>
             <point key="canvasLocation" x="1062" y="-2401"/>
         </scene>
-        <!--Create Acc Business View Controller-->
+        <!--Register New Company-->
         <scene sceneID="scR-Aa-Kcz">
             <objects>
-                <viewController id="neK-5G-qlS" customClass="CreateAccBusinessViewController" customModule="Dropspot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateAccBusinessViewController" title="Register New Company" useStoryboardIdentifierAsRestorationIdentifier="YES" id="neK-5G-qlS" customClass="CreateAccBusinessViewController" customModule="Dropspot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dad-oe-TI1">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="SPZ-qG-0yl">
@@ -1107,7 +1114,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Register"/>
                                         <connections>
-                                            <segue destination="Sj6-85-F0u" kind="presentation" modalPresentationStyle="currentContext" id="Sos-bM-NdT"/>
+                                            <segue destination="Sj6-85-F0u" kind="show" identifier="TakeOwnShipViewController" id="Sos-bM-NdT"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1281,6 +1288,10 @@
             <point key="canvasLocation" x="-405" y="160"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Sos-bM-NdT"/>
+        <segue reference="9Ug-mq-sOJ"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="addFile-35-35" width="35" height="35"/>
         <image name="briefcase.fill" catalog="system" width="128" height="103"/>
