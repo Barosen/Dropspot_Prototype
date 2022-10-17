@@ -500,46 +500,101 @@
             <objects>
                 <viewController storyboardIdentifier="ProfileViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yXX-Et-m5D" customClass="ProfileViewController" customModule="Dropspot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I4v-NX-VGB">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awH-PU-H0u">
-                                <rect key="frame" x="137.33333333333331" y="589.66666666666663" width="132.33333333333331" height="34.333333333333371"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Add Company">
-                                    <color key="baseBackgroundColor" systemColor="labelColor"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="btnBusinessCrt:" destination="yXX-Et-m5D" eventType="touchUpInside" id="9o4-pR-LmT"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTu-qb-2WH">
-                                <rect key="frame" x="178" y="165" width="51" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Hm"/>
-                                <connections>
-                                    <segue destination="kMB-Ac-FJk" kind="show" id="fkU-id-JP6"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="5Gf-C8-4xp">
+                                <rect key="frame" x="55" y="111.99999999999997" width="280" height="451.33333333333326"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMR-Lx-cW6">
+                                        <rect key="frame" x="103.66666666666666" y="0.0" width="72.666666666666657" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7MY-gU-SKG">
+                                        <rect key="frame" x="0.0" y="70.333333333333343" width="280" height="291"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="e6x-0H-P6I">
+                                                <rect key="frame" x="91" y="14.999999999999998" width="32" height="21.333333333333329"/>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Own" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15i-dR-P84">
+                                                <rect key="frame" x="122.66666666666666" y="0.0" width="35" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTu-qb-2WH">
+                                                <rect key="frame" x="80" y="47" width="120" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="VAU-Mh-dWr"/>
+                                                    <constraint firstAttribute="width" constant="120" id="oJd-ih-XyJ"/>
+                                                </constraints>
+                                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Hm"/>
+                                                <connections>
+                                                    <segue destination="kMB-Ac-FJk" kind="show" id="fkU-id-JP6"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
+                                        <constraints>
+                                            <constraint firstItem="eK1-ys-a0V" firstAttribute="trailing" secondItem="e6x-0H-P6I" secondAttribute="trailing" constant="157" id="22a-JF-C9A"/>
+                                            <constraint firstItem="jTu-qb-2WH" firstAttribute="top" secondItem="e6x-0H-P6I" secondAttribute="bottom" constant="10.666666666666671" id="2Na-ia-Waq"/>
+                                            <constraint firstItem="e6x-0H-P6I" firstAttribute="top" secondItem="eK1-ys-a0V" secondAttribute="top" constant="14.999999999999998" id="6zf-Eg-tc7"/>
+                                            <constraint firstAttribute="width" constant="280" id="Clo-1G-pZC"/>
+                                            <constraint firstAttribute="trailing" secondItem="jTu-qb-2WH" secondAttribute="trailing" constant="90" id="D85-O9-g4u"/>
+                                            <constraint firstItem="jTu-qb-2WH" firstAttribute="centerX" secondItem="15i-dR-P84" secondAttribute="centerX" id="FkQ-Em-Gzo"/>
+                                            <constraint firstItem="eK1-ys-a0V" firstAttribute="bottom" secondItem="jTu-qb-2WH" secondAttribute="bottom" constant="194" id="K5s-p6-Qjj"/>
+                                            <constraint firstItem="jTu-qb-2WH" firstAttribute="centerX" secondItem="7MY-gU-SKG" secondAttribute="centerX" id="Uzj-uc-ZBo"/>
+                                            <constraint firstAttribute="bottom" secondItem="jTu-qb-2WH" secondAttribute="bottom" constant="194" id="W1I-nD-gH4"/>
+                                            <constraint firstItem="15i-dR-P84" firstAttribute="top" secondItem="0R2-Fc-wr7" secondAttribute="top" id="lXN-hY-EB6"/>
+                                            <constraint firstItem="jTu-qb-2WH" firstAttribute="centerY" secondItem="7MY-gU-SKG" secondAttribute="centerY" constant="-73.5" id="pFJ-JX-s71"/>
+                                            <constraint firstItem="e6x-0H-P6I" firstAttribute="leading" secondItem="eK1-ys-a0V" secondAttribute="leading" constant="91" id="prs-9D-8RL"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="0R2-Fc-wr7"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="eK1-ys-a0V"/>
+                                    </scrollView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awH-PU-H0u">
+                                        <rect key="frame" x="74.333333333333357" y="411.33333333333337" width="131.66666666666663" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="8om-sr-Anc"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Add Company">
+                                            <color key="baseBackgroundColor" red="0.96170336010000002" green="0.44995675019999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnBusinessCrt:" destination="yXX-Et-m5D" eventType="touchUpInside" id="9o4-pR-LmT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="540" id="Y0f-jY-poY"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YYl-3p-7Od"/>
-                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="awH-PU-H0u" firstAttribute="centerX" secondItem="jTu-qb-2WH" secondAttribute="centerX" id="HCG-Ea-hfW"/>
-                            <constraint firstItem="jTu-qb-2WH" firstAttribute="top" secondItem="YYl-3p-7Od" secondAttribute="top" constant="118" id="VBO-Aa-yeJ"/>
-                            <constraint firstItem="jTu-qb-2WH" firstAttribute="leading" secondItem="YYl-3p-7Od" secondAttribute="leading" constant="178" id="Ywb-ZQ-6ep"/>
-                            <constraint firstItem="awH-PU-H0u" firstAttribute="leading" secondItem="YYl-3p-7Od" secondAttribute="leading" constant="137.33333333333337" id="yO9-O6-7NI"/>
-                            <constraint firstItem="YYl-3p-7Od" firstAttribute="bottom" secondItem="awH-PU-H0u" secondAttribute="bottom" constant="186" id="zIa-6L-0tH"/>
+                            <constraint firstItem="5Gf-C8-4xp" firstAttribute="top" secondItem="YYl-3p-7Od" secondAttribute="top" constant="65" id="1u1-uB-iub"/>
+                            <constraint firstItem="YYl-3p-7Od" firstAttribute="bottom" secondItem="5Gf-C8-4xp" secondAttribute="bottom" constant="142.33333333333337" id="Clh-y6-i0R"/>
+                            <constraint firstItem="5Gf-C8-4xp" firstAttribute="leading" secondItem="YYl-3p-7Od" secondAttribute="leading" constant="55" id="WoM-c9-fcb"/>
+                            <constraint firstItem="5Gf-C8-4xp" firstAttribute="top" secondItem="YYl-3p-7Od" secondAttribute="top" constant="65" id="dMQ-1p-84D"/>
+                            <constraint firstItem="YYl-3p-7Od" firstAttribute="trailing" secondItem="5Gf-C8-4xp" secondAttribute="trailing" constant="55" id="lEg-Dp-h90"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BwN-cf-ga2"/>
                     <connections>
+                        <outlet property="scrollViewDesign" destination="7MY-gU-SKG" id="xfu-AI-VoP"/>
                         <segue destination="neK-5G-qlS" kind="show" identifier="nextScreen" id="V2X-wj-Gab"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xd4-Uu-tuQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2294" y="-309"/>
+            <point key="canvasLocation" x="2293.8461538461538" y="-309.24170616113742"/>
         </scene>
         <!--My Company View Controller-->
         <scene sceneID="eHe-xB-C9p">
@@ -1289,6 +1344,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="V2X-wj-Gab"/>
         <segue reference="9Ug-mq-sOJ"/>
         <segue reference="WbT-qo-xWm"/>
     </inferredMetricsTieBreakers>
@@ -1325,14 +1381,14 @@
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemMintColor">
             <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiarySystemGroupedBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
