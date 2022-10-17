@@ -433,7 +433,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cao-Io-Rke" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1130.7692307692307" y="315.63981042654029"/>
+            <point key="canvasLocation" x="-406" y="509"/>
         </scene>
         <!--Favorites View Controller-->
         <scene sceneID="FMx-go-HP3">
@@ -507,11 +507,11 @@
             <objects>
                 <viewController storyboardIdentifier="ProfileViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yXX-Et-m5D" customClass="ProfileViewController" customModule="Dropspot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I4v-NX-VGB">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awH-PU-H0u">
-                                <rect key="frame" x="137.33333333333331" y="566.66666666666663" width="132.33333333333331" height="34.333333333333371"/>
+                                <rect key="frame" x="137.33333333333331" y="589.66666666666663" width="132.33333333333331" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Add Company">
                                     <color key="baseBackgroundColor" systemColor="labelColor"/>
@@ -1179,15 +1179,14 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UbW-YV-0yZ">
                                                     <rect key="frame" x="0.0" y="0.0" width="390" height="711"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="discount" translatesAutoresizingMaskIntoConstraints="NO" id="6Fh-Xe-enR">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discount" translatesAutoresizingMaskIntoConstraints="NO" id="6Fh-Xe-enR">
                                                             <rect key="frame" x="0.0" y="0.0" width="390" height="703"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="Zz8-Yl-oIS">
-                                                            <rect key="frame" x="20" y="636" width="350" height="50"/>
+                                                            <rect key="frame" x="19.666666666666657" y="636" width="350.66666666666674" height="50"/>
                                                             <subviews>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCE-yG-Yxl" userLabel="Share Btn">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="51" height="50"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="51.666666666666664" height="50"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="51.670000000000002" id="Dek-1n-F4I"/>
                                                                         <constraint firstAttribute="height" constant="50" id="vHy-AL-j0N"/>
@@ -1198,7 +1197,7 @@
                                                                     </buttonConfiguration>
                                                                 </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AgM-Vw-eq5" userLabel="Favorite Btn">
-                                                                    <rect key="frame" x="99" y="0.0" width="51.666666666666657" height="50"/>
+                                                                    <rect key="frame" x="99.666666666666657" y="0.0" width="51.666666666666657" height="50"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="51.670000000000002" id="Zto-ON-WEM"/>
                                                                         <constraint firstAttribute="height" constant="50" id="rmT-PG-dW8"/>
@@ -1209,7 +1208,7 @@
                                                                     </buttonConfiguration>
                                                                 </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0v-kg-4eP" userLabel="Comment Btn">
-                                                                    <rect key="frame" x="198.66666666666666" y="0.0" width="51.666666666666657" height="50"/>
+                                                                    <rect key="frame" x="199.33333333333334" y="0.0" width="51.666666666666657" height="50"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="50" id="CcN-QC-01H"/>
                                                                         <constraint firstAttribute="width" constant="51.670000000000002" id="zQZ-gv-OI3"/>
@@ -1220,7 +1219,7 @@
                                                                     </buttonConfiguration>
                                                                 </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQB-HW-SRn" userLabel="Follow Btn">
-                                                                    <rect key="frame" x="298.33333333333331" y="0.0" width="51.666666666666686" height="50"/>
+                                                                    <rect key="frame" x="299" y="0.0" width="51.666666666666686" height="50"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="51.670000000000002" id="HTb-QZ-5Z0"/>
                                                                         <constraint firstAttribute="height" constant="50" id="oIo-8z-X9X"/>
@@ -1235,18 +1234,20 @@
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
+                                                        <constraint firstItem="6Fh-Xe-enR" firstAttribute="top" secondItem="UbW-YV-0yZ" secondAttribute="top" id="0v1-2e-wxB"/>
+                                                        <constraint firstItem="Zz8-Yl-oIS" firstAttribute="centerX" secondItem="6Fh-Xe-enR" secondAttribute="centerX" id="7cx-tU-nCF"/>
                                                         <constraint firstAttribute="width" constant="390" id="9cr-SC-OQa"/>
+                                                        <constraint firstItem="6Fh-Xe-enR" firstAttribute="leading" secondItem="UbW-YV-0yZ" secondAttribute="leading" id="TCC-l2-DhY"/>
                                                         <constraint firstAttribute="height" constant="622" id="Vlh-qX-Tlw"/>
-                                                        <constraint firstAttribute="trailing" secondItem="Zz8-Yl-oIS" secondAttribute="trailing" constant="20" id="e1y-ze-DVo"/>
                                                         <constraint firstAttribute="bottom" secondItem="Zz8-Yl-oIS" secondAttribute="bottom" constant="25" id="gab-Zo-JA7"/>
-                                                        <constraint firstItem="Zz8-Yl-oIS" firstAttribute="leading" secondItem="UbW-YV-0yZ" secondAttribute="leading" constant="20" id="jz2-BF-tFi"/>
+                                                        <constraint firstItem="Zz8-Yl-oIS" firstAttribute="centerX" secondItem="UbW-YV-0yZ" secondAttribute="centerX" id="hWB-Sq-vkG"/>
+                                                        <constraint firstItem="6Fh-Xe-enR" firstAttribute="bottom" secondItem="UbW-YV-0yZ" secondAttribute="bottomMargin" id="xwM-95-Flc"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="UbW-YV-0yZ" secondAttribute="bottom" id="6xJ-il-yRf"/>
                                                 <constraint firstItem="UbW-YV-0yZ" firstAttribute="top" secondItem="Jcx-PI-eHg" secondAttribute="top" id="Z2t-JH-FF3"/>
-                                                <constraint firstItem="UbW-YV-0yZ" firstAttribute="leading" secondItem="Jcx-PI-eHg" secondAttribute="leading" id="e3R-e2-Jwz"/>
                                                 <constraint firstAttribute="trailing" secondItem="UbW-YV-0yZ" secondAttribute="trailing" id="nx1-rc-ivd"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -1289,7 +1290,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Sos-bM-NdT"/>
         <segue reference="9Ug-mq-sOJ"/>
     </inferredMetricsTieBreakers>
     <resources>
