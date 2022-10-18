@@ -514,8 +514,8 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="390" id="HFj-Vf-Wed"/>
                                                                 <constraint firstAttribute="bottom" secondItem="0Vf-Fs-UIW" secondAttribute="bottom" constant="25" id="Vwn-ba-Khh"/>
+                                                                <constraint firstAttribute="height" constant="673" id="eHW-CJ-G70"/>
                                                                 <constraint firstItem="0Vf-Fs-UIW" firstAttribute="leading" secondItem="JNg-5j-kf9" secondAttribute="leading" constant="20" id="l4e-jL-FqH"/>
-                                                                <constraint firstAttribute="height" constant="673" id="zgx-Sq-4bK"/>
                                                                 <constraint firstAttribute="trailing" secondItem="0Vf-Fs-UIW" secondAttribute="trailing" constant="20" id="zwK-SZ-2KF"/>
                                                             </constraints>
                                                         </view>
@@ -533,6 +533,7 @@
                                                     <outlet property="profileFavoritCellBtn" destination="gcZ-ff-QOr" id="L8Y-Rz-SKH"/>
                                                     <outlet property="shareFavoritCellBtn" destination="k8i-3G-M4J" id="4VJ-b5-Sbl"/>
                                                     <outlet property="tableViewFavoritCellBackgrund" destination="hGe-ZU-hP8" id="qLQ-Gg-Gyk"/>
+                                                    <segue destination="Th9-pZ-A7d" kind="show" identifier="showRecentAnnonce2" id="raK-m0-nr6"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -1406,6 +1407,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="raK-m0-nr6"/>
         <segue reference="9Ug-mq-sOJ"/>
     </inferredMetricsTieBreakers>
     <resources>
