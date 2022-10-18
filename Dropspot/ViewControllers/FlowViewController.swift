@@ -126,6 +126,7 @@ extension FlowViewController : UITableViewDelegate{
 extension FlowViewController : UITableViewDataSource{
     
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+         tableView.isPagingEnabled = true
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for : indexPath) as! FlowTableViewCell
         let annonce = self.annonces[indexPath.row]
         cell.companyImageView.image = UIImage(named: annonce.image)

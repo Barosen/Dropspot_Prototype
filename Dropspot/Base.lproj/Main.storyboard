@@ -181,7 +181,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="6aQ-84-Kdy" kind="relationship" relationship="rootViewController" id="nKk-Qt-AgF"/>
+                        <segue destination="Iai-b5-edo" kind="relationship" relationship="rootViewController" id="DgA-M9-sjI"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UIX-Ux-QDY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -259,7 +259,7 @@
                                                         <constraint firstAttribute="bottom" secondItem="GAZ-CT-Fan" secondAttribute="bottom" constant="10" id="HL9-Zz-bQl"/>
                                                         <constraint firstItem="GAZ-CT-Fan" firstAttribute="top" secondItem="mVs-y0-rgw" secondAttribute="top" id="TVt-rF-kQw"/>
                                                         <constraint firstItem="GAZ-CT-Fan" firstAttribute="leading" secondItem="mVs-y0-rgw" secondAttribute="leading" id="UJA-xG-FWf"/>
-                                                        <constraint firstAttribute="height" constant="622" id="mId-tO-lLA"/>
+                                                        <constraint firstAttribute="height" constant="673" id="ser-rM-8me"/>
                                                         <constraint firstAttribute="trailing" secondItem="GAZ-CT-Fan" secondAttribute="trailing" id="uQG-2V-isz"/>
                                                         <constraint firstItem="dvd-SE-JhY" firstAttribute="leading" secondItem="mVs-y0-rgw" secondAttribute="leading" constant="20" id="v6m-rt-DUx"/>
                                                         <constraint firstAttribute="trailing" secondItem="GAZ-CT-Fan" secondAttribute="trailing" id="vpa-o5-b4Q"/>
@@ -303,7 +303,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hXz-QD-Q22" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-203.07692307692307" y="-309.24170616113742"/>
+            <point key="canvasLocation" x="-1132" y="-366"/>
         </scene>
         <!--Flow Options View Controller-->
         <scene sceneID="l46-BJ-sgf">
@@ -1255,25 +1255,6 @@
             </objects>
             <point key="canvasLocation" x="1349" y="653"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="auQ-4m-Maq">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6aQ-84-Kdy" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="c8G-c5-BrJ"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="O6R-PE-JlS">
-                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Iai-b5-edo" kind="relationship" relationship="rootViewController" id="zxg-xw-i10"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Zy6-Rz-3iT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1132.3076923076924" y="-309.24170616113742"/>
-        </scene>
         <!--Company Flow View Controller-->
         <scene sceneID="6sf-a8-paA">
             <objects>
@@ -1355,7 +1336,7 @@
                                                         <constraint firstItem="Zz8-Yl-oIS" firstAttribute="centerX" secondItem="6Fh-Xe-enR" secondAttribute="centerX" id="7cx-tU-nCF"/>
                                                         <constraint firstAttribute="width" constant="390" id="9cr-SC-OQa"/>
                                                         <constraint firstItem="6Fh-Xe-enR" firstAttribute="leading" secondItem="UbW-YV-0yZ" secondAttribute="leading" id="TCC-l2-DhY"/>
-                                                        <constraint firstAttribute="height" constant="622" id="Vlh-qX-Tlw"/>
+                                                        <constraint firstAttribute="height" constant="673" id="g0l-d0-zqk"/>
                                                         <constraint firstAttribute="bottom" secondItem="Zz8-Yl-oIS" secondAttribute="bottom" constant="25" id="gab-Zo-JA7"/>
                                                         <constraint firstItem="Zz8-Yl-oIS" firstAttribute="centerX" secondItem="UbW-YV-0yZ" secondAttribute="centerX" id="hWB-Sq-vkG"/>
                                                         <constraint firstItem="6Fh-Xe-enR" firstAttribute="bottom" secondItem="UbW-YV-0yZ" secondAttribute="bottomMargin" id="xwM-95-Flc"/>
@@ -1407,7 +1388,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="raK-m0-nr6"/>
+        <segue reference="QwZ-W2-aa7"/>
         <segue reference="9Ug-mq-sOJ"/>
     </inferredMetricsTieBreakers>
     <resources>
