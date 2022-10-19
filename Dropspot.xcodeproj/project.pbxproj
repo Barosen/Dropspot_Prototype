@@ -18,6 +18,7 @@
 		139D824A28CF6811009F264D /* DropspotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D824928CF6811009F264D /* DropspotUITests.swift */; };
 		139D824C28CF6811009F264D /* DropspotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D824B28CF6811009F264D /* DropspotUITestsLaunchTests.swift */; };
 		497EF93A28F8084D00AE1A9C /* MyCompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497EF93928F8084D00AE1A9C /* MyCompanyViewController.swift */; };
+		5B5CF3E32900255E0041D446 /* PlaceAdsInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5CF3E22900255E0041D446 /* PlaceAdsInfoViewController.swift */; };
 		5B9124B628D0E8F6004E7813 /* CustomTextFiled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9124B528D0E8F6004E7813 /* CustomTextFiled.swift */; };
 		5B9124BE28D51062004E7813 /* CreateAccBusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9124BD28D51062004E7813 /* CreateAccBusinessViewController.swift */; };
 		5B9124C028EB0EF4004E7813 /* TakeOwnShipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9124BF28EB0EF4004E7813 /* TakeOwnShipViewController.swift */; };
@@ -67,6 +68,7 @@
 		139D824928CF6811009F264D /* DropspotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropspotUITests.swift; sourceTree = "<group>"; };
 		139D824B28CF6811009F264D /* DropspotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropspotUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		497EF93928F8084D00AE1A9C /* MyCompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCompanyViewController.swift; sourceTree = "<group>"; };
+		5B5CF3E22900255E0041D446 /* PlaceAdsInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAdsInfoViewController.swift; sourceTree = "<group>"; };
 		5B9124B528D0E8F6004E7813 /* CustomTextFiled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFiled.swift; sourceTree = "<group>"; };
 		5B9124BD28D51062004E7813 /* CreateAccBusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccBusinessViewController.swift; sourceTree = "<group>"; };
 		5B9124BF28EB0EF4004E7813 /* TakeOwnShipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeOwnShipViewController.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 				5B9124BF28EB0EF4004E7813 /* TakeOwnShipViewController.swift */,
 				497EF93928F8084D00AE1A9C /* MyCompanyViewController.swift */,
 				A91F0FF428F873B900070CD2 /* FlowOptionsViewController.swift */,
+				5B5CF3E22900255E0041D446 /* PlaceAdsInfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				5B9124BE28D51062004E7813 /* CreateAccBusinessViewController.swift in Sources */,
 				5BB3D3E228CF888C00F32BAF /* LoginOrSingnViewController.swift in Sources */,
 				5B9124C028EB0EF4004E7813 /* TakeOwnShipViewController.swift in Sources */,
+				5B5CF3E32900255E0041D446 /* PlaceAdsInfoViewController.swift in Sources */,
 				A96C19E128CF83D500B93DD3 /* FavoritesViewController.swift in Sources */,
 				A91F0FF528F873B900070CD2 /* FlowOptionsViewController.swift in Sources */,
 				139D822B28CF6810009F264D /* SceneDelegate.swift in Sources */,
