@@ -20,8 +20,8 @@
 		497EF93A28F8084D00AE1A9C /* MyCompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497EF93928F8084D00AE1A9C /* MyCompanyViewController.swift */; };
 		497EF93C28FF0AAB00AE1A9C /* AdStatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497EF93B28FF0AAB00AE1A9C /* AdStatViewController.swift */; };
 		497EF93E290067F200AE1A9C /* AdStatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497EF93D290067F200AE1A9C /* AdStatCell.swift */; };
+		5B5CF3E32900255E0041D446 /* PlaceAdsInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5CF3E22900255E0041D446 /* PlaceAdsInfoViewController.swift */; };
 		5B9124B628D0E8F6004E7813 /* CustomTextFiled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9124B528D0E8F6004E7813 /* CustomTextFiled.swift */; };
-		5B9124BC28D50F3E004E7813 /* LoginBusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9124BB28D50F3E004E7813 /* LoginBusinessViewController.swift */; };
 		5B9124BE28D51062004E7813 /* CreateAccBusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9124BD28D51062004E7813 /* CreateAccBusinessViewController.swift */; };
 		5B9124C028EB0EF4004E7813 /* TakeOwnShipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9124BF28EB0EF4004E7813 /* TakeOwnShipViewController.swift */; };
 		5BB3D3E228CF888C00F32BAF /* LoginOrSingnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB3D3E128CF888C00F32BAF /* LoginOrSingnViewController.swift */; };
@@ -72,8 +72,8 @@
 		497EF93928F8084D00AE1A9C /* MyCompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCompanyViewController.swift; sourceTree = "<group>"; };
 		497EF93B28FF0AAB00AE1A9C /* AdStatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdStatViewController.swift; sourceTree = "<group>"; };
 		497EF93D290067F200AE1A9C /* AdStatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdStatCell.swift; sourceTree = "<group>"; };
+		5B5CF3E22900255E0041D446 /* PlaceAdsInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAdsInfoViewController.swift; sourceTree = "<group>"; };
 		5B9124B528D0E8F6004E7813 /* CustomTextFiled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFiled.swift; sourceTree = "<group>"; };
-		5B9124BB28D50F3E004E7813 /* LoginBusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBusinessViewController.swift; sourceTree = "<group>"; };
 		5B9124BD28D51062004E7813 /* CreateAccBusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccBusinessViewController.swift; sourceTree = "<group>"; };
 		5B9124BF28EB0EF4004E7813 /* TakeOwnShipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeOwnShipViewController.swift; sourceTree = "<group>"; };
 		5BB3D3E128CF888C00F32BAF /* LoginOrSingnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOrSingnViewController.swift; sourceTree = "<group>"; };
@@ -185,7 +185,6 @@
 				A96C19E428CF83FA00B93DD3 /* ProfileViewController.swift */,
 				5BB3D3E128CF888C00F32BAF /* LoginOrSingnViewController.swift */,
 				5BB3D3E528CFBD7900F32BAF /* CreateAccountViewController.swift */,
-				5B9124BB28D50F3E004E7813 /* LoginBusinessViewController.swift */,
 				5B9124BD28D51062004E7813 /* CreateAccBusinessViewController.swift */,
 				130C582D28D9BDC100C1783E /* SplashScreenController.swift */,
 				C1D1FB2D28E70A1E00EB4AE2 /* followTableViewCell.swift */,
@@ -194,6 +193,7 @@
 				497EF93928F8084D00AE1A9C /* MyCompanyViewController.swift */,
 				A91F0FF428F873B900070CD2 /* FlowOptionsViewController.swift */,
 				497EF93B28FF0AAB00AE1A9C /* AdStatViewController.swift */,
+				5B5CF3E22900255E0041D446 /* PlaceAdsInfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -357,6 +357,7 @@
 				5B9124BE28D51062004E7813 /* CreateAccBusinessViewController.swift in Sources */,
 				5BB3D3E228CF888C00F32BAF /* LoginOrSingnViewController.swift in Sources */,
 				5B9124C028EB0EF4004E7813 /* TakeOwnShipViewController.swift in Sources */,
+				5B5CF3E32900255E0041D446 /* PlaceAdsInfoViewController.swift in Sources */,
 				A96C19E128CF83D500B93DD3 /* FavoritesViewController.swift in Sources */,
 				A91F0FF528F873B900070CD2 /* FlowOptionsViewController.swift in Sources */,
 				5B9124BC28D50F3E004E7813 /* LoginBusinessViewController.swift in Sources */,
