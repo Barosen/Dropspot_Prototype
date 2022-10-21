@@ -368,7 +368,6 @@
 				5B5CF3E32900255E0041D446 /* PlaceAdsInfoViewController.swift in Sources */,
 				A96C19E128CF83D500B93DD3 /* FavoritesViewController.swift in Sources */,
 				A91F0FF528F873B900070CD2 /* FlowOptionsViewController.swift in Sources */,
-				5B9124BC28D50F3E004E7813 /* LoginBusinessViewController.swift in Sources */,
 				497EF93C28FF0AAB00AE1A9C /* AdStatViewController.swift in Sources */,
 				139D822B28CF6810009F264D /* SceneDelegate.swift in Sources */,
 			);
@@ -548,7 +547,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8V3CAV6X92;
+				DEVELOPMENT_TEAM = 56CU9AMJBP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Dropspot/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -579,7 +578,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8V3CAV6X92;
+				DEVELOPMENT_TEAM = 56CU9AMJBP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Dropspot/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
