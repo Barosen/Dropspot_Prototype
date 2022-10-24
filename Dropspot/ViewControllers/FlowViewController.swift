@@ -145,6 +145,17 @@ extension FlowViewController : UITableViewDataSource{
     func tableView(_ tableView : UITableView, numberOfRowsInSection section: Int) -> Int {
         return annonces.count
     }
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let navigate = UIContextualAction(style: .normal, title: "") {
+            (action , view , competionHandler) in
+            self.performSegue(withIdentifier: "showRecentAnnonce", sender: self)
+
+            print("delete \(indexPath)")
+            competionHandler(true)
+        }
+        let swipe = UISwipeActionsConfiguration(actions: [navigate])
+        return swipe
+    }
     
 }
 struct Annonce{
