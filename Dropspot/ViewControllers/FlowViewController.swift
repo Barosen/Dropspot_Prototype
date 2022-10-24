@@ -129,7 +129,6 @@ extension FlowViewController : UITableViewDelegate{
 extension FlowViewController : UITableViewDataSource{
     
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-         tableView.isPagingEnabled = true
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for : indexPath) as! FlowTableViewCell
         let annonce = self.annonces[indexPath.row]
         cell.companyImageView.image = UIImage(named: annonce.image)
@@ -147,17 +146,6 @@ extension FlowViewController : UITableViewDataSource{
     
     func tableView(_ tableView : UITableView, numberOfRowsInSection section: Int) -> Int {
         return annonces.count
-    }
-    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let navigate = UIContextualAction(style: .normal, title: "") {
-            (action , view , competionHandler) in
-            self.performSegue(withIdentifier: "showRecentAnnonce", sender: self)
-
-            print("delete \(indexPath)")
-            competionHandler(true)
-        }
-        let swipe = UISwipeActionsConfiguration(actions: [navigate])
-        return swipe
     }
     
 }

@@ -66,7 +66,6 @@ extension CompanyFlowViewController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        tableView.isPagingEnabled = true
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableViewCell", for: indexPath) as! CompanyFlowCell
         let annonce = self.annonces[indexPath.row]
         
