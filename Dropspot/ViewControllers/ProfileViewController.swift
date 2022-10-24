@@ -8,13 +8,17 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
-
+    @IBOutlet weak var scrollViewDesign: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        scrollViewDesign.layer.cornerRadius = 20
 
         // Do any additional setup after loading the view.
     }
     
+
     @IBAction func showPayment(_ sender: Any) {
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "paymentvc") as? PaymentViewController else {return}
         if let sheet = vc.sheetPresentationController {
@@ -22,6 +26,7 @@ class ProfileViewController: UIViewController {
             sheet.detents = [.medium()]
         }
         present(vc, animated: true)
+
     }
     
     /*
