@@ -18,8 +18,15 @@ class ProfileViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func btnBusinessCrt(_ sender: Any) {
-        self.performSegue(withIdentifier: "nextScreen", sender: self)
+
+    @IBAction func showPayment(_ sender: Any) {
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "paymentvc") as? PaymentViewController else {return}
+        if let sheet = vc.sheetPresentationController {
+            sheet.prefersGrabberVisible = true
+            sheet.detents = [.medium()]
+        }
+        present(vc, animated: true)
+
     }
     
     /*
