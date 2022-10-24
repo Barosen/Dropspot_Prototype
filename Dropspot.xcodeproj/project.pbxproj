@@ -17,9 +17,13 @@
 		139D824028CF6811009F264D /* DropspotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D823F28CF6811009F264D /* DropspotTests.swift */; };
 		139D824A28CF6811009F264D /* DropspotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D824928CF6811009F264D /* DropspotUITests.swift */; };
 		139D824C28CF6811009F264D /* DropspotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D824B28CF6811009F264D /* DropspotUITestsLaunchTests.swift */; };
+		418D1E572901315F00C158E3 /* PreviewPageForAnnonce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418D1E562901315F00C158E3 /* PreviewPageForAnnonce.swift */; };
+		418D1E592901336700C158E3 /* AnnoncePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418D1E582901336700C158E3 /* AnnoncePreview.swift */; };
 		497EF93A28F8084D00AE1A9C /* MyCompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497EF93928F8084D00AE1A9C /* MyCompanyViewController.swift */; };
+		497EF93C28FF0AAB00AE1A9C /* AdStatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497EF93B28FF0AAB00AE1A9C /* AdStatViewController.swift */; };
+		497EF93E290067F200AE1A9C /* AdStatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497EF93D290067F200AE1A9C /* AdStatCell.swift */; };
+		5B5CF3E32900255E0041D446 /* PlaceAdsInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5CF3E22900255E0041D446 /* PlaceAdsInfoViewController.swift */; };
 		5B9124B628D0E8F6004E7813 /* CustomTextFiled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9124B528D0E8F6004E7813 /* CustomTextFiled.swift */; };
-		5B9124BC28D50F3E004E7813 /* LoginBusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9124BB28D50F3E004E7813 /* LoginBusinessViewController.swift */; };
 		5B9124BE28D51062004E7813 /* CreateAccBusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9124BD28D51062004E7813 /* CreateAccBusinessViewController.swift */; };
 		5B9124C028EB0EF4004E7813 /* TakeOwnShipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9124BF28EB0EF4004E7813 /* TakeOwnShipViewController.swift */; };
 		5BB3D3E228CF888C00F32BAF /* LoginOrSingnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB3D3E128CF888C00F32BAF /* LoginOrSingnViewController.swift */; };
@@ -67,9 +71,13 @@
 		139D824528CF6811009F264D /* DropspotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropspotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		139D824928CF6811009F264D /* DropspotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropspotUITests.swift; sourceTree = "<group>"; };
 		139D824B28CF6811009F264D /* DropspotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropspotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		418D1E562901315F00C158E3 /* PreviewPageForAnnonce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPageForAnnonce.swift; sourceTree = "<group>"; };
+		418D1E582901336700C158E3 /* AnnoncePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnoncePreview.swift; sourceTree = "<group>"; };
 		497EF93928F8084D00AE1A9C /* MyCompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCompanyViewController.swift; sourceTree = "<group>"; };
+		497EF93B28FF0AAB00AE1A9C /* AdStatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdStatViewController.swift; sourceTree = "<group>"; };
+		497EF93D290067F200AE1A9C /* AdStatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdStatCell.swift; sourceTree = "<group>"; };
+		5B5CF3E22900255E0041D446 /* PlaceAdsInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceAdsInfoViewController.swift; sourceTree = "<group>"; };
 		5B9124B528D0E8F6004E7813 /* CustomTextFiled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFiled.swift; sourceTree = "<group>"; };
-		5B9124BB28D50F3E004E7813 /* LoginBusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBusinessViewController.swift; sourceTree = "<group>"; };
 		5B9124BD28D51062004E7813 /* CreateAccBusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccBusinessViewController.swift; sourceTree = "<group>"; };
 		5B9124BF28EB0EF4004E7813 /* TakeOwnShipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeOwnShipViewController.swift; sourceTree = "<group>"; };
 		5BB3D3E128CF888C00F32BAF /* LoginOrSingnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOrSingnViewController.swift; sourceTree = "<group>"; };
@@ -181,7 +189,6 @@
 				A96C19E428CF83FA00B93DD3 /* ProfileViewController.swift */,
 				5BB3D3E128CF888C00F32BAF /* LoginOrSingnViewController.swift */,
 				5BB3D3E528CFBD7900F32BAF /* CreateAccountViewController.swift */,
-				5B9124BB28D50F3E004E7813 /* LoginBusinessViewController.swift */,
 				5B9124BD28D51062004E7813 /* CreateAccBusinessViewController.swift */,
 				130C582D28D9BDC100C1783E /* SplashScreenController.swift */,
 				C1D1FB2D28E70A1E00EB4AE2 /* followTableViewCell.swift */,
@@ -193,7 +200,6 @@
 				5B5CF3E22900255E0041D446 /* PlaceAdsInfoViewController.swift */,
 				418D1E562901315F00C158E3 /* PreviewPageForAnnonce.swift */,
 				418D1E582901336700C158E3 /* AnnoncePreview.swift */,
-				A9F513DF29020FA800C456D9 /* PaymentViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -203,6 +209,7 @@
 			children = (
 				A9B97DD228D8CF3D004B77CB /* SearchCell.swift */,
 				A9B97DD328D8CF3D004B77CB /* SearchCell.xib */,
+				497EF93D290067F200AE1A9C /* AdStatCell.swift */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -340,6 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				497EF93E290067F200AE1A9C /* AdStatCell.swift in Sources */,
 				A9B97DD428D8CF3D004B77CB /* SearchCell.swift in Sources */,
 				5B9124B628D0E8F6004E7813 /* CustomTextFiled.swift in Sources */,
 				A96C19E528CF83FA00B93DD3 /* ProfileViewController.swift in Sources */,
@@ -354,10 +362,13 @@
 				C1D1FB2E28E70A1E00EB4AE2 /* followTableViewCell.swift in Sources */,
 				5B9124BE28D51062004E7813 /* CreateAccBusinessViewController.swift in Sources */,
 				5BB3D3E228CF888C00F32BAF /* LoginOrSingnViewController.swift in Sources */,
+				418D1E592901336700C158E3 /* AnnoncePreview.swift in Sources */,
+				418D1E572901315F00C158E3 /* PreviewPageForAnnonce.swift in Sources */,
 				5B9124C028EB0EF4004E7813 /* TakeOwnShipViewController.swift in Sources */,
+				5B5CF3E32900255E0041D446 /* PlaceAdsInfoViewController.swift in Sources */,
 				A96C19E128CF83D500B93DD3 /* FavoritesViewController.swift in Sources */,
 				A91F0FF528F873B900070CD2 /* FlowOptionsViewController.swift in Sources */,
-				5B9124BC28D50F3E004E7813 /* LoginBusinessViewController.swift in Sources */,
+				497EF93C28FF0AAB00AE1A9C /* AdStatViewController.swift in Sources */,
 				139D822B28CF6810009F264D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -536,7 +547,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8V3CAV6X92;
+				DEVELOPMENT_TEAM = 56CU9AMJBP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Dropspot/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -567,7 +578,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8V3CAV6X92;
+				DEVELOPMENT_TEAM = 56CU9AMJBP;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Dropspot/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
