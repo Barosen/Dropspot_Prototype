@@ -2199,9 +2199,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="UkQ-xG-vEw"/>
         <segue reference="QwZ-W2-aa7"/>
         <segue reference="NXh-Ak-l5b"/>
-        <segue reference="WbT-qo-xWm"/>
+        <segue reference="y68-MT-PMy"/>
         <segue reference="eRE-3E-1kN"/>
     </inferredMetricsTieBreakers>
     <resources>
