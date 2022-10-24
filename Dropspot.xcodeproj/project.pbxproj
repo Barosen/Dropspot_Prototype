@@ -31,6 +31,7 @@
 		A9B97DCC28D882B5004B77CB /* stretchyTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B97DCB28D882B5004B77CB /* stretchyTableViewHeader.swift */; };
 		A9B97DD428D8CF3D004B77CB /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B97DD228D8CF3D004B77CB /* SearchCell.swift */; };
 		A9B97DD528D8CF3D004B77CB /* SearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9B97DD328D8CF3D004B77CB /* SearchCell.xib */; };
+		A9F513E029020FA800C456D9 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F513DF29020FA800C456D9 /* PaymentViewController.swift */; };
 		C186039E28EED776002E02B9 /* CompanyFlowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C186039D28EED776002E02B9 /* CompanyFlowViewController.swift */; };
 		C1D1FB2E28E70A1E00EB4AE2 /* followTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D1FB2D28E70A1E00EB4AE2 /* followTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -81,6 +82,7 @@
 		A9B97DCB28D882B5004B77CB /* stretchyTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stretchyTableViewHeader.swift; sourceTree = "<group>"; };
 		A9B97DD228D8CF3D004B77CB /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		A9B97DD328D8CF3D004B77CB /* SearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCell.xib; sourceTree = "<group>"; };
+		A9F513DF29020FA800C456D9 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		C186039D28EED776002E02B9 /* CompanyFlowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyFlowViewController.swift; sourceTree = "<group>"; };
 		C1D1FB2D28E70A1E00EB4AE2 /* followTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = followTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -189,6 +191,7 @@
 				5B9124BF28EB0EF4004E7813 /* TakeOwnShipViewController.swift */,
 				497EF93928F8084D00AE1A9C /* MyCompanyViewController.swift */,
 				A91F0FF428F873B900070CD2 /* FlowOptionsViewController.swift */,
+				A9F513DF29020FA800C456D9 /* PaymentViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				130C582E28D9BDC100C1783E /* SplashScreenController.swift in Sources */,
 				139D822D28CF6810009F264D /* FlowViewController.swift in Sources */,
 				139D822928CF6810009F264D /* AppDelegate.swift in Sources */,
+				A9F513E029020FA800C456D9 /* PaymentViewController.swift in Sources */,
 				5BB3D3E628CFBD7900F32BAF /* CreateAccountViewController.swift in Sources */,
 				C186039E28EED776002E02B9 /* CompanyFlowViewController.swift in Sources */,
 				A9B97DCC28D882B5004B77CB /* stretchyTableViewHeader.swift in Sources */,

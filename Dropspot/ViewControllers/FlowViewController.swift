@@ -9,6 +9,7 @@ import UIKit
 
 class FlowViewController: UIViewController {
     
+    @IBOutlet var navBar: UINavigationItem!
     var itemleft = UIBarButtonItem()
     var valueToCheck = 0
     var btnProfile = UIButton()
@@ -34,6 +35,7 @@ class FlowViewController: UIViewController {
        
         
        tableViewAndDesignDetails()
+        
     }
     
     func tableViewAndDesignDetails() {
@@ -47,7 +49,8 @@ class FlowViewController: UIViewController {
         itemleft = UIBarButtonItem(customView: btnProfile)
         self.navigationItem.setLeftBarButton(itemleft, animated: true)
         
-        
+        //navBar.compactScrollEdgeAppearance = .none
+                
     }
  
     
