@@ -9,19 +9,23 @@ import UIKit
 
 class CreateAccountViewController: UIViewController {
 
-
-    @IBOutlet weak var btnRegisterDesign: UIButton!
+  @IBOutlet weak var RegisterDesignBt: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        btnRegisterDesign.layer.cornerRadius = 25
+        RegisterDesignBt.layer.cornerRadius = 20
     }
     
-    @IBAction func btnRegisterNext(_ sender: Any) {
-        self.performSegue(withIdentifier: "nextRegisterBtn", sender: self)
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
     }
-    
-    
+    */
 
 }

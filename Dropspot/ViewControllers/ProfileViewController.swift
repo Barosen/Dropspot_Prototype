@@ -8,12 +8,9 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
-    @IBOutlet weak var scrollViewDesign: UIScrollView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        scrollViewDesign.layer.cornerRadius = 20
 
         // Do any additional setup after loading the view.
     }

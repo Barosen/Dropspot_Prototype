@@ -8,18 +8,12 @@
 import UIKit
 
 class SearchViewController: UIViewController {
-    
-    let data = ["Gucci", "Volkswagen", "Toyota", "Bagetti", "Rolls-Royce", "Koeningsegg", "BananaInc", "Pannkakor AB", "Köttbullar > Falafel"]
-    var filteredData: [String]!
-    
-    
-    
-    @IBOutlet weak var searchBar: UITextField!
     @IBOutlet var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        filteredData = data
+
+        // Do any additional setup after loading the view.
         tableViewAndStylingDetails()
     }
     
@@ -31,31 +25,23 @@ class SearchViewController: UIViewController {
         tableView.register(nib, forCellReuseIdentifier: "SearchCell")
     }
     
-    @IBAction func textFieldEditingDidChange(_ sender: Any) {
-        filteredData = []
-        if searchBar.text == "" {
-            filteredData = data
-        }
-        for word in data {
-            if word.uppercased().contains(searchBar.text!.uppercased())
-            {
-                filteredData.append(word)
-            }
-        }
-        self.tableView.reloadData()
-    }
 }
+
 extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    //Skriv bara tableView funktioner här
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "SearchCell", for: indexPath)
-        cell.textLabel?.text = filteredData[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "SearchCell", for: indexPath) as! SearchCell
+        //Fixa element, exempelvis: cell.myLabel.text = "Coop Forum"
+        
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return filteredData.count
+        // return datainfo.count
+        return 1
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
