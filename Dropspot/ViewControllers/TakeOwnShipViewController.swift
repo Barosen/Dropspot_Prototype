@@ -24,12 +24,21 @@ class TakeOwnShipViewController: UIViewController {
     
     
     @IBAction func btnSubmit(_ sender: Any) {
+       
+        
+        //navigationController?.popViewController(animated: true)
+
+       // dismiss(animated: true, completion: nil)
+        
+        
         
         //let storyboard = self.storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
         
         //self.navigationController?.pushViewController(storyboard, animated: true)
         
-        self.performSegue(withIdentifier: "screen", sender: self)
+        //performSegue(withIdentifier: "screen", sender: self)
+        //self.navigationController?.popViewController(animated: true)
+        
     }
     
 

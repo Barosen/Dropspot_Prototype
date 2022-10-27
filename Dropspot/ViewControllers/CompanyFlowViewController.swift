@@ -8,13 +8,20 @@
 import UIKit
 
 class CompanyFlowViewController: UIViewController {
-
+    
     @IBOutlet weak var companyTableView: UITableView!
     let annonces = [
-        Annonce(title: "flower", image: "image.jpg"),
-        Annonce(title: "kläder", image: "image1"),
-        Annonce(title: "Food", image: "McDonalds"),
-        Annonce(title: "rabat", image: "discount")
+        Annonce( title: "flower" ,image: "image.jpg", companyName: "Flower", favorite: false, discounts: true, release: false, event: false, NearBy: true),
+        Annonce( title: "kläder" ,image: "image1", companyName: "H&M", favorite: true, discounts: true, release: false, event: false, NearBy: true),
+        Annonce( title: "Food" ,image: "McDonalds", companyName: "McDonalds", favorite: true, discounts: true, release: false, event: false, NearBy: true),
+        Annonce( title: "rabat" ,image: "discount", companyName: "McDonalds", favorite: false, discounts: true, release: false, event: false, NearBy: true),
+        Annonce( title: "kläder" ,image: "event1", companyName: "H&M", favorite: true, discounts: true, release: false, event: false, NearBy: true),
+        Annonce( title: "kläder" ,image: "sale50%", companyName: "H&M", favorite: true, discounts: true, release: false, event: false, NearBy: true),
+        Annonce( title: "kläder" ,image: "sale50%2", companyName: "H&M", favorite: true, discounts: true, release: false, event: false, NearBy: true),
+        Annonce( title: "kläder" ,image: "sale70%", companyName: "H&M", favorite: true, discounts: true, release: false, event: false, NearBy: true),
+        Annonce( title: "rabat" ,image: "discount", companyName: "McDonalds", favorite: false, discounts: true, release: false, event: false, NearBy: true),
+
+        Annonce( title: "event" ,image: "mcEvent", companyName: "McDonalds", favorite: false, discounts: true, release: false, event: false, NearBy: true),
         
     ]
     override func viewDidLoad() {

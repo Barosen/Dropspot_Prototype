@@ -24,6 +24,20 @@ class CreateAccBusinessViewController: UIViewController {
     }
     
 
+    @IBAction func registerSegue(_ sender: UIButton) {
+       
+        
+        
+        //self.navigationController?.popViewController(animated: true)
+        /*
+        
+        performSegue(withIdentifier: "TakeOwnShipViewController", sender: self)
+        navigationController?.popViewController(animated: true)
+
+        dismiss(animated: true, completion: nil)
+         */
+        
+    }
     /*
     // MARK: - Navigation
 

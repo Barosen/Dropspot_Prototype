@@ -17,6 +17,7 @@
 		139D824028CF6811009F264D /* DropspotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D823F28CF6811009F264D /* DropspotTests.swift */; };
 		139D824A28CF6811009F264D /* DropspotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D824928CF6811009F264D /* DropspotUITests.swift */; };
 		139D824C28CF6811009F264D /* DropspotUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D824B28CF6811009F264D /* DropspotUITestsLaunchTests.swift */; };
+		4132D1CE290696E7009F19D4 /* CompanyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4132D1CD290696E7009F19D4 /* CompanyProfile.swift */; };
 		418D1E572901315F00C158E3 /* PreviewPageForAnnonce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418D1E562901315F00C158E3 /* PreviewPageForAnnonce.swift */; };
 		418D1E592901336700C158E3 /* AnnoncePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418D1E582901336700C158E3 /* AnnoncePreview.swift */; };
 		497EF93A28F8084D00AE1A9C /* MyCompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497EF93928F8084D00AE1A9C /* MyCompanyViewController.swift */; };
@@ -72,6 +73,7 @@
 		139D824528CF6811009F264D /* DropspotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropspotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		139D824928CF6811009F264D /* DropspotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropspotUITests.swift; sourceTree = "<group>"; };
 		139D824B28CF6811009F264D /* DropspotUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropspotUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4132D1CD290696E7009F19D4 /* CompanyProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyProfile.swift; sourceTree = "<group>"; };
 		418D1E562901315F00C158E3 /* PreviewPageForAnnonce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewPageForAnnonce.swift; sourceTree = "<group>"; };
 		418D1E582901336700C158E3 /* AnnoncePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnoncePreview.swift; sourceTree = "<group>"; };
 		497EF93928F8084D00AE1A9C /* MyCompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCompanyViewController.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				418D1E562901315F00C158E3 /* PreviewPageForAnnonce.swift */,
 				418D1E582901336700C158E3 /* AnnoncePreview.swift */,
 				A903DDBC290A6B4800B75B47 /* PaymentViewController.swift */,
+				4132D1CD290696E7009F19D4 /* CompanyProfile.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				A96C19E328CF83EF00B93DD3 /* SearchViewController.swift in Sources */,
 				130C582E28D9BDC100C1783E /* SplashScreenController.swift in Sources */,
 				139D822D28CF6810009F264D /* FlowViewController.swift in Sources */,
+				4132D1CE290696E7009F19D4 /* CompanyProfile.swift in Sources */,
 				139D822928CF6810009F264D /* AppDelegate.swift in Sources */,
 				5BB3D3E628CFBD7900F32BAF /* CreateAccountViewController.swift in Sources */,
 				C186039E28EED776002E02B9 /* CompanyFlowViewController.swift in Sources */,
