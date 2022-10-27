@@ -28,6 +28,7 @@
 		5B9124C028EB0EF4004E7813 /* TakeOwnShipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9124BF28EB0EF4004E7813 /* TakeOwnShipViewController.swift */; };
 		5BB3D3E228CF888C00F32BAF /* LoginOrSingnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB3D3E128CF888C00F32BAF /* LoginOrSingnViewController.swift */; };
 		5BB3D3E628CFBD7900F32BAF /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB3D3E528CFBD7900F32BAF /* CreateAccountViewController.swift */; };
+		A903DDBD290A6B4800B75B47 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A903DDBC290A6B4800B75B47 /* PaymentViewController.swift */; };
 		A91F0FF528F873B900070CD2 /* FlowOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91F0FF428F873B900070CD2 /* FlowOptionsViewController.swift */; };
 		A96C19E128CF83D500B93DD3 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C19E028CF83D500B93DD3 /* FavoritesViewController.swift */; };
 		A96C19E328CF83EF00B93DD3 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C19E228CF83EF00B93DD3 /* SearchViewController.swift */; };
@@ -82,6 +83,7 @@
 		5B9124BF28EB0EF4004E7813 /* TakeOwnShipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeOwnShipViewController.swift; sourceTree = "<group>"; };
 		5BB3D3E128CF888C00F32BAF /* LoginOrSingnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOrSingnViewController.swift; sourceTree = "<group>"; };
 		5BB3D3E528CFBD7900F32BAF /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		A903DDBC290A6B4800B75B47 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		A91F0FF428F873B900070CD2 /* FlowOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowOptionsViewController.swift; sourceTree = "<group>"; };
 		A96C19E028CF83D500B93DD3 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		A96C19E228CF83EF00B93DD3 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				5B5CF3E22900255E0041D446 /* PlaceAdsInfoViewController.swift */,
 				418D1E562901315F00C158E3 /* PreviewPageForAnnonce.swift */,
 				418D1E582901336700C158E3 /* AnnoncePreview.swift */,
+				A903DDBC290A6B4800B75B47 /* PaymentViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -366,6 +369,7 @@
 				418D1E572901315F00C158E3 /* PreviewPageForAnnonce.swift in Sources */,
 				5B9124C028EB0EF4004E7813 /* TakeOwnShipViewController.swift in Sources */,
 				5B5CF3E32900255E0041D446 /* PlaceAdsInfoViewController.swift in Sources */,
+				A903DDBD290A6B4800B75B47 /* PaymentViewController.swift in Sources */,
 				A96C19E128CF83D500B93DD3 /* FavoritesViewController.swift in Sources */,
 				A91F0FF528F873B900070CD2 /* FlowOptionsViewController.swift in Sources */,
 				497EF93C28FF0AAB00AE1A9C /* AdStatViewController.swift in Sources */,
