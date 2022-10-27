@@ -84,10 +84,22 @@ extension CompanyFlowViewController: UITableViewDataSource{
         tableView.isPagingEnabled = true
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableViewCell", for: indexPath) as! CompanyFlowCell
         let annonce = list2![indexPath.row]
+        let image = UIImage(named: "favoriteOn")
+        let image2 = UIImage(named: "favorite5")
         
         cell.companyImageViewCell.image = UIImage(named: annonce.image)
         cell.commentBtnCell.setImage(UIImage(named: "commentButton"), for: UIControl.State())
-        cell.favoriteBtnCell.setImage(UIImage(named: "favoriteButton"), for: UIControl.State())
+        if (annonce.favorite){
+            
+           cell.favoriteBtnCell.setImage(image, for: UIControl.State.normal)
+            //cell.favoriteButton.imageEdgeInsets = UIEdgeInsets(top: 30, left: 30, bottom: 30, right: 30)
+
+           // cell.favoriteButton.contentMode = UIView.ContentMode.center
+            
+        } else {
+            cell.favoriteBtnCell.setImage(image2, for: UIControl.State.normal)
+           // cell.favoriteButton.contentMode = UIView.ContentMode.center
+        }
         cell.shareBtnCell.setImage(UIImage(named: "shareButton"), for: UIControl.State())
         cell.FollowBtnCell.setImage(UIImage(named: "followButton"), for: UIControl.State())
         return cell
