@@ -19,6 +19,19 @@ class FlowViewController: UIViewController {
  
     
     var header: StretchyTableViewHeader?
+    
+    func prepareForSegue(segue: UIStoryboardSegue, sender: [Annonce]?) {
+        if segue.identifier == "showRecentAnnonce"{
+            let destinationVC = segue.destination as! CompanyFlowViewController
+            
+           
+            destinationVC.list2 = sender as [Annonce]?
+            
+        }
+
+        // Create a variable that you want to send
+       
+        }
 
     
  
@@ -108,15 +121,17 @@ extension FlowViewController : UITableViewDelegate{
     
     
       func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+              
+              
+              /*
+               let storyboard = UIStoryboard(name: "CompanyFlowViewController", bundle: nil)
+               let vc = storyboard.instantiateInitialViewController()!
+               self.present(vc, animated: true, completion: nil)
+               */
+              // performSegue(withIdentifier: "showRecentAnnonce", sender: self)
+              // your code ...
+              print (indexPath)
           
-          /*
-          let storyboard = UIStoryboard(name: "CompanyFlowViewController", bundle: nil)
-          let vc = storyboard.instantiateInitialViewController()!
-          self.present(vc, animated: true, completion: nil)
-           */
-         // performSegue(withIdentifier: "showRecentAnnonce", sender: self)
-        // your code ...
-        print (indexPath)
          
     }
 
@@ -171,14 +186,19 @@ extension FlowViewController : UITableViewDataSource{
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let navigate = UIContextualAction(style: .normal, title: "") {
             (action , view , competionHandler) in
-            self.performSegue(withIdentifier: "showRecentAnnonce", sender: self)
-
-            print("delete \(indexPath)")
+            if let vc = self.storyboard?.instantiateViewController(withIdentifier: "CompanyFlowViewController") as? CompanyFlowViewController{
+                vc.list2 = MainList.annonces.filter{annonse in
+                    return (annonse.companyName == MainList.annonces[indexPath.row].companyName)}
+                self.navigationController?.pushViewController(vc, animated: true)}
             competionHandler(true)
         }
+      
+        
         let swipe = UISwipeActionsConfiguration(actions: [navigate])
         return swipe
     }
+
+   
   
     
 }

@@ -722,7 +722,6 @@
                                                     <outlet property="profileFavoritCellBtn" destination="gcZ-ff-QOr" id="L8Y-Rz-SKH"/>
                                                     <outlet property="shareFavoritCellBtn" destination="k8i-3G-M4J" id="4VJ-b5-Sbl"/>
                                                     <outlet property="tableViewFavoritCellBackgrund" destination="hGe-ZU-hP8" id="qLQ-Gg-Gyk"/>
-                                                    <segue destination="Th9-pZ-A7d" kind="show" identifier="showRecentAnnonce2" id="raK-m0-nr6"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -2545,8 +2544,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Sos-bM-NdT"/>
-        <segue reference="raK-m0-nr6"/>
         <segue reference="25l-xf-vIb"/>
         <segue reference="y68-MT-PMy"/>
         <segue reference="eRE-3E-1kN"/>

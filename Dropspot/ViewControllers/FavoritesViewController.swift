@@ -14,7 +14,7 @@ class FavoritesViewController: UIViewController,UITableViewDelegate,UITableViewD
     
     
    
-    let list2 = MainList.annonces.filter{annonse in
+    let favoritList = MainList.annonces.filter{annonse in
         return (annonse.favorite == true)}
     
  
@@ -26,14 +26,28 @@ class FavoritesViewController: UIViewController,UITableViewDelegate,UITableViewD
 
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        list2.count
+        favoritList.count
+    }
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let navigate = UIContextualAction(style: .normal, title: "") {
+            (action , view , competionHandler) in
+            if let vc = self.storyboard?.instantiateViewController(withIdentifier: "CompanyFlowViewController") as? CompanyFlowViewController{
+                vc.list2 = MainList.annonces.filter{annonse in
+                    return (annonse.companyName == self.favoritList[indexPath.row].companyName)}
+                self.navigationController?.pushViewController(vc, animated: true)}
+            competionHandler(true)
+        }
+      
+        
+        let swipe = UISwipeActionsConfiguration(actions: [navigate])
+        return swipe
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         tableView.isPagingEnabled = true
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableCellFavorit", for: indexPath)
         as! tableViewFavoritCell
-        let annonce = self.list2[indexPath.row]
+        let annonce = self.favoritList[indexPath.row]
         cell.tableViewFavoritCellBackgrund.image = UIImage(named: annonce.image)
         cell.commentFavoritCellBtn.setImage(UIImage(named: "commentButton"), for: UIControl.State())
        
@@ -59,6 +73,10 @@ class FavoritesViewController: UIViewController,UITableViewDelegate,UITableViewD
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "CompanyFlowViewController") as? CompanyFlowViewController{
+            vc.list2 = MainList.annonces.filter{annonse in
+                return (annonse.companyName == self.favoritList[indexPath.row].companyName)}
+            self.navigationController?.pushViewController(vc, animated: true)}
      
         //performSegue(withIdentifier: "showRecentAnnonce2", sender: self)
      

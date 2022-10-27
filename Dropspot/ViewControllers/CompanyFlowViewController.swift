@@ -8,6 +8,12 @@
 import UIKit
 
 class CompanyFlowViewController: UIViewController {
+   
+    var list2 : [Annonce]?
+    
+    
+  
+    
     
     @IBOutlet weak var companyTableView: UITableView!
     let annonces = [
@@ -28,6 +34,7 @@ class CompanyFlowViewController: UIViewController {
         super.viewDidLoad()
         companyTableView.delegate = self
         companyTableView.dataSource = self
+      
 
         // Do any additional setup after loading the view.
     }
@@ -69,13 +76,14 @@ extension CompanyFlowViewController: UITableViewDelegate {
 }
 extension CompanyFlowViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return annonces.count
+        
+        return list2?.count ??  1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         tableView.isPagingEnabled = true
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableViewCell", for: indexPath) as! CompanyFlowCell
-        let annonce = self.annonces[indexPath.row]
+        let annonce = list2![indexPath.row]
         
         cell.companyImageViewCell.image = UIImage(named: annonce.image)
         cell.commentBtnCell.setImage(UIImage(named: "commentButton"), for: UIControl.State())
@@ -86,6 +94,18 @@ extension CompanyFlowViewController: UITableViewDataSource{
          
         
         
+    }
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let navigate = UIContextualAction(style: .normal, title: "") {
+            (action , view , competionHandler) in
+            self.navigationController?.popViewController(animated: true)
+           
+            competionHandler(true)
+        }
+      
+        
+        let swipe = UISwipeActionsConfiguration(actions: [navigate])
+        return swipe
     }
     
  
