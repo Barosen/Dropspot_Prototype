@@ -172,13 +172,13 @@
         <!--Company Profile-->
         <scene sceneID="ew8-1f-gvQ">
             <objects>
-                <viewController id="Ulc-mD-XNd" customClass="CompanyProfile" customModule="Dropspot" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="companyProfile" id="Ulc-mD-XNd" customClass="CompanyProfile" customModule="Dropspot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y6U-Ij-K6F">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O8I-xG-ST9">
-                                <rect key="frame" x="0.0" y="91" width="390" height="670"/>
+                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CEG-I1-FxD" userLabel="title">
                                         <rect key="frame" x="0.0" y="40" width="390" height="36"/>
@@ -215,11 +215,11 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bcU-B3-WHm">
-                                                        <rect key="frame" x="0.0" y="87.666666666666686" width="330" height="32.333333333333343"/>
+                                                        <rect key="frame" x="0.0" y="87.666666666666686" width="330" height="18"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stockholm. Kista." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkJ-IC-QCf">
-                                                                <rect key="frame" x="65.666666666666671" y="0.0" width="198.66666666666663" height="32.333333333333336"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                                <rect key="frame" x="105.33333333333334" y="0.0" width="119.33333333333334" height="18"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -289,10 +289,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="zX5-mi-UCf" userLabel="shareAndLike">
-                                        <rect key="frame" x="15" y="570" width="115" height="50"/>
+                                        <rect key="frame" x="15" y="570" width="115" height="143"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZs-qt-Vff">
-                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <rect key="frame" x="0.0" y="46.666666666666629" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="dCu-7V-Ipb"/>
                                                     <constraint firstAttribute="height" constant="50" id="hOG-Jb-TV4"/>
@@ -304,7 +304,7 @@
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRU-za-tTO">
-                                                <rect key="frame" x="65" y="0.0" width="50" height="50"/>
+                                                <rect key="frame" x="65" y="46.666666666666629" width="50" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="3A3-mp-ys7"/>
                                                     <constraint firstAttribute="width" constant="50" id="YxV-LS-9Qc"/>
@@ -349,6 +349,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="c4C-7E-yqK"/>
+                    <connections>
+                        <outlet property="companyAddress" destination="nkJ-IC-QCf" id="9e1-cU-UIo"/>
+                        <outlet property="companyTitle" destination="SoB-LM-hBs" id="W0r-ew-5b0"/>
+                        <outlet property="companyWebsite" destination="RWY-wk-7tp" id="rVj-lF-UpW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sY7-AN-pqK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -458,7 +463,6 @@
                                             <outlet property="favoriteButton" destination="q0y-8y-ep4" id="7F8-jU-dzI"/>
                                             <outlet property="followButton" destination="QLS-mz-bht" id="Kgb-Bt-SPR"/>
                                             <outlet property="shareButton" destination="bMi-qh-5UK" id="BTh-0U-den"/>
-                                            <segue destination="Ulc-mD-XNd" kind="show" id="WmN-Kr-dCe"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

@@ -121,6 +121,10 @@ extension FlowViewController : UITableViewDelegate{
     
     
       func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+          
+          if let vc = self.storyboard?.instantiateViewController(withIdentifier: "companyProfile") as? CompanyProfile{
+              vc.companyName = MainList.annonces[indexPath.row].companyName
+              self.navigationController?.pushViewController(vc, animated: true)}
               
               
               /*
