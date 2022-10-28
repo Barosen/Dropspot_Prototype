@@ -254,6 +254,7 @@ extension FlowViewController : UITableViewDataSource{
                 self.navigationController?.pushViewController(vc, animated: true)}
             competionHandler(true)
         }
+        navigate.backgroundColor = UIColor.systemBlue
 
 
         let swipe = UISwipeActionsConfiguration(actions: [navigate])
@@ -267,7 +268,7 @@ extension FlowViewController : UITableViewDataSource{
                 self.navigationController?.pushViewController(vc, animated: true)}
             competionHandler(true)
         }
-
+        navigate.backgroundColor = UIColor.black
 
         let swipe = UISwipeActionsConfiguration(actions: [navigate])
         return swipe
