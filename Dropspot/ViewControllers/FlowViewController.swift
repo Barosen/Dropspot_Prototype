@@ -238,25 +238,40 @@ struct MainList {
     static var annonces = [
         
         Annonce( title: "flower" ,image: "image.jpg", companyName: "Flower", favorite: true, discounts: true, release: false, event: false, NearBy: true),
+        Annonce( title: "rabat" ,image: "mcRabat", companyName: "McDonalds", favorite: true, discounts: true, release: false, event: false, NearBy: true),
+        Annonce( title: "elektronik" ,image: "media5", companyName: "Mediamarkt", favorite: true, discounts: true, release: false, event: false, NearBy: true),
         Annonce( title: "kläder" ,image: "image1", companyName: "H&M", favorite: false, discounts: true, release: false, event: false, NearBy: true),
         Annonce( title: "Food" ,image: "McDonalds", companyName: "McDonalds", favorite: true, discounts: true, release: false, event: false, NearBy: true),
+        Annonce( title: "kläder" ,image: "lager4", companyName: "Lager157", favorite: true, discounts: true, release: false, event: false, NearBy: true),
+        Annonce( title: "elektronik" ,image: "media4", companyName: "Mediamarkt", favorite: true, discounts: true, release: false, event: false, NearBy: true),
         Annonce( title: "rabat" ,image: "discount", companyName: "McDonalds", favorite: false, discounts: true, release: false, event: false, NearBy: true),
-        Annonce( title: "kläder" ,image: "event1", companyName: "H&M", favorite: true, discounts: true, release: false, event: false, NearBy: true),
         Annonce( title: "kläder" ,image: "sale50%", companyName: "H&M", favorite: false, discounts: true, release: false, event: false, NearBy: true),
-        Annonce( title: "kläder" ,image: "sale50%2", companyName: "H&M", favorite: true, discounts: true, release: false, event: false, NearBy: true),
-        Annonce( title: "rabat" ,image: "discount", companyName: "McDonalds", favorite: false, discounts: true, release: false, event: false, NearBy: true),
-
+        Annonce( title: "kläder" ,image: "lager3", companyName: "Lager157", favorite: true, discounts: true, release: false, event: false, NearBy: true),
         Annonce( title: "event" ,image: "mcEvent", companyName: "McDonalds", favorite: true, discounts: true, release: false, event: false, NearBy: true),
+        Annonce( title: "kläder" ,image: "sale50%2", companyName: "H&M", favorite: true, discounts: true, release: false, event: false, NearBy: true),
+        Annonce( title: "elektronik" ,image: "media2", companyName: "Mediamarkt", favorite: true, discounts: true, release: false, event: false, NearBy: true),
+        Annonce( title: "rabat" ,image: "discount", companyName: "McDonalds", favorite: false, discounts: true, release: false, event: false, NearBy: true),
+        Annonce( title: "kläder" ,image: "lager1", companyName: "Lager157", favorite: false, discounts: true, release: false, event: false, NearBy: true),
+
+
+     
 
         Annonce( title: "rabat" ,image: "mcEvent1", companyName: "McDonalds", favorite: false, discounts: true, release: false, event: false, NearBy: true),
 
-        Annonce( title: "rabat" ,image: "mcRabat", companyName: "McDonalds", favorite: true, discounts: true, release: false, event: false, NearBy: true),
-        Annonce( title: "kläder" ,image: "lager1", companyName: "Lager157", favorite: false, discounts: true, release: false, event: false, NearBy: true),
-
+        
+     
         Annonce( title: "kläder" ,image: "lager2", companyName: "Lager157", favorite: false, discounts: true, release: false, event: false, NearBy: true),
 
-        Annonce( title: "kläder" ,image: "lager3", companyName: "Lager157", favorite: true, discounts: true, release: false, event: false, NearBy: true),
-        Annonce( title: "kläder" ,image: "lager4", companyName: "Lager157", favorite: true, discounts: true, release: false, event: false, NearBy: true),
+   
+       
+        Annonce( title: "elektronik" ,image: "media1", companyName: "Mediamarkt", favorite: true, discounts: true, release: false, event: false, NearBy: true),
+        Annonce( title: "kläder" ,image: "event1", companyName: "H&M", favorite: true, discounts: true, release: false, event: false, NearBy: true),
+
+     
+    
+
+       
+
 
     ]
     
