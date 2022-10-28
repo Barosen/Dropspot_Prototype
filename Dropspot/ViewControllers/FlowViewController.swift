@@ -189,7 +189,7 @@ extension FlowViewController : UITableViewDataSource{
             
          } else {
              
-             let annonce = FavoritList.annonces[indexPath.row]
+             let annonce = FollowingList.annonces[indexPath.row]
              let image = UIImage(named: "favoriteOn")
              let image2 = UIImage(named: "favorite5")
              
@@ -229,7 +229,7 @@ extension FlowViewController : UITableViewDataSource{
         if (valueToCheck == 0){
             return MainList.annonces.count
         } else {
-            return FavoritList.annonces.count
+            return FollowingList.annonces.count
         }
         
     }
@@ -316,7 +316,7 @@ struct MainList {
     ]
     
 }
-struct FavoritList{
+struct FollowingList{
     static var annonces = [
         
        
