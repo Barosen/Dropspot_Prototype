@@ -193,6 +193,7 @@
 			children = (
 				139D822C28CF6810009F264D /* FlowViewController.swift */,
 				A91F0FF428F873B900070CD2 /* FlowOptionsViewController.swift */,
+				49EA311C29080D27009AD9A8 /* FlowCommentsViewController.swift */,
 				A96C19E028CF83D500B93DD3 /* FavoritesViewController.swift */,
 				A96C19E228CF83EF00B93DD3 /* SearchViewController.swift */,
 				A96C19E428CF83FA00B93DD3 /* ProfileViewController.swift */,
@@ -210,7 +211,6 @@
 				418D1E582901336700C158E3 /* AnnoncePreview.swift */,
 				A903DDBC290A6B4800B75B47 /* PaymentViewController.swift */,
 				4132D1CD290696E7009F19D4 /* CompanyProfile.swift */,
-				49EA311C29080D27009AD9A8 /* FlowCommentsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
