@@ -16,6 +16,7 @@ class FlowViewController: UIViewController {
     
     
     
+    
  
     
     var header: StretchyTableViewHeader?
@@ -71,7 +72,9 @@ class FlowViewController: UIViewController {
             itemleft = UIBarButtonItem(customView: btnProfile)
             valueToCheck = 0
             animateFollowOrForYouPress()
+            
         }
+        tableView.reloadData()
         print("Working")
     }
     
@@ -147,45 +150,88 @@ extension FlowViewController : UITableViewDelegate{
 extension FlowViewController : UITableViewDataSource{
     
     
+    
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
          tableView.isPagingEnabled = true
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for : indexPath) as! FlowTableViewCell
-         let annonce = MainList.annonces[indexPath.row]
-         let image = UIImage(named: "favoriteOn")
-         let image2 = UIImage(named: "favorite5")
+         if (valueToCheck == 0){
+             
+             let annonce = MainList.annonces[indexPath.row]
+             let image = UIImage(named: "favoriteOn")
+             let image2 = UIImage(named: "favorite5")
+             
+             cell.favoriteButton.tag = indexPath.row
          
-         cell.favoriteButton.tag = indexPath.row
-     
 
-        cell.companyImageView.image = UIImage(named: annonce.image)
-     
-        //cell.commentButton.setImage(UIImage(named: "commentButton"), for: UIControl.State())
-         if (annonce.favorite){
-             
-            cell.favoriteButton.setImage(image, for: UIControl.State.normal)
-             //cell.favoriteButton.imageEdgeInsets = UIEdgeInsets(top: 30, left: 30, bottom: 30, right: 30)
+            cell.companyImageView.image = UIImage(named: annonce.image)
+         
+            //cell.commentButton.setImage(UIImage(named: "commentButton"), for: UIControl.State())
+             if (annonce.favorite){
+                 
+                cell.favoriteButton.setImage(image, for: UIControl.State.normal)
+                 //cell.favoriteButton.imageEdgeInsets = UIEdgeInsets(top: 30, left: 30, bottom: 30, right: 30)
 
-            // cell.favoriteButton.contentMode = UIView.ContentMode.center
+                // cell.favoriteButton.contentMode = UIView.ContentMode.center
+                 
+             } else {
+                 cell.favoriteButton.setImage(image2, for: UIControl.State.normal)
+                // cell.favoriteButton.contentMode = UIView.ContentMode.center
+             }
              
+            //cell.favoriteButton.setImage(UIImage(named: "favoriteButton"), for: UIControl.State())
+            //cell.shareButton.setImage(UIImage(named: "shareButton"), for: UIControl.State())
+            //cell.followButton.setImage(UIImage(named: "followButton"), for: UIControl.State())
+            
+            
+          
+            
+            return cell
+            
          } else {
-             cell.favoriteButton.setImage(image2, for: UIControl.State.normal)
-            // cell.favoriteButton.contentMode = UIView.ContentMode.center
+             
+             let annonce = FavoritList.annonces[indexPath.row]
+             let image = UIImage(named: "favoriteOn")
+             let image2 = UIImage(named: "favorite5")
+             
+             cell.favoriteButton.tag = indexPath.row
+         
+
+            cell.companyImageView.image = UIImage(named: annonce.image)
+         
+            //cell.commentButton.setImage(UIImage(named: "commentButton"), for: UIControl.State())
+             if (annonce.favorite){
+                 
+                cell.favoriteButton.setImage(image, for: UIControl.State.normal)
+                 //cell.favoriteButton.imageEdgeInsets = UIEdgeInsets(top: 30, left: 30, bottom: 30, right: 30)
+
+                // cell.favoriteButton.contentMode = UIView.ContentMode.center
+                 
+             } else {
+                 cell.favoriteButton.setImage(image2, for: UIControl.State.normal)
+                // cell.favoriteButton.contentMode = UIView.ContentMode.center
+             }
+             
+            //cell.favoriteButton.setImage(UIImage(named: "favoriteButton"), for: UIControl.State())
+            //cell.shareButton.setImage(UIImage(named: "shareButton"), for: UIControl.State())
+            //cell.followButton.setImage(UIImage(named: "followButton"), for: UIControl.State())
+            
+            
+          
+            
+            return cell
+             
          }
          
-        //cell.favoriteButton.setImage(UIImage(named: "favoriteButton"), for: UIControl.State())
-        //cell.shareButton.setImage(UIImage(named: "shareButton"), for: UIControl.State())
-        //cell.followButton.setImage(UIImage(named: "followButton"), for: UIControl.State())
-        
-        
-      
-        
-        return cell
-        
     }
   
     
     func tableView(_ tableView : UITableView, numberOfRowsInSection section: Int) -> Int {
-        return MainList.annonces.count
+        if (valueToCheck == 0){
+            return MainList.annonces.count
+        } else {
+            return FavoritList.annonces.count
+        }
+        
     }
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let navigate = UIContextualAction(style: .normal, title: "") {
@@ -252,14 +298,31 @@ struct MainList {
         Annonce( title: "elektronik" ,image: "media2", companyName: "Mediamarkt", favorite: true, discounts: true, release: false, event: false, NearBy: true),
         Annonce( title: "rabat" ,image: "discount", companyName: "McDonalds", favorite: false, discounts: true, release: false, event: false, NearBy: true),
         Annonce( title: "kläder" ,image: "lager1", companyName: "Lager157", favorite: false, discounts: true, release: false, event: false, NearBy: true),
-
-
-     
-
         Annonce( title: "rabat" ,image: "mcEvent1", companyName: "McDonalds", favorite: false, discounts: true, release: false, event: false, NearBy: true),
 
-        
+        Annonce( title: "kläder" ,image: "lager2", companyName: "Lager157", favorite: false, discounts: true, release: false, event: false, NearBy: true),
+
+   
+       
+        Annonce( title: "elektronik" ,image: "media1", companyName: "Mediamarkt", favorite: true, discounts: true, release: false, event: false, NearBy: true),
+        Annonce( title: "kläder" ,image: "event1", companyName: "H&M", favorite: true, discounts: true, release: false, event: false, NearBy: true),
+
      
+    
+
+       
+
+
+    ]
+    
+}
+struct FavoritList{
+    static var annonces = [
+        
+       
+        Annonce( title: "rabat" ,image: "mcRabat", companyName: "McDonalds", favorite: true, discounts: true, release: false, event: false, NearBy: true),
+       
+
         Annonce( title: "kläder" ,image: "lager2", companyName: "Lager157", favorite: false, discounts: true, release: false, event: false, NearBy: true),
 
    
