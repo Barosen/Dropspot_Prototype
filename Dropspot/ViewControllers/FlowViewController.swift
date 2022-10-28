@@ -201,6 +201,19 @@ extension FlowViewController : UITableViewDataSource{
         let swipe = UISwipeActionsConfiguration(actions: [navigate])
         return swipe
     }
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let navigate = UIContextualAction(style: .normal, title: "") {
+            (action , view , competionHandler) in
+            if let vc = self.storyboard?.instantiateViewController(withIdentifier: "companyProfile") as? CompanyProfile{
+                vc.companyName = MainList.annonces[indexPath.row].companyName
+                self.navigationController?.pushViewController(vc, animated: true)}
+            competionHandler(true)
+        }
+      
+        
+        let swipe = UISwipeActionsConfiguration(actions: [navigate])
+        return swipe
+    }
 
    
   
