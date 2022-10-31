@@ -144,11 +144,11 @@ class FlowViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
         
         cell.favoriteButton.tag = indexPath.row
-        //Toggle fav with tag
-        cell.favoriteButton.addTarget(self, action:#selector(setFav(_:)), for: .touchUpInside)
+        
         
         if (valueToCheck == 0){
-
+            //Toggle fav with tag
+            cell.favoriteButton.addTarget(self, action:#selector(setFav(_:)), for: .touchUpInside)
             let annonce = MainList.annonces[indexPath.row]
             let image = UIImage(named: "favoriteOn")
             let image2 = UIImage(named: "favorite5")
@@ -183,7 +183,8 @@ class FlowViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
            return cell
 
         } else {
-
+            //Toggle fav following with tag
+            cell.favoriteButton.addTarget(self, action:#selector(setFollowingFav(_:)), for: .touchUpInside)
             let annonce = FollowingList.annonces[indexPath.row]
             let image = UIImage(named: "favoriteOn")
             let image2 = UIImage(named: "favorite5")
@@ -230,6 +231,14 @@ class FlowViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
          
        
    }
+    
+    @objc func setFollowingFav(_ sender:UIButton){
+        if(FollowingList.annonces[sender.tag].favorite==false){
+            FollowingList.annonces[sender.tag].favorite=true
+        }else{FollowingList.annonces[sender.tag].favorite=false}
+        tableView.reloadData()
+        
+    }
 
 
    func tableView(_ tableView : UITableView, numberOfRowsInSection section: Int) -> Int {
