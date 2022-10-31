@@ -233,6 +233,7 @@ class FlowViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
    }
     
     @objc func setFollowingFav(_ sender:UIButton){
+        tableView.reloadData()
         if(FollowingList.annonces[sender.tag].favorite==false){
             FollowingList.annonces[sender.tag].favorite=true
         }else{FollowingList.annonces[sender.tag].favorite=false}
