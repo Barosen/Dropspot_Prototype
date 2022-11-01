@@ -18,9 +18,6 @@ class ProfileViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func btnBusinessCrt(_ sender: Any) {
-        self.performSegue(withIdentifier: "nextScreen", sender: self)
-    }
     
     /*
     // MARK: - Navigation
