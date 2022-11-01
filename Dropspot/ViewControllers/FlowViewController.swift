@@ -149,6 +149,7 @@ class FlowViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         if (valueToCheck == 0){
             //Toggle fav with tag
             cell.favoriteButton.addTarget(self, action:#selector(setFav(_:)), for: .touchUpInside)
+            cell.shareButton.addTarget(self, action: #selector(shareBtn(_:)), for: .touchUpInside)
             let annonce = MainList.annonces[indexPath.row]
             let image = UIImage(named: "favoriteOn")
             let image2 = UIImage(named: "favorite5")
@@ -185,6 +186,7 @@ class FlowViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         } else {
             //Toggle fav following with tag
             cell.favoriteButton.addTarget(self, action:#selector(setFollowingFav(_:)), for: .touchUpInside)
+            cell.shareButton.addTarget(self, action: #selector(shareBtn(_:)), for: .touchUpInside)
             let annonce = FollowingList.annonces[indexPath.row]
             let image = UIImage(named: "favoriteOn")
             let image2 = UIImage(named: "favorite5")
@@ -220,6 +222,27 @@ class FlowViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
 
    }
+    
+    @objc func shareBtn(_ sender:UIButton){
+        
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "shareView") as?FlowShareViewController else{return}
+        if let sheet = vc.sheetPresentationController{
+            sheet.prefersGrabberVisible = true
+            sheet.detents = [.medium()]
+
+        }
+
+        //vc.boxTry=testBox
+        present(vc,animated: true)
+        
+        
+        
+        
+    }
+    
+    
+    
+    
    //Toggle fav!
      @objc func setFav(_ sender:UIButton){
          if(MainList.annonces[sender.tag].favorite==false){
@@ -233,7 +256,6 @@ class FlowViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
    }
     
     @objc func setFollowingFav(_ sender:UIButton){
-        tableView.reloadData()
         if(FollowingList.annonces[sender.tag].favorite==false){
             FollowingList.annonces[sender.tag].favorite=true
         }else{FollowingList.annonces[sender.tag].favorite=false}
