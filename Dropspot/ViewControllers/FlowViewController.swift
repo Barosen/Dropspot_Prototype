@@ -118,8 +118,47 @@ class FlowViewController: UIViewController {
             })
         })
     }
+    @objc func setFav(_ sender:UIButton){
+        
+        if (MainList.annonces[sender.tag].favorite==true){
+            MainList.annonces[sender.tag].favorite=false
+            
+        }else{
+            MainList.annonces[sender.tag].favorite=true
+            
+        }
+        tableView.reloadData()
+        
+    }
+    
+    @objc func setFollFav(_ sender:UIButton){
+        
+        if(FollowingList.annonces[sender.tag].favorite==true){
+            FollowingList.annonces[sender.tag].favorite=false
+        }else{
+            FollowingList.annonces[sender.tag].favorite=true
+        }
+        tableView.reloadData()
+    }
+    
+    @objc func shareBtn(_ sender:UIButton){
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "FlowShare") as?FlowShareViewController else{return}
+        if let sheet = vc.sheetPresentationController{
+            sheet.prefersGrabberVisible = true
+            sheet.detents = [.medium()]
+
+        }
+
+        
+        present(vc,animated: true)
+
+        
+    }
 
 }
+
+
+
 
 class FlowTableViewCell: UITableViewCell{
     @IBOutlet weak var shareButton: UIButton!
@@ -173,7 +212,8 @@ extension FlowViewController : UITableViewDataSource{
              let image2 = UIImage(named: "favorite5")
 
              cell.favoriteButton.tag = indexPath.row
-
+             cell.shareButton.addTarget(self, action: #selector(shareBtn(_:)), for: .touchUpInside)
+             cell.favoriteButton.addTarget(self, action: #selector(setFav(_:)), for: .touchUpInside)
 
             cell.companyImageView.image = UIImage(named: annonce.image)
 
@@ -206,8 +246,8 @@ extension FlowViewController : UITableViewDataSource{
              let image2 = UIImage(named: "favorite5")
 
              cell.favoriteButton.tag = indexPath.row
-
-
+             cell.shareButton.addTarget(self, action: #selector(shareBtn(_:)), for: .touchUpInside)
+             cell.favoriteButton.addTarget(self, action: #selector(setFollFav(_:)), for: .touchUpInside)
             cell.companyImageView.image = UIImage(named: annonce.image)
 
             //cell.commentButton.setImage(UIImage(named: "commentButton"), for: UIControl.State())
