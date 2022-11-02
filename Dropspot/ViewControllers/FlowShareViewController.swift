@@ -18,6 +18,9 @@ class FlowShareViewController:UIViewController{
     
     
     
+    @IBAction func closeSlide(_ sender: Any) {
+        dismiss(animated: true)
+    }
     
     
 }

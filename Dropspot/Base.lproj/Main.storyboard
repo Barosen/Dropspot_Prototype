@@ -723,6 +723,11 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K68-SD-Lkv">
                                                 <rect key="frame" x="227" y="0.0" width="134" height="34.333333333333336"/>
@@ -746,6 +751,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Close" cornerStyle="capsule"/>
                                         <connections>
+                                            <action selector="closeSlide:" destination="KrF-tE-y6u" eventType="touchUpInside" id="CZx-oo-LHv"/>
                                             <action selector="savePressed:" destination="5Yq-nR-loU" eventType="touchUpInside" id="1nV-bY-oE1"/>
                                         </connections>
                                     </button>
@@ -787,6 +793,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Close" cornerStyle="capsule"/>
                                 <connections>
+                                    <action selector="closeSlide:" destination="dLq-e2-0NH" eventType="touchUpInside" id="yYa-a2-a95"/>
                                     <action selector="savePressed:" destination="5Yq-nR-loU" eventType="touchUpInside" id="T0O-y1-yN2"/>
                                 </connections>
                             </button>
@@ -1126,8 +1133,7 @@
                                             <color key="baseBackgroundColor" red="0.96170336010000002" green="0.44995675019999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="btnBusinessCrt:" destination="yXX-Et-m5D" eventType="touchUpInside" id="9o4-pR-LmT"/>
-                                            <segue destination="OYM-yc-KrU" kind="show" id="2gq-dE-3jJ"/>
+                                            <segue destination="OYM-yc-KrU" kind="show" id="8CT-bF-CRC"/>
                                         </connections>
                                     </button>
                                 </subviews>

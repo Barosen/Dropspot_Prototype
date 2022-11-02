@@ -71,5 +71,8 @@ class FlowCommentsViewController: UIViewController,UITableViewDataSource,UITable
         
     }
     
+    @IBAction func closeSlide(_ sender: Any) {
+        dismiss(animated: true)
+    }
     
 }
