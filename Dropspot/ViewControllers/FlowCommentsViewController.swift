@@ -37,6 +37,12 @@ class FlowCommentsViewController: UIViewController,UITableViewDataSource,UITable
     @IBOutlet weak var textInput: UITextField!
     
     @IBOutlet weak var commentTable: UITableView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //return comments.count
         return boxTry!.count
@@ -57,9 +63,7 @@ class FlowCommentsViewController: UIViewController,UITableViewDataSource,UITable
     }
     
     
-    override func viewDidLoad() {
-        
-    }
+    
     
     
     @IBAction func postBtn(_ sender: Any) {

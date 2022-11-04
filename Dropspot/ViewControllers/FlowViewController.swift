@@ -40,7 +40,6 @@ class FlowViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         tableView.delegate = self
         tableView.dataSource = self
 
@@ -294,7 +293,7 @@ extension FlowViewController : UITableViewDataSource{
                 self.navigationController?.pushViewController(vc, animated: true)}
             competionHandler(true)
         }
-        navigate.backgroundColor = UIColor.systemBlue
+        navigate.backgroundColor = UIColor.black
 
 
         let swipe = UISwipeActionsConfiguration(actions: [navigate])
