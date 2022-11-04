@@ -785,67 +785,72 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3H-9n-TVf">
-                                <rect key="frame" x="20" y="757" width="350" height="34.333333333333371"/>
-                                <color key="backgroundColor" red="0.070922129279999996" green="0.27468039770000002" blue="0.1236800997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="350" id="6hR-9G-gfo"/>
-                                    <constraint firstAttribute="height" constant="34.329999999999998" id="S7k-zk-7Wk"/>
-                                </constraints>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Close" cornerStyle="capsule"/>
-                                <connections>
-                                    <action selector="closeSlide:" destination="dLq-e2-0NH" eventType="touchUpInside" id="yYa-a2-a95"/>
-                                    <action selector="savePressed:" destination="5Yq-nR-loU" eventType="touchUpInside" id="T0O-y1-yN2"/>
-                                </connections>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Zyf-DS-hbt">
-                                <rect key="frame" x="314" y="448" width="51" height="279"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="F8d-wp-U56">
+                                <rect key="frame" x="20" y="511.66666666666674" width="350" height="278.33333333333326"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fl-X3-nAC">
-                                        <rect key="frame" x="0.0" y="0.0" width="51" height="51"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Zyf-DS-hbt">
+                                        <rect key="frame" x="299" y="0.0" width="51" height="234"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fl-X3-nAC">
+                                                <rect key="frame" x="0.0" y="0.0" width="51" height="51"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="51" id="Fmp-Wa-Bp9"/>
+                                                    <constraint firstAttribute="width" constant="51" id="fFp-SX-098"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="3225179_app_logo_media_popular_social_icon"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXQ-4q-K40">
+                                                <rect key="frame" x="0.0" y="60.999999999999943" width="51" height="51"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="51" id="6b1-RU-BmV"/>
+                                                    <constraint firstAttribute="height" constant="51" id="Ixi-Qb-B55"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="3225183_app_logo_media_popular_social_icon"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMv-k2-c67">
+                                                <rect key="frame" x="0.0" y="121.99999999999994" width="51" height="51"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="51" id="TD3-BG-hNA"/>
+                                                    <constraint firstAttribute="height" constant="51" id="htn-6z-Gns"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="3225191_app_instagram_logo_media_popular_icon"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Esd-6e-cCg">
+                                                <rect key="frame" x="0.0" y="182.99999999999994" width="51" height="51"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="51" id="Axp-mr-Pjh"/>
+                                                    <constraint firstAttribute="height" constant="51" id="NkU-q7-p2h"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain">
+                                                    <backgroundConfiguration key="background" image="5296499_fb_facebook_facebook logo_icon"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3H-9n-TVf">
+                                        <rect key="frame" x="0.0" y="243.99999999999997" width="350" height="34.333333333333343"/>
+                                        <color key="backgroundColor" red="0.070922129279999996" green="0.27468039770000002" blue="0.1236800997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="51" id="Fmp-Wa-Bp9"/>
-                                            <constraint firstAttribute="width" constant="51" id="fFp-SX-098"/>
+                                            <constraint firstAttribute="width" constant="350" id="6hR-9G-gfo"/>
+                                            <constraint firstAttribute="height" constant="34.329999999999998" id="S7k-zk-7Wk"/>
                                         </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <backgroundConfiguration key="background" image="3225179_app_logo_media_popular_social_icon"/>
-                                        </buttonConfiguration>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TXQ-4q-K40">
-                                        <rect key="frame" x="0.0" y="76" width="51" height="51"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="51" id="6b1-RU-BmV"/>
-                                            <constraint firstAttribute="height" constant="51" id="Ixi-Qb-B55"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <backgroundConfiguration key="background" image="3225183_app_logo_media_popular_social_icon"/>
-                                        </buttonConfiguration>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMv-k2-c67">
-                                        <rect key="frame" x="0.0" y="152" width="51" height="51"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="51" id="TD3-BG-hNA"/>
-                                            <constraint firstAttribute="height" constant="51" id="htn-6z-Gns"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <backgroundConfiguration key="background" image="3225191_app_instagram_logo_media_popular_icon"/>
-                                        </buttonConfiguration>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Esd-6e-cCg">
-                                        <rect key="frame" x="0.0" y="228" width="51" height="51"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="51" id="Axp-mr-Pjh"/>
-                                            <constraint firstAttribute="height" constant="51" id="NkU-q7-p2h"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain">
-                                            <backgroundConfiguration key="background" image="5296499_fb_facebook_facebook logo_icon"/>
-                                        </buttonConfiguration>
+                                        <buttonConfiguration key="configuration" style="plain" title="Close" cornerStyle="capsule"/>
+                                        <connections>
+                                            <action selector="closeSlide:" destination="dLq-e2-0NH" eventType="touchUpInside" id="yYa-a2-a95"/>
+                                            <action selector="savePressed:" destination="5Yq-nR-loU" eventType="touchUpInside" id="T0O-y1-yN2"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -853,10 +858,8 @@
                         <viewLayoutGuide key="safeArea" id="NKC-Am-9I6"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="NKC-Am-9I6" firstAttribute="bottom" secondItem="e3H-9n-TVf" secondAttribute="bottom" constant="18.670000000000002" id="AOk-dL-CVa"/>
-                            <constraint firstItem="NKC-Am-9I6" firstAttribute="trailing" secondItem="Zyf-DS-hbt" secondAttribute="trailing" constant="25" id="JKO-dJ-YbQ"/>
-                            <constraint firstItem="e3H-9n-TVf" firstAttribute="centerX" secondItem="OxI-Th-WXx" secondAttribute="centerX" id="aya-zU-eUy"/>
-                            <constraint firstItem="e3H-9n-TVf" firstAttribute="top" secondItem="Zyf-DS-hbt" secondAttribute="bottom" constant="30" id="vYF-kG-t2C"/>
+                            <constraint firstItem="F8d-wp-U56" firstAttribute="centerX" secondItem="OxI-Th-WXx" secondAttribute="centerX" id="2az-D9-TXC"/>
+                            <constraint firstItem="NKC-Am-9I6" firstAttribute="bottom" secondItem="F8d-wp-U56" secondAttribute="bottom" constant="20" id="m9l-le-Cv6"/>
                         </constraints>
                     </view>
                 </viewController>
