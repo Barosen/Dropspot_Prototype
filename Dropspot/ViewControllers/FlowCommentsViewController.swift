@@ -75,4 +75,22 @@ class FlowCommentsViewController: UIViewController,UITableViewDataSource,UITable
         dismiss(animated: true)
     }
     
+    
+    @IBAction func done(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    
+    
 }
+
+extension UIViewController {
+        func hideKeyboardWhenTappedAround() {
+            let tap = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+            tap.cancelsTouchesInView = false
+            view.addGestureRecognizer(tap)
+        }
+        
+        @objc func dismissKeyboard() {
+            view.endEditing(true)
+        }
+    }
