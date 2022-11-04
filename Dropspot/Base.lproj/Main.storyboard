@@ -2700,6 +2700,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="continue" textContentType="organization"/>
                                 <connections>
+                                    <action selector="doneEy:" destination="ukc-w0-JAP" eventType="primaryActionTriggered" id="EMc-7h-rfD"/>
                                     <action selector="textFieldEditingDidChange:" destination="ukc-w0-JAP" eventType="editingChanged" id="Q7V-Xs-SNA"/>
                                 </connections>
                             </textField>

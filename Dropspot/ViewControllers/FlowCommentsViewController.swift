@@ -82,7 +82,7 @@ class FlowCommentsViewController: UIViewController,UITableViewDataSource,UITable
     
     
 }
-
+//Create a method that when tapped outside of keyboard closes the keyboard, can be used on different views
 extension UIViewController {
         func hideKeyboardWhenTappedAround() {
             let tap = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
