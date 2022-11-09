@@ -158,7 +158,7 @@ class FlowViewController: UIViewController {
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "commentsflowvc") as?FlowCommentsViewController else{return}
         if let sheet = vc.sheetPresentationController{
             sheet.prefersGrabberVisible = true
-            sheet.detents = [.medium(),.large()]
+            sheet.detents = [.medium()]
 
         }
 
@@ -244,7 +244,7 @@ extension FlowViewController : UITableViewDataSource{
          tableView.isPagingEnabled = true
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for : indexPath) as! FlowTableViewCell
          if (valueToCheck == 0){
-
+             
              let annonce = MainList.annonces[indexPath.row]
              let image = UIImage(named: "favoriteOn")
              let image2 = UIImage(named: "favorite5")
@@ -280,7 +280,7 @@ extension FlowViewController : UITableViewDataSource{
             return cell
 
          } else {
-
+             
              let annonce = FollowingList.annonces[indexPath.row]
              let image = UIImage(named: "favoriteOn")
              let image2 = UIImage(named: "favorite5")

@@ -40,7 +40,7 @@ class FlowCommentsViewController: UIViewController,UITableViewDataSource,UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        commentTable.reloadData()
+        
         self.hideKeyboardWhenTappedAround()
     }
     
@@ -78,7 +78,9 @@ class FlowCommentsViewController: UIViewController,UITableViewDataSource,UITable
             self.present(alert,animated: true,completion: nil)
             
         }else{
-            boxTry!.insert(comment(title: textInput.text ?? "Opsi", image: "cat"), at: 0)}
+            boxTry!.insert(comment(title: textInput.text ?? "Opsi", image: "cat"), at: 0)
+            textInput.text=""
+        }
         commentTable.reloadData()
         
     }
