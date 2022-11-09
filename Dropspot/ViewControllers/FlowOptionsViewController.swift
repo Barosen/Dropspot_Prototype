@@ -55,12 +55,14 @@ class FlowOptionsViewController: UIViewController {
              notFollowingButton.clipsToBounds = true
              notFollowingButton.layer.cornerRadius = 10
              notFollowingButton.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMaxXMaxYCorner]
-             notFollowingButton.backgroundColor = .white
+             notFollowingButton.backgroundColor = UIColor.darkGray
+             notFollowingButton.tintColor = .black
 
              FollowingButton.clipsToBounds = true
              FollowingButton.layer.cornerRadius = 10
              FollowingButton.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
-             FollowingButton.backgroundColor = UIColor.label.withAlphaComponent(0.7)
+             //FollowingButton.backgroundColor = UIColor.label.withAlphaComponent(0.7)
+             FollowingButton.backgroundColor = UIColor.darkGray
              FollowingButton.tintColor = .white
              
              saveButton.layer.cornerRadius = 5
@@ -132,16 +134,18 @@ class FlowOptionsViewController: UIViewController {
 
          }
          @IBAction func followingButtonPress(_ sender: Any) {
-             notFollowingButton.backgroundColor = .white
-             FollowingButton.backgroundColor = UIColor.label.withAlphaComponent(0.7)
-             FollowingButton.tintColor = .white
+             notFollowingButton.backgroundColor = .darkGray
+             //FollowingButton.backgroundColor = UIColor.label.withAlphaComponent(0.7)
+             FollowingButton.backgroundColor = UIColor.white
+             FollowingButton.tintColor = .black
              notFollowingButton.tintColor = .label
          }
          @IBAction func notFollowingButtonPress(_ sender: Any) {
-             FollowingButton.backgroundColor = .white
-             notFollowingButton.backgroundColor = UIColor.label.withAlphaComponent(0.7)
+             FollowingButton.backgroundColor = .darkGray
+             //notFollowingButton.backgroundColor = UIColor.label.withAlphaComponent(0.7)
+             notFollowingButton.backgroundColor = UIColor.white
              FollowingButton.tintColor = .label
-             notFollowingButton.tintColor = .white
+             notFollowingButton.tintColor = .black
          }
 
 

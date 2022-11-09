@@ -14,7 +14,7 @@ class FavoritesViewController: UIViewController,UITableViewDelegate,UITableViewD
     
     
    
-    let favoritList = MainList.annonces.filter{annonse in
+    var favoritList = MainList.annonces.filter{annonse in
         return (annonse.favorite == true)}
     
  
@@ -90,7 +90,8 @@ class FavoritesViewController: UIViewController,UITableViewDelegate,UITableViewD
         super.viewDidLoad()
         tableViewFavorit.delegate = self
         tableViewFavorit.dataSource = self
-
+        tableViewFavorit.reloadData()
+        print(favoritList)
         // Do any additional setup after loading the view.
     }
     

@@ -32,14 +32,15 @@ class FlowCommentsViewController: UIViewController,UITableViewDataSource,UITable
     
     var boxTry : [comment]?
     
-    var comments:[comment] = [comment(title: "Cool App", image: "person.circle"),comment(title: "Noice App", image:"person.circle")]
-    
+    /*var comments:[comment] = [comment(title: "Cool App", image: "person.circle"),comment(title: "Noice App", image:"person.circle")]
+    */
     @IBOutlet weak var textInput: UITextField!
     
     @IBOutlet weak var commentTable: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        commentTable.reloadData()
         self.hideKeyboardWhenTappedAround()
     }
     
@@ -56,8 +57,8 @@ class FlowCommentsViewController: UIViewController,UITableViewDataSource,UITable
         
         
         cell.commentText.text=boxTry?[indexPath.row].title
-        cell.commentImage.image=UIImage(systemName: (boxTry?[indexPath.row].image)!)
-        
+        //cell.commentImage.image=UIImage(systemName: (boxTry?[indexPath.row].image)!)
+        cell.commentImage.image=UIImage(named: (boxTry?[indexPath.row].image)!)
         
         return cell
     }
@@ -68,9 +69,16 @@ class FlowCommentsViewController: UIViewController,UITableViewDataSource,UITable
     
     @IBAction func postBtn(_ sender: Any) {
         
-        boxTry!.insert(comment(title: textInput.text ?? "Opsi", image: "person.circle"), at: 0)
-        print(comments)
-        textInput.text = ""
+        
+        //print(comments)
+        
+        if(textInput.text!.isEmpty){
+            let alert = UIAlertController(title: "Try Again!", message: "No empty comments pls!", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Close", style: UIAlertAction.Style.default,handler: nil))
+            self.present(alert,animated: true,completion: nil)
+            
+        }else{
+            boxTry!.insert(comment(title: textInput.text ?? "Opsi", image: "cat"), at: 0)}
         commentTable.reloadData()
         
     }
