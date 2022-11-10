@@ -18,6 +18,7 @@ class LoginOrSingnViewController: UIViewController {
         LoginDesignBt.layer.cornerRadius = 20
         NewUserDesignBt.layer.cornerRadius = 20
         startup()
+        self.hideKeyboardWhenTappedAround()
     }
     @IBAction func btnLogin(_ sender: Any) {
         self.performSegue(withIdentifier: "nextTabBar", sender: self)
@@ -27,6 +28,20 @@ class LoginOrSingnViewController: UIViewController {
     @IBAction func btnRegister(_ sender: Any) {
         self.performSegue(withIdentifier: "registerView", sender: self)
     }
+    
+    
+    @IBAction func keyDoneMail(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    
+    
+    @IBAction func keyDonePass(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    
+    
+    
+    
     
 }
 func startup(){

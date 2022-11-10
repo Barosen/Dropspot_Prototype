@@ -200,7 +200,10 @@ class FlowTableViewCell: UITableViewCell{
     @IBOutlet weak var followButton: UIButton!
     @IBOutlet weak var companyImageView: UIImageView!
 
-    
+    func viewDidLoad(){
+        
+        
+    }
    /* override func layoutSubviews() {
         super.layoutSubviews()
         contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 0))
@@ -243,6 +246,27 @@ extension FlowViewController : UITableViewDataSource{
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
          tableView.isPagingEnabled = true
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for : indexPath) as! FlowTableViewCell
+            
+         cell.favoriteButton.layer.shadowColor = UIColor.black.cgColor
+         cell.favoriteButton.layer.shadowOffset = CGSize(width: 5, height: 5)
+         cell.favoriteButton.layer.shadowRadius = 5
+         cell.favoriteButton.layer.shadowOpacity = 1.0
+         
+         cell.shareButton.layer.shadowColor = UIColor.black.cgColor
+         cell.shareButton.layer.shadowOffset = CGSize(width: 5, height: 5)
+         cell.shareButton.layer.shadowRadius = 5
+         cell.shareButton.layer.shadowOpacity = 1.0
+         
+         cell.commentButton.layer.shadowColor = UIColor.black.cgColor
+         cell.commentButton.layer.shadowOffset = CGSize(width: 5, height: 5)
+         cell.commentButton.layer.shadowRadius = 5
+         cell.commentButton.layer.shadowOpacity = 1.0
+         
+         cell.followButton.layer.shadowColor = UIColor.black.cgColor
+         cell.followButton.layer.shadowOffset = CGSize(width: 5, height: 5)
+         cell.followButton.layer.shadowRadius = 5
+         cell.followButton.layer.shadowOpacity = 1.0
+         
          if (valueToCheck == 0){
              
              let annonce = MainList.annonces[indexPath.row]

@@ -13,7 +13,7 @@ class PaymentViewController: UIViewController {
     @IBOutlet var masterButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view.
     }
     
@@ -39,5 +39,24 @@ class PaymentViewController: UIViewController {
         let circle = UIImage(systemName: "circle", withConfiguration: circleConfig)
         visaButton.setImage(circle, for: .normal)
     }
-
+    
+    
+    
+    @IBAction func keyDoneCard(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    
+    @IBAction func keyDoneCardName(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    @IBAction func keyDoneDate(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    
+    
+    @IBAction func keyDoneCvc(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    
+    
 }

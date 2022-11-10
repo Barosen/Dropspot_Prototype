@@ -26,11 +26,14 @@ class PlaceAdsInfoViewController: UIViewController {
         ViewSubjectsDateDesign.layer.cornerRadius = 20
         BtnPayDesign.layer.cornerRadius = 25
         BtnChooseDesign.layer.cornerRadius = 25
-
+        self.hideKeyboardWhenTappedAround()
 
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func keyDone(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
     @IBAction func btnPayPress(_ sender: Any) {
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "paymentvc") as? PaymentViewController else {return}
         if let sheet = vc.sheetPresentationController {
