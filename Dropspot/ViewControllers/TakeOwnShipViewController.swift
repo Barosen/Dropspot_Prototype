@@ -24,7 +24,7 @@ class TakeOwnShipViewController: UIViewController {
     
     
     @IBAction func btnSubmit(_ sender: Any) {
-       
+        self.navigationController?.popToRootViewController(animated: true)
         
         //navigationController?.popViewController(animated: true)
 

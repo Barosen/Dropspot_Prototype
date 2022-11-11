@@ -19,11 +19,33 @@ class CreateAccBusinessViewController: UIViewController {
         
         RegisterBusiBtDesign.layer.cornerRadius = 20
         BusinessImgDesign.layer.cornerRadius = 20
-
+        self.hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func keyDoneOne(_ sender: UITextField) {
+        
+        sender.resignFirstResponder()
+        
+    }
+    
+    @IBAction func keyDoneTwo(_ sender: UITextField) {
+        
+        sender.resignFirstResponder()
+        
+    }
+    
+    
+    @IBAction func keyDoneThree(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    
+    
+    @IBAction func keyDoneFourth(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    
+    
     @IBAction func registerSegue(_ sender: UIButton) {
        
         

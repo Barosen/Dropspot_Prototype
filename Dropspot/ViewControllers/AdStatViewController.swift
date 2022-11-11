@@ -56,7 +56,14 @@ class AdStatViewController:UIViewController,UITableViewDataSource,UITableViewDel
     
     
    
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        adFollowers.text="Followers: "
+        adLikes.text="Likes: "
+        adComments.text="Comments: "
+        adShare.text="Shares: "
+        
+    }
     
     
    
@@ -99,12 +106,6 @@ class AdStatViewController:UIViewController,UITableViewDataSource,UITableViewDel
         adShare.text="Shares: "+item.shares.description
         }
     
-    override func viewDidLoad() {
-        adFollowers.text="Followers: "
-        adLikes.text="Likes: "
-        adComments.text="Comments: "
-        adShare.text="Shares: "
-        
-    }
+    
     
 }

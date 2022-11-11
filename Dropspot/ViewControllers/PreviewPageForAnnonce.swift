@@ -38,7 +38,7 @@ class PreviewPageForAnnoce : UIViewController{
     }
     
     @IBAction func upploadAndClose(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
         
     }
     

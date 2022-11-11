@@ -14,7 +14,7 @@ class CreateAccountViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.hideKeyboardWhenTappedAround()
         btnRegisterDesign.layer.cornerRadius = 25
     }
     
@@ -22,6 +22,12 @@ class CreateAccountViewController: UIViewController {
         self.performSegue(withIdentifier: "nextRegisterBtn", sender: self)
     }
     
+    @IBAction func keyDoneRegMail(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
     
-
+    @IBAction func keyDoneRegPass(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    
 }

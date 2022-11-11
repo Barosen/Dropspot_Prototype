@@ -9,7 +9,7 @@ import UIKit
 
 class FlowViewController: UIViewController {
 
-    var testBox = [comment(title: "Awesome stuff!", image: "person")]
+    
 
     var itemleft = UIBarButtonItem()
     var valueToCheck = 0
@@ -40,7 +40,7 @@ class FlowViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //navigationController?.navigationBar.barTintColor = UIColor.green
         tableView.delegate = self
         tableView.dataSource = self
 
@@ -52,7 +52,8 @@ class FlowViewController: UIViewController {
 
         btnProfile = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 25))
         btnProfile.setTitle("Following", for: .normal)
-        btnProfile.backgroundColor = UIColor.label.withAlphaComponent(0.7)
+        //btnProfile.backgroundColor = UIColor.label.withAlphaComponent(0.7)
+        btnProfile.backgroundColor = UIColor.systemGray
         btnProfile.layer.cornerRadius = 12.5
         btnProfile.layer.masksToBounds = true
         btnProfile.addTarget(self, action: #selector(followOrForYouPress), for: .touchUpInside)
@@ -80,7 +81,7 @@ class FlowViewController: UIViewController {
         print("Working")
     }
 
-    @IBAction func btnCommentsPress(_ sender: Any) {
+  /*  @IBAction func btnCommentsPress(_ sender: Any) {
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "commentsflowvc") as?FlowCommentsViewController else{return}
         if let sheet = vc.sheetPresentationController{
             sheet.prefersGrabberVisible = true
@@ -93,7 +94,7 @@ class FlowViewController: UIViewController {
 
 
 
-    }
+    }*/
 
     @IBAction func barButtonOptionsPress(_ sender: Any) {
         guard let vc = storyboard?.instantiateViewController(withIdentifier: "optionsflowvc") as? FlowOptionsViewController else {return}
@@ -119,7 +120,6 @@ class FlowViewController: UIViewController {
         })
     }
     @objc func setFav(_ sender:UIButton){
-        
         if (MainList.annonces[sender.tag].favorite==true){
             MainList.annonces[sender.tag].favorite=false
             
@@ -128,6 +128,7 @@ class FlowViewController: UIViewController {
             
         }
         tableView.reloadData()
+        print(MainList.annonces[sender.tag].favorite)
         
     }
     
@@ -154,6 +155,38 @@ class FlowViewController: UIViewController {
 
         
     }
+    @objc func commentsBtn(_ sender:UIButton){
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "commentsflowvc") as?FlowCommentsViewController else{return}
+        if let sheet = vc.sheetPresentationController{
+            sheet.prefersGrabberVisible = true
+            sheet.detents = [.medium()]
+
+        }
+
+        vc.boxTry=MainList.annonces[sender.tag].comments
+        present(vc,animated: true)
+        tableView.reloadData()
+        
+        
+        
+    }
+    
+    @objc func commFollBtn(_ sender:UIButton){
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "commentsflowvc") as?FlowCommentsViewController else{return}
+        if let sheet = vc.sheetPresentationController{
+            sheet.prefersGrabberVisible = true
+            sheet.detents = [.medium()]
+
+        }
+
+        vc.boxTry=FollowingList.annonces[sender.tag].comments
+        present(vc,animated: true)
+        tableView.reloadData()
+
+        
+        
+        
+    }
 
 }
 
@@ -168,6 +201,15 @@ class FlowTableViewCell: UITableViewCell{
     @IBOutlet weak var followButton: UIButton!
     @IBOutlet weak var companyImageView: UIImageView!
 
+    func viewDidLoad(){
+        
+        
+    }
+   /* override func layoutSubviews() {
+        super.layoutSubviews()
+        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 0))
+    }*/
+    
 
 }
 
@@ -205,15 +247,38 @@ extension FlowViewController : UITableViewDataSource{
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
          tableView.isPagingEnabled = true
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for : indexPath) as! FlowTableViewCell
+            
+         cell.favoriteButton.layer.shadowColor = UIColor.black.cgColor
+         cell.favoriteButton.layer.shadowOffset = CGSize(width: 5, height: 5)
+         cell.favoriteButton.layer.shadowRadius = 5
+         cell.favoriteButton.layer.shadowOpacity = 1.0
+         
+         cell.shareButton.layer.shadowColor = UIColor.black.cgColor
+         cell.shareButton.layer.shadowOffset = CGSize(width: 5, height: 5)
+         cell.shareButton.layer.shadowRadius = 5
+         cell.shareButton.layer.shadowOpacity = 1.0
+         
+         cell.commentButton.layer.shadowColor = UIColor.black.cgColor
+         cell.commentButton.layer.shadowOffset = CGSize(width: 5, height: 5)
+         cell.commentButton.layer.shadowRadius = 5
+         cell.commentButton.layer.shadowOpacity = 1.0
+         
+         cell.followButton.layer.shadowColor = UIColor.black.cgColor
+         cell.followButton.layer.shadowOffset = CGSize(width: 5, height: 5)
+         cell.followButton.layer.shadowRadius = 5
+         cell.followButton.layer.shadowOpacity = 1.0
+         
          if (valueToCheck == 0){
-
+             
              let annonce = MainList.annonces[indexPath.row]
              let image = UIImage(named: "favoriteOn")
              let image2 = UIImage(named: "favorite5")
 
              cell.favoriteButton.tag = indexPath.row
+             cell.commentButton.tag = indexPath.row
              cell.shareButton.addTarget(self, action: #selector(shareBtn(_:)), for: .touchUpInside)
              cell.favoriteButton.addTarget(self, action: #selector(setFav(_:)), for: .touchUpInside)
+             cell.commentButton.addTarget(self, action: #selector(commentsBtn(_:)), for: .touchUpInside)
 
             cell.companyImageView.image = UIImage(named: annonce.image)
 
@@ -240,14 +305,16 @@ extension FlowViewController : UITableViewDataSource{
             return cell
 
          } else {
-
+             
              let annonce = FollowingList.annonces[indexPath.row]
              let image = UIImage(named: "favoriteOn")
              let image2 = UIImage(named: "favorite5")
 
              cell.favoriteButton.tag = indexPath.row
+             cell.commentButton.tag = indexPath.row
              cell.shareButton.addTarget(self, action: #selector(shareBtn(_:)), for: .touchUpInside)
              cell.favoriteButton.addTarget(self, action: #selector(setFollFav(_:)), for: .touchUpInside)
+             cell.commentButton.addTarget(self, action: #selector(commFollBtn(_:)), for: .touchUpInside)
             cell.companyImageView.image = UIImage(named: annonce.image)
 
             //cell.commentButton.setImage(UIImage(named: "commentButton"), for: UIControl.State())
@@ -294,7 +361,7 @@ extension FlowViewController : UITableViewDataSource{
                 self.navigationController?.pushViewController(vc, animated: true)}
             competionHandler(true)
         }
-        navigate.backgroundColor = UIColor.systemBlue
+        navigate.backgroundColor = UIColor.black
 
 
         let swipe = UISwipeActionsConfiguration(actions: [navigate])
@@ -328,6 +395,7 @@ struct Annonce : Identifiable{
     var release : Bool
     var event : Bool
     var NearBy : Bool
+    var comments : [comment]
 
 
 
@@ -336,29 +404,29 @@ struct Annonce : Identifiable{
 struct MainList {
     static var annonces = [
 
-        Annonce( title: "flower" ,image: "image.jpg", companyName: "Flower", favorite: true, discounts: true, release: false, event: false, NearBy: true),
-        Annonce( title: "rabat" ,image: "mcRabat", companyName: "McDonalds", favorite: true, discounts: true, release: false, event: false, NearBy: true),
-        Annonce( title: "elektronik" ,image: "media5", companyName: "Mediamarkt", favorite: true, discounts: true, release: false, event: false, NearBy: true),
-        Annonce( title: "kläder" ,image: "image1", companyName: "H&M", favorite: false, discounts: true, release: false, event: false, NearBy: true),
-        Annonce( title: "Food" ,image: "McDonalds", companyName: "McDonalds", favorite: true, discounts: true, release: false, event: false, NearBy: true),
-        Annonce( title: "kläder" ,image: "lager4", companyName: "Lager157", favorite: true, discounts: true, release: false, event: false, NearBy: true),
-        Annonce( title: "elektronik" ,image: "media4", companyName: "Mediamarkt", favorite: true, discounts: true, release: false, event: false, NearBy: true),
-        Annonce( title: "rabat" ,image: "discount", companyName: "McDonalds", favorite: false, discounts: true, release: false, event: false, NearBy: true),
-        Annonce( title: "kläder" ,image: "sale50%", companyName: "H&M", favorite: false, discounts: true, release: false, event: false, NearBy: true),
-        Annonce( title: "kläder" ,image: "lager3", companyName: "Lager157", favorite: true, discounts: true, release: false, event: false, NearBy: true),
-        Annonce( title: "event" ,image: "mcEvent", companyName: "McDonalds", favorite: true, discounts: true, release: false, event: false, NearBy: true),
-        Annonce( title: "kläder" ,image: "sale50%2", companyName: "H&M", favorite: true, discounts: true, release: false, event: false, NearBy: true),
-        Annonce( title: "elektronik" ,image: "media2", companyName: "Mediamarkt", favorite: true, discounts: true, release: false, event: false, NearBy: true),
-        Annonce( title: "rabat" ,image: "discount", companyName: "McDonalds", favorite: false, discounts: true, release: false, event: false, NearBy: true),
-        Annonce( title: "kläder" ,image: "lager1", companyName: "Lager157", favorite: false, discounts: true, release: false, event: false, NearBy: true),
-        Annonce( title: "rabat" ,image: "mcEvent1", companyName: "McDonalds", favorite: false, discounts: true, release: false, event: false, NearBy: true),
+        
+        Annonce( title: "rabat" ,image: "mcRabat", companyName: "McDonalds", favorite: true, discounts: true, release: false, event: false, NearBy: true,comments: [comment(title: "Nice deal!", image: "steve.png"),comment(title: "Now i got hungry!", image: "bill"),comment(title: "Tasty!", image: "cat")]),
+        Annonce( title: "elektronik" ,image: "media5", companyName: "Mediamarkt", favorite: true, discounts: true, release: false, event: false, NearBy: true,comments: [comment(title: "Cool stuff", image: "bill"),comment(title: "Time for an upgrade!", image: "steve"),comment(title: "Cables?", image: "cat")]),
+        Annonce( title: "kläder" ,image: "image1", companyName: "H&M", favorite: false, discounts: true, release: false, event: false, NearBy: true,comments: [comment(title: "Winter is coming", image: "bill"),comment(title: "Been looking for something like this!", image: "steve")]),
+        Annonce( title: "Food" ,image: "McDonalds", companyName: "McDonalds", favorite: true, discounts: true, release: false, event: false, NearBy: true,comments: [comment(title: "Now that look tasty!", image: "cat")]),
+        Annonce( title: "kläder" ,image: "lager4", companyName: "Lager157", favorite: true, discounts: true, release: false, event: false, NearBy: true,comments: [comment(title: "Noice!", image: "steve")]),
+        Annonce( title: "elektronik" ,image: "media4", companyName: "Mediamarkt", favorite: true, discounts: true, release: false, event: false, NearBy: true,comments: [comment(title: "Power to the people", image: "bill")]),
+        Annonce( title: "rabat" ,image: "discount", companyName: "McDonalds", favorite: false, discounts: true, release: false, event: false, NearBy: true,comments: [comment(title: "Yay cheaper food", image: "cat")]),
+        Annonce( title: "kläder" ,image: "sale50%", companyName: "H&M", favorite: false, discounts: true, release: false, event: false, NearBy: true,comments: [comment(title: "50% wow!", image: "steve")]),
+        Annonce( title: "kläder" ,image: "lager3", companyName: "Lager157", favorite: true, discounts: true, release: false, event: false, NearBy: true,comments: [comment(title: "Lager 157 always a favorite!", image: "steve")]),
+        Annonce( title: "event" ,image: "mcEvent", companyName: "McDonalds", favorite: true, discounts: true, release: false, event: false, NearBy: true,comments: [comment(title: "I will bring friends!", image: "cat")]),
+        Annonce( title: "kläder" ,image: "sale50%2", companyName: "H&M", favorite: true, discounts: true, release: false, event: false, NearBy: true,comments: [comment(title: "Maybe a new shirt?", image: "steve")]),
+        Annonce( title: "elektronik" ,image: "media2", companyName: "Mediamarkt", favorite: true, discounts: true, release: false, event: false, NearBy: true,comments: [comment(title: "Very good products!", image: "bill")]),
+        Annonce( title: "rabat" ,image: "discount", companyName: "McDonalds", favorite: false, discounts: true, release: false, event: false, NearBy: true,comments: [comment(title: "Purrfect!", image: "cat")]),
+        Annonce( title: "kläder" ,image: "lager1", companyName: "Lager157", favorite: false, discounts: true, release: false, event: false, NearBy: true,comments: [comment(title: "Cool", image: "bill")]),
+        Annonce( title: "rabat" ,image: "mcEvent1", companyName: "McDonalds", favorite: false, discounts: true, release: false, event: false, NearBy: true,comments: [comment(title: "Awesome!", image: "cat")]),
 
-        Annonce( title: "kläder" ,image: "lager2", companyName: "Lager157", favorite: false, discounts: true, release: false, event: false, NearBy: true),
+        Annonce( title: "kläder" ,image: "lager2", companyName: "Lager157", favorite: false, discounts: true, release: false, event: false, NearBy: true,comments: [comment(title: "This is just what i was looking for!", image: "steve")]),
 
 
 
-        Annonce( title: "elektronik" ,image: "media1", companyName: "Mediamarkt", favorite: true, discounts: true, release: false, event: false, NearBy: true),
-        Annonce( title: "kläder" ,image: "event1", companyName: "H&M", favorite: true, discounts: true, release: false, event: false, NearBy: true),
+        Annonce( title: "elektronik" ,image: "media1", companyName: "Mediamarkt", favorite: true, discounts: true, release: false, event: false, NearBy: true,comments: [comment(title: "Powerful!", image: "bill")]),
+        Annonce( title: "kläder" ,image: "event1", companyName: "H&M", favorite: true, discounts: true, release: false, event: false, NearBy: true,comments: [comment(title: "Not for me thank you!", image: "cat")]),
 
 
 
@@ -373,15 +441,15 @@ struct FollowingList{
     static var annonces = [
 
 
-        Annonce( title: "rabat" ,image: "mcRabat", companyName: "McDonalds", favorite: true, discounts: true, release: false, event: false, NearBy: true),
+        
 
 
-        Annonce( title: "kläder" ,image: "lager2", companyName: "Lager157", favorite: false, discounts: true, release: false, event: false, NearBy: true),
+        Annonce( title: "kläder" ,image: "lager2", companyName: "Lager157", favorite: false, discounts: true, release: false, event: false, NearBy: true,comments: [comment(title: "good stuff!", image: "bill")]),
 
+        Annonce( title: "rabat" ,image: "mcRabat", companyName: "McDonalds", favorite: true, discounts: true, release: false, event: false, NearBy: true,comments: [comment(title: "First!", image: "cat")]),
 
-
-        Annonce( title: "elektronik" ,image: "media1", companyName: "Mediamarkt", favorite: true, discounts: true, release: false, event: false, NearBy: true),
-        Annonce( title: "kläder" ,image: "event1", companyName: "H&M", favorite: true, discounts: true, release: false, event: false, NearBy: true),
+        Annonce( title: "elektronik" ,image: "media1", companyName: "Mediamarkt", favorite: true, discounts: true, release: false, event: false, NearBy: true,comments: [comment(title: "Just what i wanted!", image: "steve")]),
+        Annonce( title: "kläder" ,image: "event1", companyName: "H&M", favorite: true, discounts: true, release: false, event: false, NearBy: true,comments: [comment(title: "Great!", image: "bill")]),
 
 
 

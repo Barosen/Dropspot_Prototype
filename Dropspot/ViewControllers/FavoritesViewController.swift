@@ -14,7 +14,7 @@ class FavoritesViewController: UIViewController,UITableViewDelegate,UITableViewD
     
     
    
-    let favoritList = MainList.annonces.filter{annonse in
+    var favoritList = MainList.annonces.filter{annonse in
         return (annonse.favorite == true)}
     
  
@@ -47,6 +47,29 @@ class FavoritesViewController: UIViewController,UITableViewDelegate,UITableViewD
         tableView.isPagingEnabled = true
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableCellFavorit", for: indexPath)
         as! tableViewFavoritCell
+        
+        cell.favoritFavoritCellBtn.layer.shadowColor = UIColor.black.cgColor
+        cell.favoritFavoritCellBtn.layer.shadowOffset = CGSize(width: 5, height: 5)
+        cell.favoritFavoritCellBtn.layer.shadowRadius = 5
+        cell.favoritFavoritCellBtn.layer.shadowOpacity = 1.0
+        
+        cell.shareFavoritCellBtn.layer.shadowColor = UIColor.black.cgColor
+        cell.shareFavoritCellBtn.layer.shadowOffset = CGSize(width: 5, height: 5)
+        cell.shareFavoritCellBtn.layer.shadowRadius = 5
+        cell.shareFavoritCellBtn.layer.shadowOpacity = 1.0
+        
+        cell.commentFavoritCellBtn.layer.shadowColor = UIColor.black.cgColor
+        cell.commentFavoritCellBtn.layer.shadowOffset = CGSize(width: 5, height: 5)
+        cell.commentFavoritCellBtn.layer.shadowRadius = 5
+        cell.commentFavoritCellBtn.layer.shadowOpacity = 1.0
+        
+        cell.profileFavoritCellBtn.layer.shadowColor = UIColor.black.cgColor
+        cell.profileFavoritCellBtn.layer.shadowOffset = CGSize(width: 5, height: 5)
+        cell.profileFavoritCellBtn.layer.shadowRadius = 5
+        cell.profileFavoritCellBtn.layer.shadowOpacity = 1.0
+        
+        
+        
         let annonce = self.favoritList[indexPath.row]
         cell.tableViewFavoritCellBackgrund.image = UIImage(named: annonce.image)
         cell.commentFavoritCellBtn.setImage(UIImage(named: "commentButton"), for: UIControl.State())
@@ -88,9 +111,11 @@ class FavoritesViewController: UIViewController,UITableViewDelegate,UITableViewD
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.barTintColor = UIColor.black
         tableViewFavorit.delegate = self
         tableViewFavorit.dataSource = self
-
+        tableViewFavorit.reloadData()
+        print(favoritList)
         // Do any additional setup after loading the view.
     }
     
@@ -117,4 +142,9 @@ class tableViewFavoritCell: UITableViewCell {
     
     @IBOutlet weak var favoritFavoritCellBtn: UIButton!
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 0))
+        
+    }
 }

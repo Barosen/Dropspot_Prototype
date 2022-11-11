@@ -13,6 +13,7 @@ class FlowShareViewController:UIViewController{
     
     
     override func viewDidLoad() {
+        super.viewDidLoad()
         
     }
     

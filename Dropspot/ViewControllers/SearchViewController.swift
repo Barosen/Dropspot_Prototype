@@ -18,10 +18,14 @@ class SearchViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
-        self.hideKeyboardWhenTappedAround()
         filteredData = data
         tableViewAndStylingDetails()
+        //called from FlowCommentsViewController!
+        self.hideKeyboardWhenTappedAround()
+        //setToolbarDoneBtn()
+        
     }
     
     func tableViewAndStylingDetails() {
@@ -31,6 +35,12 @@ class SearchViewController: UIViewController {
         let nib = UINib(nibName: "SearchCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "SearchCell")
     }
+    //return/continue btn to dismiss keyboard!
+    @IBAction func doneEy(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    
+    
     
     @IBAction func textFieldEditingDidChange(_ sender: Any) {
         filteredData = []
@@ -44,7 +54,25 @@ class SearchViewController: UIViewController {
             }
         }
         self.tableView.reloadData()
+        
     }
+    
+    
+    
+   /* func setToolbarDoneBtn(){
+        let bar = UIToolbar()
+        let btnDone = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(disMyKeyboard))
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        bar.items = [flexSpace, flexSpace, btnDone]
+        bar.sizeToFit()
+        searchBar.inputAccessoryView = bar
+        
+    }
+    @objc func disMyKeyboard(){
+        
+        view.endEditing(true)
+        
+    }*/
 }
 extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -64,3 +92,4 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
 }
+
