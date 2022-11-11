@@ -186,7 +186,7 @@ extension CompanyFlowViewController: UITableViewDataSource{
             competionHandler(true)
         }
       
-        
+        navigate.backgroundColor = UIColor.black
         let swipe = UISwipeActionsConfiguration(actions: [navigate])
         return swipe
     }
