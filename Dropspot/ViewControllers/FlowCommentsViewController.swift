@@ -59,7 +59,9 @@ class FlowCommentsViewController: UIViewController,UITableViewDataSource,UITable
         cell.commentText.text=boxTry?[indexPath.row].title
         //cell.commentImage.image=UIImage(systemName: (boxTry?[indexPath.row].image)!)
         cell.commentImage.image=UIImage(named: (boxTry?[indexPath.row].image)!)
-        
+        cell.commentImage.contentMode = .scaleAspectFill
+        cell.commentImage.layer.cornerRadius = 25
+        cell.commentImage.layer.masksToBounds = true
         return cell
     }
     

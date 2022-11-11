@@ -128,6 +128,7 @@ class FlowViewController: UIViewController {
             
         }
         tableView.reloadData()
+        print(MainList.annonces[sender.tag].favorite)
         
     }
     
@@ -440,12 +441,12 @@ struct FollowingList{
     static var annonces = [
 
 
-        Annonce( title: "rabat" ,image: "mcRabat", companyName: "McDonalds", favorite: true, discounts: true, release: false, event: false, NearBy: true,comments: [comment(title: "First!", image: "cat")]),
+        
 
 
         Annonce( title: "kläder" ,image: "lager2", companyName: "Lager157", favorite: false, discounts: true, release: false, event: false, NearBy: true,comments: [comment(title: "good stuff!", image: "bill")]),
 
-
+        Annonce( title: "rabat" ,image: "mcRabat", companyName: "McDonalds", favorite: true, discounts: true, release: false, event: false, NearBy: true,comments: [comment(title: "First!", image: "cat")]),
 
         Annonce( title: "elektronik" ,image: "media1", companyName: "Mediamarkt", favorite: true, discounts: true, release: false, event: false, NearBy: true,comments: [comment(title: "Just what i wanted!", image: "steve")]),
         Annonce( title: "kläder" ,image: "event1", companyName: "H&M", favorite: true, discounts: true, release: false, event: false, NearBy: true,comments: [comment(title: "Great!", image: "bill")]),
