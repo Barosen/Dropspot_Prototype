@@ -16,7 +16,7 @@ class CompanyFlowViewController: UIViewController {
     
     
     @IBOutlet weak var companyTableView: UITableView!
-    let annonces = [
+   /* var annonces = [
         Annonce( title: "flower" ,image: "image.jpg", companyName: "Flower", favorite: false, discounts: true, release: false, event: false, NearBy: true,comments: [comment(title: "Tjohej!", image: "cat")]),
         Annonce( title: "kläder" ,image: "image1", companyName: "H&M", favorite: true, discounts: true, release: false, event: false, NearBy: true,comments: [comment(title: "Yes!", image: "steve")]),
         Annonce( title: "Food" ,image: "McDonalds", companyName: "McDonalds", favorite: true, discounts: true, release: false, event: false, NearBy: true,comments: [comment(title: "Yes!", image: "steve")]),
@@ -29,14 +29,52 @@ class CompanyFlowViewController: UIViewController {
 
         Annonce( title: "event" ,image: "mcEvent", companyName: "McDonalds", favorite: false, discounts: true, release: false, event: false, NearBy: true,comments: [comment(title: "Yes!", image: "steve")]),
         
-    ]
+    ]*/
     override func viewDidLoad() {
         super.viewDidLoad()
         companyTableView.delegate = self
         companyTableView.dataSource = self
-      
+        navigationController?.navigationBar.barTintColor = UIColor.black
 
         // Do any additional setup after loading the view.
+    }
+    @objc func setCompFav(_ sender:UIButton){
+        
+        if(list2![sender.tag].favorite==true){
+            list2![sender.tag].favorite=false
+        }else{
+            list2![sender.tag].favorite=true
+        }
+        companyTableView.reloadData()
+    }
+    
+    @objc func shareCompBtn(_ sender:UIButton){
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "FlowShare") as?FlowShareViewController else{return}
+        if let sheet = vc.sheetPresentationController{
+            sheet.prefersGrabberVisible = true
+            sheet.detents = [.medium()]
+
+        }
+
+        
+        present(vc,animated: true)
+
+        
+    }
+    @objc func commentsCompBtn(_ sender:UIButton){
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "commentsflowvc") as?FlowCommentsViewController else{return}
+        if let sheet = vc.sheetPresentationController{
+            sheet.prefersGrabberVisible = true
+            sheet.detents = [.medium()]
+
+        }
+
+        vc.boxTry=list2![sender.tag].comments
+        present(vc,animated: true)
+        companyTableView.reloadData()
+        
+        
+        
     }
     
 
@@ -65,6 +103,11 @@ class CompanyFlowCell : UITableViewCell{
    
     @IBOutlet weak var commentBtnCell: UIButton!
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 0))
+        
+    }
 }
 extension CompanyFlowViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
@@ -83,12 +126,44 @@ extension CompanyFlowViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         tableView.isPagingEnabled = true
         let cell = tableView.dequeueReusableCell(withIdentifier: "tableViewCell", for: indexPath) as! CompanyFlowCell
+        
+        cell.favoriteBtnCell.layer.shadowColor = UIColor.black.cgColor
+        cell.favoriteBtnCell.layer.shadowOffset = CGSize(width: 5, height: 5)
+        cell.favoriteBtnCell.layer.shadowRadius = 5
+        cell.favoriteBtnCell.layer.shadowOpacity = 1.0
+        
+        cell.shareBtnCell.layer.shadowColor = UIColor.black.cgColor
+        cell.shareBtnCell.layer.shadowOffset = CGSize(width: 5, height: 5)
+        cell.shareBtnCell.layer.shadowRadius = 5
+        cell.shareBtnCell.layer.shadowOpacity = 1.0
+        
+        cell.commentBtnCell.layer.shadowColor = UIColor.black.cgColor
+        cell.commentBtnCell.layer.shadowOffset = CGSize(width: 5, height: 5)
+        cell.commentBtnCell.layer.shadowRadius = 5
+        cell.commentBtnCell.layer.shadowOpacity = 1.0
+        
+        cell.FollowBtnCell.layer.shadowColor = UIColor.black.cgColor
+        cell.FollowBtnCell.layer.shadowOffset = CGSize(width: 5, height: 5)
+        cell.FollowBtnCell.layer.shadowRadius = 5
+        cell.FollowBtnCell.layer.shadowOpacity = 1.0
+        
+        cell.favoriteBtnCell.tag = indexPath.row
+        cell.commentBtnCell.tag = indexPath.row
+        cell.shareBtnCell.addTarget(self, action: #selector(shareCompBtn(_:)), for: .touchUpInside)
+        cell.favoriteBtnCell.addTarget(self, action: #selector(setCompFav(_:)), for: .touchUpInside)
+        cell.commentBtnCell.addTarget(self, action: #selector(commentsCompBtn(_:)), for: .touchUpInside)
+        
         let annonce = list2![indexPath.row]
         let image = UIImage(named: "favoriteOn")
         let image2 = UIImage(named: "favorite5")
         
         cell.companyImageViewCell.image = UIImage(named: annonce.image)
         cell.commentBtnCell.setImage(UIImage(named: "commentButton"), for: UIControl.State())
+        
+        
+        
+        
+        
         if (annonce.favorite){
             
            cell.favoriteBtnCell.setImage(image, for: UIControl.State.normal)

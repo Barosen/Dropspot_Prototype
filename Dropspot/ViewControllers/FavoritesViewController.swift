@@ -21,9 +21,58 @@ class FavoritesViewController: UIViewController,UITableViewDelegate,UITableViewD
     
     //var list2 : [Annonce] =
     
+    func check(i:Int){
+        if(favoritList[i].favorite==false){
+            
+            favoritList.remove(at: i)
+            tableViewFavorit.reloadData()
+        }
+        
+        
+    }
     
+    @objc func favFavBtn(_ sender:UIButton){
+        if (favoritList[sender.tag].favorite==true){
+            favoritList[sender.tag].favorite=false
+            check(i: sender.tag)
+            
+        }else{
+            favoritList[sender.tag].favorite=true
+            
+        }
+        tableViewFavorit.reloadData()
+        //print(favoritList[sender.tag].favorite)
+        
+    }
     
+    @objc func shareCellBtn(_ sender:UIButton){
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "FlowShare") as?FlowShareViewController else{return}
+        if let sheet = vc.sheetPresentationController{
+            sheet.prefersGrabberVisible = true
+            sheet.detents = [.medium()]
 
+        }
+
+        
+        present(vc,animated: true)
+
+        
+    }
+    @objc func commentsCellBtn(_ sender:UIButton){
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "commentsflowvc") as?FlowCommentsViewController else{return}
+        if let sheet = vc.sheetPresentationController{
+            sheet.prefersGrabberVisible = true
+            sheet.detents = [.medium()]
+
+        }
+
+        vc.boxTry=favoritList[sender.tag].comments
+        present(vc,animated: true)
+        tableViewFavorit.reloadData()
+        
+        
+        
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         favoritList.count
@@ -68,7 +117,11 @@ class FavoritesViewController: UIViewController,UITableViewDelegate,UITableViewD
         cell.profileFavoritCellBtn.layer.shadowRadius = 5
         cell.profileFavoritCellBtn.layer.shadowOpacity = 1.0
         
-        
+        cell.favoritFavoritCellBtn.tag = indexPath.row
+        cell.commentFavoritCellBtn.tag = indexPath.row
+        cell.shareFavoritCellBtn.addTarget(self, action: #selector(shareCellBtn(_:)), for: .touchUpInside)
+        cell.commentFavoritCellBtn.addTarget(self, action: #selector(commentsCellBtn(_:)), for: .touchUpInside)
+        cell.favoritFavoritCellBtn.addTarget(self, action: #selector(favFavBtn(_:)), for: .touchUpInside)
         
         let annonce = self.favoritList[indexPath.row]
         cell.tableViewFavoritCellBackgrund.image = UIImage(named: annonce.image)
@@ -78,6 +131,7 @@ class FavoritesViewController: UIViewController,UITableViewDelegate,UITableViewD
         cell.profileFavoritCellBtn.setImage(UIImage(named: "followButton"), for: UIControl.State())
         let image = UIImage(named: "favoriteOn")
         let image2 = UIImage(named: "favorite5")
+        
         if (annonce.favorite){
             
            cell.favoritFavoritCellBtn.setImage(image, for: UIControl.State.normal)
