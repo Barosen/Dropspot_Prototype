@@ -165,11 +165,11 @@ class FavoritesViewController: UIViewController,UITableViewDelegate,UITableViewD
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.barTintColor = UIColor.black
         tableViewFavorit.delegate = self
         tableViewFavorit.dataSource = self
         tableViewFavorit.reloadData()
         print(favoritList)
+        navigationController?.navigationBar.barTintColor = UIColor.black
         // Do any additional setup after loading the view.
     }
     

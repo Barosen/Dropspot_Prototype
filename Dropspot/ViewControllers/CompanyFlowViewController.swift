@@ -103,11 +103,7 @@ class CompanyFlowCell : UITableViewCell{
    
     @IBOutlet weak var commentBtnCell: UIButton!
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 0, left: 0, bottom: 10, right: 0))
-        
-    }
+    
 }
 extension CompanyFlowViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){

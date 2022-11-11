@@ -169,6 +169,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Ujb-HV-Suy">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -960,11 +961,11 @@
             <objects>
                 <viewController id="tJ7-D0-pMw" customClass="FavoritesViewController" customModule="Dropspot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kuv-fG-UR5">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="670"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l8M-Vc-HY8">
-                                <rect key="frame" x="0.0" y="91" width="390" height="670"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="670"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Jhi-XX-eV0">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="670"/>
@@ -1107,9 +1108,11 @@
             <objects>
                 <navigationController id="Dht-CU-xU5" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" image="briefcase.fill" catalog="system" id="Ire-PN-qYS"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DG3-0Q-Cjd">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="DG3-0Q-Cjd">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -1127,9 +1130,11 @@
             <objects>
                 <navigationController id="2QX-NG-J6A" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="K9a-H9-oyV"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xnf-xL-LTW">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="xnf-xL-LTW">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -1147,9 +1152,11 @@
             <objects>
                 <navigationController id="mHp-S0-F0Z" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Favorites" image="heart" catalog="system" id="6Ps-qF-jgE"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xp2-y4-Kq5">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="xp2-y4-Kq5">
                         <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -1167,24 +1174,24 @@
             <objects>
                 <viewController storyboardIdentifier="ProfileViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yXX-Et-m5D" customClass="ProfileViewController" customModule="Dropspot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I4v-NX-VGB">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="670"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="UI-ICON-1" translatesAutoresizingMaskIntoConstraints="NO" id="vP7-8b-ooo">
-                                <rect key="frame" x="2" y="175" width="386" height="347"/>
+                                <rect key="frame" x="2" y="84" width="386" height="347"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="347" id="HhD-Ei-UjS"/>
                                     <constraint firstAttribute="width" constant="386" id="faf-ao-rzy"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMR-Lx-cW6">
-                                <rect key="frame" x="129" y="111" width="123" height="20"/>
+                                <rect key="frame" x="129" y="20" width="123" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0B4-qD-NUJ">
-                                <rect key="frame" x="164" y="265" width="62.333333333333343" height="38"/>
+                                <rect key="frame" x="164" y="174" width="62.333333333333343" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="38" id="Md5-0a-hYj"/>
                                     <constraint firstAttribute="width" constant="62.329999999999998" id="ieE-Ij-glr"/>
@@ -1196,13 +1203,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Own" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="15i-dR-P84">
-                                <rect key="frame" x="177.66666666666666" y="207.66666666666666" width="35" height="20.333333333333343"/>
+                                <rect key="frame" x="177.66666666666666" y="116.66666666666666" width="35" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awH-PU-H0u">
-                                <rect key="frame" x="125" y="554" width="140" height="40"/>
+                                <rect key="frame" x="125" y="463" width="140" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="8om-sr-Anc"/>
                                     <constraint firstAttribute="width" constant="140" id="eYw-jQ-JtA"/>
@@ -1244,11 +1251,11 @@
             <objects>
                 <viewController id="kMB-Ac-FJk" customClass="MyCompanyViewController" customModule="Dropspot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bqa-oa-5hE">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="670"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="UgC-KG-pX8">
-                                <rect key="frame" x="10" y="91" width="370" height="357"/>
+                                <rect key="frame" x="10" y="0.0" width="370" height="357"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="e2M-H3-XDd">
                                         <rect key="frame" x="0.0" y="0.0" width="370" height="112"/>
@@ -1383,11 +1390,11 @@
             <objects>
                 <viewController id="3Vh-Ix-HJS" customClass="AdStatViewController" customModule="Dropspot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rl8-8l-h4e">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="670"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="JkC-LK-whL">
-                                <rect key="frame" x="16" y="91" width="358" height="668.33333333333337"/>
+                                <rect key="frame" x="16" y="0.0" width="358" height="668.33333333333337"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6mx-0N-AnR">
                                         <rect key="frame" x="0.0" y="0.0" width="358" height="331.66666666666669"/>
@@ -1512,11 +1519,11 @@
             <objects>
                 <viewController id="VR7-ID-qM3" customClass="PreviewPageForAnnoce" customModule="Dropspot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sbo-0y-Bwy">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="670"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iY9-xg-ZqJ">
-                                <rect key="frame" x="40" y="0.0" width="320" height="761"/>
+                                <rect key="frame" x="40" y="0.0" width="320" height="670"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="O6L-Jv-hf2">
                                         <rect key="frame" x="50" y="70" width="220" height="40"/>
@@ -1568,7 +1575,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dAm-fG-KUp">
-                                        <rect key="frame" x="0.0" y="211.66666666666666" width="100" height="40"/>
+                                        <rect key="frame" x="0.0" y="211.66666666666669" width="100" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1I-Ee-JaK">
                                                 <rect key="frame" x="0.0" y="0.0" width="45" height="40"/>
@@ -1957,11 +1964,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="O9i-o1-hds" customClass="PlaceAdsInfoViewController" customModule="Dropspot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uHx-O7-cds">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="670"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="995-3N-8cs">
-                                <rect key="frame" x="0.0" y="91" width="390" height="670"/>
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="670"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="87t-Cc-x1Y">
                                         <rect key="frame" x="145" y="0.0" width="100" height="110"/>
@@ -2243,11 +2250,11 @@
             <objects>
                 <viewController storyboardIdentifier="TakeOwnShipViewController" title="Company Name" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Sj6-85-F0u" customClass="TakeOwnShipViewController" customModule="Dropspot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y5M-Zl-EO1">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="670"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="91" translatesAutoresizingMaskIntoConstraints="NO" id="Si9-nJ-RoJ">
-                                <rect key="frame" x="50" y="162" width="290" height="521.33333333333337"/>
+                                <rect key="frame" x="50" y="71" width="290" height="521.33333333333337"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJS-ed-lFR">
                                         <rect key="frame" x="84" y="0.0" width="122" height="20.333333333333332"/>
@@ -2512,7 +2519,7 @@
             <objects>
                 <viewController storyboardIdentifier="CreateAccBusinessViewController" title="Register New Company" useStoryboardIdentifierAsRestorationIdentifier="YES" id="OYM-yc-KrU" customClass="CreateAccBusinessViewController" customModule="Dropspot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7z6-9f-aze">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="670"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="ICON_2" translatesAutoresizingMaskIntoConstraints="NO" id="L4F-ZR-k1D">
@@ -2782,11 +2789,11 @@
             <objects>
                 <viewController id="ukc-w0-JAP" customClass="SearchViewController" customModule="Dropspot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t6V-Sk-0tn">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="761"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="670"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="cYN-P6-zWx">
-                                <rect key="frame" x="16" y="130" width="358" height="631"/>
+                                <rect key="frame" x="16" y="57" width="358" height="613"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2794,8 +2801,8 @@
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qlG-QS-Twy">
-                                <rect key="frame" x="78" y="73" width="234" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qlG-QS-Twy">
+                                <rect key="frame" x="78" y="15" width="234" height="34"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -2811,7 +2818,7 @@
                         <constraints>
                             <constraint firstItem="cYN-P6-zWx" firstAttribute="centerX" secondItem="qlG-QS-Twy" secondAttribute="centerX" id="6NJ-9g-W4m"/>
                             <constraint firstItem="cYN-P6-zWx" firstAttribute="trailing" secondItem="t6V-Sk-0tn" secondAttribute="trailingMargin" id="JYJ-ip-C4r"/>
-                            <constraint firstItem="qlG-QS-Twy" firstAttribute="top" secondItem="vCY-H3-TC2" secondAttribute="top" constant="-18" id="K3c-vZ-NRi"/>
+                            <constraint firstItem="qlG-QS-Twy" firstAttribute="top" secondItem="vCY-H3-TC2" secondAttribute="top" id="K3c-vZ-NRi"/>
                             <constraint firstItem="cYN-P6-zWx" firstAttribute="leading" secondItem="t6V-Sk-0tn" secondAttribute="leadingMargin" id="T6r-as-oxc"/>
                             <constraint firstItem="cYN-P6-zWx" firstAttribute="top" secondItem="qlG-QS-Twy" secondAttribute="bottom" constant="23" id="bG9-jc-Duu"/>
                             <constraint firstItem="qlG-QS-Twy" firstAttribute="leading" secondItem="vCY-H3-TC2" secondAttribute="leading" constant="78" id="mTg-K3-ByU"/>
