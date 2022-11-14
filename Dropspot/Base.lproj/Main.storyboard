@@ -7,6 +7,7 @@
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -2783,6 +2784,129 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9WJ-1l-xL3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1133.8461538461538" y="423.69668246445497"/>
+        </scene>
+        <!--Ads Collection View-->
+        <scene sceneID="eKF-wU-ddM">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jxc-uf-qZs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="AdsCollectionView" id="ayr-Ty-pVl" customClass="AdsCollectionView" customModule="Dropspot" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fzn-Gd-kkv">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YOD-ZP-eaE">
+                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RfL-HF-hPs">
+                                    <size key="itemSize" width="383" height="763"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollVCell" id="Cor-js-v3l" customClass="FlowCollectionVCell" customModule="Dropspot" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="383" height="763"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1jp-nK-91Q">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="763"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="discount" translatesAutoresizingMaskIntoConstraints="NO" id="bnL-Hx-kkx">
+                                                    <rect key="frame" x="0.0" y="0.0" width="383" height="763"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="635" id="XxP-gR-Ynj"/>
+                                                        <constraint firstAttribute="width" constant="365" id="hV0-9d-oGS"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lZy-pG-Mh2">
+                                                    <rect key="frame" x="314" y="464" width="51" height="264"/>
+                                                    <subviews>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFo-Tc-QOi" userLabel="Share Btn">
+                                                            <rect key="frame" x="0.0" y="0.0" width="51" height="51"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="51" id="Mbl-Tc-7iM"/>
+                                                                <constraint firstAttribute="height" constant="51" id="NWI-jB-0JN"/>
+                                                            </constraints>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="">
+                                                                <backgroundConfiguration key="background" image="share.png"/>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6U-PC-igT" userLabel="Favorite Btn">
+                                                            <rect key="frame" x="0.0" y="71" width="51" height="51"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="51" id="VPB-dy-yIz"/>
+                                                                <constraint firstAttribute="width" constant="51" id="rW4-mU-Aou"/>
+                                                            </constraints>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="">
+                                                                <backgroundConfiguration key="background" image="favorite"/>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fF8-Hx-1Rg" userLabel="Comment Btn">
+                                                            <rect key="frame" x="0.0" y="142" width="51" height="51"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="51" id="gON-jn-QdU"/>
+                                                                <constraint firstAttribute="width" constant="51" id="j6k-33-Ad3"/>
+                                                            </constraints>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="">
+                                                                <backgroundConfiguration key="background" image="comment.png"/>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJr-9B-Ud6" userLabel="Follow Btn">
+                                                            <rect key="frame" x="0.0" y="213" width="51" height="51"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="51" id="Omw-Hj-zIh"/>
+                                                                <constraint firstAttribute="height" constant="51" id="zpj-Hp-r1E"/>
+                                                            </constraints>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="">
+                                                                <backgroundConfiguration key="background" image="follow.png"/>
+                                                            </buttonConfiguration>
+                                                        </button>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="bnL-Hx-kkx" firstAttribute="top" secondItem="1jp-nK-91Q" secondAttribute="top" id="5NU-b7-D39"/>
+                                                <constraint firstItem="bnL-Hx-kkx" firstAttribute="leading" secondItem="1jp-nK-91Q" secondAttribute="leading" id="J3a-oC-5sQ"/>
+                                                <constraint firstAttribute="trailing" secondItem="lZy-pG-Mh2" secondAttribute="trailing" constant="18" id="MTk-xD-hAf"/>
+                                                <constraint firstAttribute="trailing" secondItem="bnL-Hx-kkx" secondAttribute="trailing" id="NmU-fV-iTe"/>
+                                                <constraint firstAttribute="bottom" secondItem="bnL-Hx-kkx" secondAttribute="bottom" id="hnc-Hs-x6c"/>
+                                                <constraint firstAttribute="bottom" secondItem="lZy-pG-Mh2" secondAttribute="bottom" constant="35" id="jCX-wx-7iM"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="customSize" width="383" height="763"/>
+                                        <connections>
+                                            <outlet property="collCommentBtn" destination="fF8-Hx-1Rg" id="OZ8-iy-Z6V"/>
+                                            <outlet property="collFavBtn" destination="Q6U-PC-igT" id="vzo-Kx-hCj"/>
+                                            <outlet property="collFollBtn" destination="FJr-9B-Ud6" id="iXk-ux-BBk"/>
+                                            <outlet property="collImage" destination="bnL-Hx-kkx" id="IMG-7e-0mr"/>
+                                            <outlet property="collShareBtn" destination="fFo-Tc-QOi" id="cFQ-cw-O2T"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bou-uM-fZ5"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YOD-ZP-eaE" firstAttribute="top" secondItem="Bou-uM-fZ5" secondAttribute="top" id="WS7-Bx-OF0"/>
+                            <constraint firstItem="Bou-uM-fZ5" firstAttribute="bottom" secondItem="YOD-ZP-eaE" secondAttribute="bottom" id="r7c-4L-D9a"/>
+                            <constraint firstItem="YOD-ZP-eaE" firstAttribute="leading" secondItem="Bou-uM-fZ5" secondAttribute="leading" id="yPr-0E-I3u"/>
+                            <constraint firstItem="Bou-uM-fZ5" firstAttribute="trailing" secondItem="YOD-ZP-eaE" secondAttribute="trailing" id="ySc-QE-JMP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="AdCollectionV" destination="YOD-ZP-eaE" id="wPp-dE-cCl"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-343" y="468"/>
         </scene>
         <!--Storyboard Reference-->
         <scene sceneID="Xo1-jq-Pat">

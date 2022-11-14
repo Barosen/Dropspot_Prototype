@@ -309,7 +309,7 @@ extension FlowViewController : UITableViewDataSource{
              let annonce = FollowingList.annonces[indexPath.row]
              let image = UIImage(named: "favoriteOn")
              let image2 = UIImage(named: "favorite5")
-
+             
              cell.favoriteButton.tag = indexPath.row
              cell.commentButton.tag = indexPath.row
              cell.shareButton.addTarget(self, action: #selector(shareBtn(_:)), for: .touchUpInside)
@@ -355,12 +355,21 @@ extension FlowViewController : UITableViewDataSource{
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let navigate = UIContextualAction(style: .normal, title: "") {
             (action , view , competionHandler) in
-            if let vc = self.storyboard?.instantiateViewController(withIdentifier: "CompanyFlowViewController") as? CompanyFlowViewController{
+            if let vc = self.storyboard?.instantiateViewController(withIdentifier: "AdsCollectionView") as? AdsCollectionView{
                 vc.list2 = MainList.annonces.filter{annonse in
                     return (annonse.companyName == MainList.annonces[indexPath.row].companyName)}
+                
                 self.navigationController?.pushViewController(vc, animated: true)}
             competionHandler(true)
+            /*
+            vc.modalPresentationStyle = .fullScreen
+            vc.modalTransitionStyle = .crossDissolve
+            self.present(vc, animated: true, completion: nil)
+             */
+            
+            
         }
+        
         navigate.backgroundColor = UIColor.black
 
 

@@ -3,4 +3,130 @@
    uuid = "18020D3D-9DD7-455A-BE8A-F37DDA773FD4"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D88E1C59-A8D6-45C9-AAB5-15FDF4575709"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Dropspot/CollectionViewCells/FlowCollectionVCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "FlowCollectionVCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "D88E1C59-A8D6-45C9-AAB5-15FDF4575709 - 424d101566a724"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Dropspot.FlowCollectionVCell.collFavBtn.getter : Swift.Optional&lt;__C.UIButton&gt;"
+                  moduleName = "Dropspot"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vinnievec/Desktop/Dropspot/Dropspot/CollectionViewCells/FlowCollectionVCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "85">
+               </Location>
+               <Location
+                  uuid = "D88E1C59-A8D6-45C9-AAB5-15FDF4575709 - 873829dc6adbf728"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Dropspot.FlowCollectionVCell.collFavBtn.setter : Swift.Optional&lt;__C.UIButton&gt;"
+                  moduleName = "Dropspot"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vinnievec/Desktop/Dropspot/Dropspot/CollectionViewCells/FlowCollectionVCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "D88E1C59-A8D6-45C9-AAB5-15FDF4575709 - bc85afb03feeb19"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Dropspot.FlowCollectionVCell.collFavBtn.modify : Swift.Optional&lt;__C.UIButton&gt;"
+                  moduleName = "Dropspot"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vinnievec/Desktop/Dropspot/Dropspot/CollectionViewCells/FlowCollectionVCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "D88E1C59-A8D6-45C9-AAB5-15FDF4575709 - 8988a0bd98ceff4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Dropspot.FlowCollectionVCell.collFavBtn.modify : Swift.Optional&lt;__C.UIButton&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Dropspot"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vinnievec/Desktop/Dropspot/Dropspot/CollectionViewCells/FlowCollectionVCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  uuid = "D88E1C59-A8D6-45C9-AAB5-15FDF4575709 - 2b20989e74897e20"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Dropspot.FlowCollectionVCell.init(frame: __C.CGRect) -&gt; Dropspot.FlowCollectionVCell"
+                  moduleName = "Dropspot"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vinnievec/Desktop/Dropspot/Dropspot/CollectionViewCells/FlowCollectionVCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "293">
+               </Location>
+               <Location
+                  uuid = "D88E1C59-A8D6-45C9-AAB5-15FDF4575709 - 78eacc30f9098382"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Dropspot.FlowCollectionVCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Dropspot.FlowCollectionVCell&gt;"
+                  moduleName = "Dropspot"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vinnievec/Desktop/Dropspot/Dropspot/CollectionViewCells/FlowCollectionVCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "200">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FDD61B9F-DB8C-40FE-B95C-6CAB30FCB6A0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Dropspot/CollectionViewCells/FlowCollectionVCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "FlowCollectionVCell"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
