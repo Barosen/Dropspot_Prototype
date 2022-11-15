@@ -52,6 +52,10 @@ class AdsCollectionView:UIViewController,UICollectionViewDataSource, UIGestureRe
         cell.collShareBtn.setImage(UIImage(named: "shareButton"), for: UIControl.State())
         cell.collFollBtn.setImage(UIImage(named: "followButton"), for: UIControl.State())
         
+        cell.collShareBtn.addTarget(self, action: #selector(shareBtn(_:)), for: .touchUpInside)
+        cell.collFavBtn.addTarget(self, action: #selector(setFav(_:)), for: .touchUpInside)
+        cell.collCommentBtn.addTarget(self, action: #selector(commentsBtn(_:)), for: .touchUpInside)
+        
         if (annonce.favorite){
             
            cell.collFavBtn.setImage(image, for: UIControl.State.normal)
@@ -96,6 +100,48 @@ class AdsCollectionView:UIViewController,UICollectionViewDataSource, UIGestureRe
 
         print("left swiped ")
         self.navigationController?.popToRootViewController(animated: true)
+        
+    }
+    
+    @objc func shareBtn(_ sender:UIButton){
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "FlowShare") as?FlowShareViewController else{return}
+        if let sheet = vc.sheetPresentationController{
+            sheet.prefersGrabberVisible = true
+            sheet.detents = [.medium()]
+
+        }
+
+        
+        present(vc,animated: true)
+
+        
+    }
+    @objc func commentsBtn(_ sender:UIButton){
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "commentsflowvc") as?FlowCommentsViewController else{return}
+        if let sheet = vc.sheetPresentationController{
+            sheet.prefersGrabberVisible = true
+            sheet.detents = [.medium()]
+
+        }
+
+        vc.boxTry=MainList.annonces[sender.tag].comments
+        present(vc,animated: true)
+        AdCollectionV.reloadData()
+        
+        
+        
+    }
+    
+    @objc func setFav(_ sender:UIButton){
+        if (list2![sender.tag].favorite==true){
+            list2![sender.tag].favorite=false
+            
+        }else{
+            list2![sender.tag].favorite=true
+            
+        }
+        AdCollectionV.reloadData()
+        print(list2![sender.tag].favorite)
         
     }
     

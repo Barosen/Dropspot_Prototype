@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dvt-8T-ram">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -2788,7 +2788,6 @@
         <!--Ads Collection View-->
         <scene sceneID="eKF-wU-ddM">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jxc-uf-qZs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="AdsCollectionView" id="ayr-Ty-pVl" customClass="AdsCollectionView" customModule="Dropspot" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fzn-Gd-kkv">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
@@ -2905,6 +2904,7 @@
                         <outlet property="AdCollectionV" destination="YOD-ZP-eaE" id="wPp-dE-cCl"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jxc-uf-qZs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-343" y="468"/>
         </scene>
@@ -3003,7 +3003,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="y68-MT-PMy"/>
-        <segue reference="eRE-3E-1kN"/>
+        <segue reference="Fpn-at-muK"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="3225179_app_logo_media_popular_social_icon" width="512" height="512"/>
